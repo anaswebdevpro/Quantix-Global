@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Container from "./ui/container";
+import { SectionHeading } from "./ui/SectionHeading";
 
 const industries = [
   {
@@ -60,15 +61,9 @@ export default function Industries() {
     <section className="py-20 bg-gray-50">
       <Container>
         <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-[#333d47]"
-          >
+          <SectionHeading>
             Industries In Which We <br /> Deal Up
-          </motion.h2>
+          </SectionHeading>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
