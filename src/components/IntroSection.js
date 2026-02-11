@@ -19,15 +19,15 @@ export default function IntroSection() {
   return (
     <section className="py-20 bg-gray-50">
       <Container>
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center mx-auto mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl font-black text-[#153577] mb-8 leading-tight"
+            className="text-3xl md:text-5xl font-black mb-8 leading-tight"
           >
-            Webcom Systems- Building Blockchain <br /> Solutions For Businesses
+           Quantix Global- Building Blockchain <br /> Solutions For Businesses
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
