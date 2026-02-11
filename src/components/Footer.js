@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Container from "./ui/container";
 
 const footerLinks = {
   services: {
@@ -56,7 +57,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-[#153577] text-white pt-20 pb-10">
-      <div className="container-custom">
+      <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Services */}
           <div>
@@ -236,7 +237,7 @@ export default function Footer() {
             Privacy Policy
           </Link>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

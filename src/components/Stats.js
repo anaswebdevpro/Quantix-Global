@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Container from "./ui/container";
 
 const stats = [
   { value: "150+", label: "TOTAL EMPLOYEES" },
@@ -11,7 +12,7 @@ export default function Stats() {
   return (
     <section className="py-20 bg-[#153577] text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#153577] to-[#0d224d] opacity-50"></div>
-      <div className="container-custom relative z-10">
+      <Container className="relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <motion.h2
@@ -61,7 +62,7 @@ export default function Stats() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

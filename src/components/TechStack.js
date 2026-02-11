@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Container from "./ui/container";
 
 const techs = [
   { name: "Binance", img: "/assets/images/Binance-1.png" },
@@ -25,7 +26,7 @@ const techs = [
 export default function TechStack() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container-custom">
+      <Container>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
             <motion.h2
@@ -77,7 +78,7 @@ export default function TechStack() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

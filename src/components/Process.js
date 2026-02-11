@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Container from "./ui/container";
 
 const steps = [
   {
@@ -32,7 +33,7 @@ const steps = [
 export default function Process() {
   return (
     <section className="py-20 bg-[#153577] text-white">
-      <div className="container-custom">
+      <Container>
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +73,7 @@ export default function Process() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

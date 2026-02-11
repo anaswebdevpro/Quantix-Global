@@ -17,24 +17,11 @@
 
 body {
   font-family: var(--font-body);
-  color: var(--color-dark-text);
+ 
   background-color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-dark);
-  font-weight: 700;
-}
 
-.container-custom {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+
+
+

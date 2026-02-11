@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Container from "./ui/container";
 
 const industries = [
   {
@@ -57,7 +58,7 @@ const industries = [
 export default function Industries() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container-custom">
+      <Container>
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -99,7 +100,7 @@ export default function Industries() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

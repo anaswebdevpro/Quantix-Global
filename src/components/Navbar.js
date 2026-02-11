@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Container from "./ui/container";
 
 const menuItems = [
   {
@@ -131,17 +132,15 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Bar */}
-     
-
       {/* Main Navbar */}
+
       <header
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-300",
           scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-3",
         )}
       >
-        <div className="max-w-[1600px] mx-auto px-4 md:px-8 flex justify-between items-center">
+        <Container className="flex justify-between items-center  md:px-18 max-w-[1600px] mx-auto">
           {/* Logo */}
           <Link href="/" className="relative z-50 flex-shrink-0">
             <div
@@ -153,7 +152,7 @@ export default function Navbar() {
               <Image
                 src="/assets/image/quantix.png"
                 alt="Quantix Global"
-                width={200}
+                width={180}
                 height={10}
                 priority
                 className=" "
@@ -162,7 +161,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-2 xl:gap-8 ml-4">
             {menuItems.map((item, index) => (
               <div key={index} className="relative group">
                 <Link
@@ -209,7 +208,7 @@ export default function Navbar() {
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
-        </div>
+        </Container>
       </header>
 
       {/* Mobile Sidebar Overlay */}

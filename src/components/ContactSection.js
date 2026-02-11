@@ -1,10 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
+import Container from "./ui/container";
 
 export default function ContactSection() {
   return (
     <section className="py-20 bg-[#f8f8f8]">
-      <div className="container-custom">
+      <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div
@@ -112,7 +113,7 @@ export default function ContactSection() {
             </div>
           </motion.div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

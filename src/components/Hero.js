@@ -1,11 +1,14 @@
 "use client";
-import { SquareArrowOutUpRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Heading } from "./ui/Heading";
+import { SubHeading } from "./ui/subheading";
+import Button from "./ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full  min-h-[600px] flex   overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-[80vh] z-0">
         <video
@@ -22,43 +25,30 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
       </div>
 
-      {/* Content */}
-      <div className="container-custom relative z-20 text-white pt-20">
-        <div className="max-w-4xl">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-3xl md:text-3xl lg:text-5xl font-black leading-tight mb-6"
-          >
+      {/* content */}
+      <div className="h-[80vh] z-20 px-10 py-20 lg:py-32 lg:px-20 ">
+        <div className="max-w-2xl flex flex-col items-start justify-center pt-20 space-y-4">
+          <Heading as="h1" className="">
             Blockchain Development Company
-          </motion.h1>
+          </Heading>
+          <SubHeading as="p" className="text-white py-2 max-w-lg">
+            Your trusted partner in building secure, scalable, and innovative
+            decentralized solutions for the future of
+            <span className="text-[#09d0c6]"> digital transformation.</span>
+          </SubHeading>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-xl md:text-3xl font-light mb-10 text-white max-w-2xl"
-          >
-            Your Partner in Decentralized Solution.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          >
-            <Link
-              href="/contact-us"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#09d0c6] hover:bg-[#08b8af] text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-teal-500/30"
+          <Link href="/contact-us">
+            <Button
+              variants="action"
+              className="inline-flex items-center justify-center text-md"
             >
               Talk To An Expert
-              <SquareArrowOutUpRight size={18} />
-            </Link>
-          </motion.div>
+              <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

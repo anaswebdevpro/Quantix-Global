@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import Container from "./ui/container";
+
 const introItems = [
   { title: "E-learning", icon: "/assets/images/elearning-1.png" },
   { title: "Cybersecurity", icon: "/assets/images/Cybersecurity-1.png" },
@@ -16,7 +18,7 @@ const introItems = [
 export default function IntroSection() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container-custom">
+      <Container>
         <div className="text-center max-w-4xl mx-auto mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -85,7 +87,7 @@ export default function IntroSection() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
