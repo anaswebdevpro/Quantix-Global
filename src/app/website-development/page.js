@@ -1,0 +1,229 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+
+import { ChevronRight } from "lucide-react";
+import Container from "@/components/ui/container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SubHeading } from "@/components/ui/subheading";
+import ContactSection from "@/components/ContactSection";
+import Button from "@/components/ui/button";
+import { Heading } from "@/components/ui/Heading";
+import Testimonials from "@/components/Testimonials";
+import Stats from "@/components/Stats";
+
+const features = [
+  {
+    title: "PHP",
+    desc: "Having in-depth knowledge of all PHP frameworks we provide a wide range of web development solutions to bridge gaps and improve processes",
+  },
+  {
+    title: "E-commerce",
+    desc: "Experts in replacing overgrown E-commerce with faster specifically tuned E-commerce: Magento, X-cart, Shopify & Opencart solutions",
+  },
+  {
+    title: "Node.js & Angular.js",
+    desc: "Proven track record of developing Node.js and Angular based web solutions enables us to come up with new ideas every-time.",
+  },
+  {
+    title: ".Net framework",
+    desc: "Cost-effective solutions based on .Net framework tailored to meet specific needs",
+  },
+  {
+    title: "CMS",
+    desc: "Specialists in leveraging CMS, Joomla & WordPress based solutions to solve abstruse web development problems",
+  },
+  {
+    title: "ROR",
+    desc: "Offers state-of-the-art ROR solutions that are easy to use, maintain and grow",
+  },
+];
+
+export default function WebsiteDevelopment() {
+  return (
+    <div className="">
+      {/* Hero Section */}
+      <section
+        className="py-20 md:py-32 text-white h-auto md:h-[90vh] flex items-center bg-[#153577]"
+        style={{
+          backgroundImage: "url('/assets/image/banner-service.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "",
+        }}
+      >
+        <Container className="max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+            <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
+              <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span className="text-[#09d0c6]">Website</span> Development{" "}
+                <br />
+              </Heading>
+              <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
+                We have the right stuff of industries best web developers in
+                india to perform everything possible and even beyond to assist
+                you to register a great online presence of your business.
+              </SubHeading>
+              <div className="flex justify-center md:justify-start">
+                <Link href="/contact-us">
+                  <button className="group bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#153577] transition-all duration-300 flex items-center gap-2 font-semibold">
+                    Let's Discuss
+                    <ChevronRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 mt-12 md:mt-0 relative">
+              <div className="relative w-full aspect-[4/3] md:h-[500px]">
+                <Image
+                  src="/assets/image/webdevelopment.png"
+                  alt="Website Development"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-16 md:py-20 bg-gray-50/50">
+        <Container>
+          <div className="text-center mb-12 md:mb-16">
+            <SectionHeading className="mx-auto">Our Services</SectionHeading>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col items-start"
+              >
+                <h3 className="text-lg md:text-xl font-bold text-[#333d47] mb-3 group-hover:text-[#09d0c6] transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {feature.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA Section */}
+      <section
+        className="py-20  text-white relative overflow-hidden"
+        style={{
+          backgroundImage: "url(/assets/image/support.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Container className="relative z-10">
+          <div className=" flex flex-col gap-12">
+            <div className="max-w-2xl pl-10">
+              <SectionHeading className="text-white mb-6 text-center md:text-left ">
+                Do you have any idea in your mind?{" "}
+                <br className="hidden md:block" />
+                We will convert your idea into
+                <span className="text-[#09d0c6]"> reality</span>
+              </SectionHeading>
+              <motion.p
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-gray-300 leading-relaxed text-xl font-semibold my-8"
+              >
+                Lets get connected
+              </motion.p>
+
+              <div className="flex justify-start md:justify-start">
+                <Link href="/contact-us">
+                  <Button
+                    variants="outline"
+                    className=""
+                  >
+                    Let's Discuss
+                    <ChevronRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:w-1/2 w-full"></div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Process/Info Section */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <div className="relative h-[300px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
+                <Image
+                  src="/assets/image/mendesk.jpg"
+                  alt="Web Design Company"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2">
+              <SectionHeading className="mb-6 text-2xl md:text-4xl">
+                Web Development Company
+              </SectionHeading>
+              <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+                Quantix Global proffers alluring, cost-efficient web design
+                solutions for organizations ranging from small-scale to
+                flourishing, large-scale enterprises. The solutions extend from
+                alternatives such as HTML to CSS to Jquery to provide our
+                clients with the best in the market. We are one of the top web
+                development company in the industry.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
+                Web development, unlike the misconception built by people, is
+                much more than textures and attractive graphics. It involves
+                user experience, interface design, and search engine
+                optimization to ensure your website not only looks good but
+                performs well.
+              </p>
+              <Link href="/contact-us">
+                <Button variants="outline" className=" text-black border-black">
+                  Start Project
+                  <ChevronRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Stats/>
+     <Testimonials/>
+
+      {/* Contact Section */}
+      <ContactSection />
+    </div>
+  );
+}

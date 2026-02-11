@@ -3,10 +3,10 @@ import React from "react";
 import { delay, motion } from "framer-motion";
 
 export const SubHeading = ({ children, className, as = "p" }) => {
-  const Tag = as;
-
+  const Tag = motion[as];
+    
   return (
-    <motion.Tag
+    <Tag
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
@@ -16,6 +16,6 @@ export const SubHeading = ({ children, className, as = "p" }) => {
       )}
     >
       {children}
-    </motion.Tag>
+    </Tag>
   );
 };
