@@ -1,8 +1,20 @@
 "use client";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
 import Container from "./ui/container";
 
 export default function ContactSection() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log("Form Data:", data);
+    // Handle form submission logic here
+  };
+
   return (
     <section className="py-20 bg-[#f8f8f8]">
       <Container>
@@ -23,44 +35,113 @@ export default function ContactSection() {
               hesitate to get in touch with our experts.
             </p>
 
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="Full Name*"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email*"
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors"
-                />
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Full Name*"
+                    {...register("fullName", {
+                      required: "Full name is required",
+                    })}
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                      errors.fullName ? "border-red-500" : "border-gray-200"
+                    }`}
+                  />
+                  {errors.fullName && (
+                    <span className="text-red-500 text-xs mt-1">
+                      {errors.fullName.message}
+                    </span>
+                  )}
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your Email*"
+                    {...register("email", { required: "Email is required" })}
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                      errors.email ? "border-red-500" : "border-gray-200"
+                    }`}
+                  />
+                  {errors.email && (
+                    <span className="text-red-500 text-xs mt-1">
+                      {errors.email.message}
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <select className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500">
-                  <option>Services I want*</option>
-                  <option>Website Designing</option>
-                  <option>Mobile App Development</option>
-                  <option>Blockchain Development</option>
-                </select>
-                <select className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500">
-                  <option>Product I want*</option>
-                  <option>Blockchain Softwares</option>
-                  <option>Fintech Softwares</option>
-                  <option>Other</option>
-                </select>
+                <div>
+                  <select
+                    {...register("service", {
+                      required: "Service is required",
+                    })}
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500 ${
+                      errors.service ? "border-red-500" : "border-gray-200"
+                    }`}
+                  >
+                    <option value="">Services I want*</option>
+                    <option value="Website Designing">Website Designing</option>
+                    <option value="Mobile App Development">
+                      Mobile App Development
+                    </option>
+                    <option value="Blockchain Development">
+                      Blockchain Development
+                    </option>
+                  </select>
+                  {errors.service && (
+                    <span className="text-red-500 text-xs mt-1">
+                      {errors.service.message}
+                    </span>
+                  )}
+                </div>
+                <div>
+                  <select
+                    {...register("product", {
+                      required: "Product is required",
+                    })}
+                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500 ${
+                      errors.product ? "border-red-500" : "border-gray-200"
+                    }`}
+                  >
+                    <option value="">Product I want*</option>
+                    <option value="Blockchain Softwares">
+                      Blockchain Softwares
+                    </option>
+                    <option value="Fintech Softwares">Fintech Softwares</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  {errors.product && (
+                    <span className="text-red-500 text-xs mt-1">
+                      {errors.product.message}
+                    </span>
+                  )}
+                </div>
               </div>
 
-              <input
-                type="tel"
-                placeholder="Phone Number*"
-                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors"
-              />
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number*"
+                  {...register("phone", {
+                    required: "Phone number is required",
+                  })}
+                  className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                    errors.phone ? "border-red-500" : "border-gray-200"
+                  }`}
+                />
+                {errors.phone && (
+                  <span className="text-red-500 text-xs mt-1">
+                    {errors.phone.message}
+                  </span>
+                )}
+              </div>
 
               <textarea
                 rows="4"
                 placeholder="Enter your message.."
+                {...register("message")}
                 className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors resize-none"
               ></textarea>
 

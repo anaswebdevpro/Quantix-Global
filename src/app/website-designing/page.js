@@ -11,6 +11,7 @@ import { SubHeading } from "@/components/ui/subheading";
 import ContactSection from "@/components/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
+import SupportCTA from "@/components/SupportCTA";
 
 const features = [
   {
@@ -139,52 +140,7 @@ export default function WebsiteDesigning() {
       </section>
 
       {/* CTA Section */}
-      <section
-        className="py-20  text-white relative overflow-hidden"
-        style={{
-          backgroundImage: "url(/assets/image/support.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <Container className="relative z-10">
-          <div className=" flex flex-col gap-12">
-            <div className="max-w-2xl pl-10">
-              <SectionHeading className="text-white mb-6 text-center md:text-left ">
-                Do you have any idea in your mind?{" "}
-                <br className="hidden md:block" />
-                We will convert your idea into
-                <span className="text-[#09d0c6]"> reality</span>
-              </SectionHeading>
-              <motion.p
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-gray-300 leading-relaxed text-xl font-semibold my-8"
-              >
-                Lets get connected
-              </motion.p>
-
-              <div className="flex justify-start md:justify-start">
-                <Link href="/contact-us">
-                  <button className="group bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#153577] transition-all duration-300 flex items-center gap-2 font-semibold">
-                    Let's Discuss
-                    <ChevronRight
-                      size={20}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
-                  </button>
-                </Link>
-              </div>
-            </div>
-
-            <div className="lg:w-1/2 w-full"></div>
-          </div>
-        </Container>
-      </section>
-
+     <SupportCTA />
       {/* Process/Info Section */}
       <section className="py-16 md:py-20">
         <Container>
