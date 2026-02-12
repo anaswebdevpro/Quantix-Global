@@ -12,7 +12,7 @@ export const Heading = ({ children, className, as = "h2" }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={cn(
-        "text-3xl md:text-5xl lg:text-6xl tracking-tight  text-white font-bold ",
+        "text-5xl md:text-5xl lg:text-6xl tracking-tight  text-white font-bold ",
         className,
       )}
     >

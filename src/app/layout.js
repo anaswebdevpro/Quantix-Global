@@ -10,9 +10,9 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Blockchain Development Company | Web 3.0 Solutions - Webcom Systems",
+  title: "Blockchain Development Company | Web 3.0 Solutions - Quantix Global",
   description:
-    "Dive into Web 3.0 with Webcom Systems! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
+    "Dive into Web 3.0 with Quantix Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
 };
 
 export default function RootLayout({ children }) {

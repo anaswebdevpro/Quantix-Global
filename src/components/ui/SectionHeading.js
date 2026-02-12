@@ -11,7 +11,7 @@ export const SectionHeading = ({ children, className, as = "h2" }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={cn(
-        "text-3xl md:text-4xl font-bold text-[#333d47] mb-10 ",
+        "text-3xl md:text-4xl font-bold text-[#333d47] py-4  ",
         className,
       )}
     >

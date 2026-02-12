@@ -29,8 +29,8 @@ export default function Hero() {
       </div>
 
       {/* content */}
-      <div className="h-[80vh] z-20 px-10 py-20 lg:py-32 lg:px-20 ">
-        <div className="max-w-2xl flex flex-col items-start justify-center pt-20 space-y-4">
+      <div className="h-[80vh] z-20 px-4 md:px-10 py-20 lg:py-24 lg:px-20 ">
+        <div className="max-w-2xl flex flex-col items-start justify-center pt-10 space-y-4">
           <Heading as="h1" className="">
             Blockchain Development Company
           </Heading>

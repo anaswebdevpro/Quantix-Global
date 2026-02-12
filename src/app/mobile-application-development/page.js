@@ -1,13 +1,167 @@
-import React from 'react';
-import { Heading } from '@/components/ui/Heading';
-import Container from '@/components/ui/container';
+  "use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function Page() {
+import { ChevronRight } from "lucide-react";
+import Container from "@/components/ui/container";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SubHeading } from "@/components/ui/subheading";
+import ContactSection from "@/components/ContactSection";
+import Button from "@/components/ui/button";
+import { Heading } from "@/components/ui/Heading";
+import Testimonials from "@/components/Testimonials";
+import Stats from "@/components/Stats";
+import SupportCTA from "@/components/SupportCTA";
+
+const features = [
+  {
+    title: "Android Development",
+    desc: "We have recruited a staff of experienced and professional trailblazers of android developers who are well versed with Android framework internals, UX/UI design, testing, and remodeling process. Our service ranges in all the departments equally including app development, app deployment, and marketing, which will assist the enterprises to stay proactive by being in the forefront of the change. We dispense our assistance in every app-related desideratum; whether it is an enterprise-targeted or consumer-targeted app – we give cost-effective solutions in the stipulated time frame. Our teams consist of unrivaled developers who will deliver a robust and scalable app which will look distinguished and be compatible to all android screens, along with being feature-rich and stunning UX design – all in competitive rates.",
+  },
+  {
+    title: "iOS Development",
+    desc: "We are proudly known for delivering innovative iOS solutions and are currently leading the industry. The combination of our matchless distinguished facilities and remarkably professional team enables us to provide an infinite supply of unparalleled execution and designs. Our developers use their in-depth knowledge and experience to produce an iOS app tailored to the client’s requirement and their business model. We offer a complete iOS app development package that adheres to Apple's human interface guidelines incorporating – design, coding, testing, promotion, and support. This app development package brings the client’s project stability from start to end. We have designed and delivered conductive apps with world-class designs, dynamic functions and customized UX for particular needs of the target audience – for all iOS platforms. We give a cost-effective and exceptional iOS app development solutions.",
+  },
+];
+
+export default function MobileApplicationDevelopment() {
   return (
-    <div className='bg-[#153577] min-h-screen pt-32 pb-20'>
-      <Container>
-        <Heading>Mobile Application Development</Heading>
-      </Container>
+    <div className="">
+      {/* Hero Section */}
+      <section
+        className="py-20 md:py-32 text-white h-auto md:h-[90vh] flex items-center bg-[#153577]"
+        style={{
+          backgroundImage: "url('/assets/image/banner-service.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "",
+        }}
+      >
+        <Container className="max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+            <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
+              <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                <span className="text-[#09d0c6]">Mobile Application</span> Development{" "}
+                <br />
+              </Heading>
+              <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
+              We have a reputation of being the pioneers in mobile application development for introducing humanized mobile apps that are not only user-friendly but also extremely engaging, helping the businesses generate revenues with expanded user engrossment.
+              </SubHeading>
+              <div className="flex justify-center md:justify-start">
+                <Link href="/contact-us">
+                  <button className="group bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#153577] transition-all duration-300 flex items-center gap-2 font-semibold">
+                    Let's Discuss
+                    <ChevronRight
+                      size={20}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 mt-12 md:mt-0 relative">
+              <div className="relative w-full aspect-[4/3] md:h-[500px]">
+                <Image
+                  src="/assets/image/mobile-app4.png"
+                  alt="Website Development"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-16 md:py-20 bg-gray-50/50">
+        <Container>
+          <div className="text-center mb-12 md:mb-16">
+            <SectionHeading className="mx-auto">Our Services</SectionHeading>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col items-start"
+              >
+                <h3 className="text-lg md:text-xl font-bold text-[#333d47] mb-3 group-hover:text-[#09d0c6] transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {feature.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA Section */}
+      <SupportCTA />
+
+      {/* Process/Info Section */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
+            <div className="w-full md:w-1/2 order-2 md:order-1">
+              <div className="relative h-[300px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
+                <Image
+                  src="/assets/image/man-in-glasses.jpg"
+                  alt="Web Design Company"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 order-1 md:order-2">
+              <SectionHeading className="mb-6 text-2xl md:text-4xl">
+                Web Development Company
+              </SectionHeading>
+              <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+                Quantix Global proffers alluring, cost-efficient web design
+                solutions for organizations ranging from small-scale to
+                flourishing, large-scale enterprises. The solutions extend from
+                alternatives such as HTML to CSS to Jquery to provide our
+                clients with the best in the market. We are one of the top web
+                development company in the industry.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
+                Web development, unlike the misconception built by people, is
+                much more than textures and attractive graphics. It involves
+                user experience, interface design, and search engine
+                optimization to ensure your website not only looks good but
+                performs well.
+              </p>
+              <Link href="/contact-us">
+                <Button variants="outline" className=" text-black border-black">
+                  Start Project
+                  <ChevronRight
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Stats/>
+
+      
+     <Testimonials/>
+
+      {/* Contact Section */}
+      <ContactSection />
     </div>
   );
 }

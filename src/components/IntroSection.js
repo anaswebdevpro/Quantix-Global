@@ -21,22 +21,22 @@ export default function IntroSection() {
   return (
     <section className="py-12 bg-gray-50">
       <Container>
-        <div className="text-center mx-auto flex flex-col ">
+        <div className="text-center mx-auto flex flex-col  ">
           <SectionHeading as="h2" className="">
             Quantix Global- Building Blockchain <br /> Solutions For Businesses
           </SectionHeading>
           <SubHeading className="text-center max-w-7xl mx-auto">
             In the dynamic world of technology,{" "}
-            <strong className="font-bold text-gray-800">Webcom Systems</strong>{" "}
+            <strong className="font-bold text-gray-800">Quantix Global</strong>{" "}
             has emerged as a trailblazer in providing innovative blockchain
             solutions tailored for businesses. With a mission to harness the
-            transformative potential of blockchain technology, Webcom Systems
+            transformative potential of blockchain technology, Quantix Global
             has positioned itself as a leading player in the industry, offering
             a range of services designed to enhance efficiency, security, and
             transparency. <br />
             <strong>Blockchain technology,</strong> known for its decentralized
             and immutable nature, is revolutionizing the way businesses operate.{" "}
-            <strong>Webcom Systems</strong> leverages this technology to create
+            <strong>Quantix Global</strong> leverages this technology to create
             customized solutions that address the unique challenges faced by
             various industries. From supply chain management and finance to
             healthcare and real estate, the applications of blockchain are vast

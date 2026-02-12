@@ -8,13 +8,13 @@ import { SectionHeading } from "./ui/SectionHeading";
 const industries = [
   {
     title: "Blockchain In Supply Chain",
-    desc: "By embracing blockchain technology, businesses can future-proof their supply chain operations and stay ahead of the curve. Webcom Systems helps supply chain leaders use data to handle the disruptions of today and build resiliency for the future.",
+    desc: "By embracing blockchain technology, businesses can future-proof their supply chain operations and stay ahead of the curve. Quantix Global helps supply chain leaders use data to handle the disruptions of today and build resiliency for the future.",
     image: "/assets/images/supply_chain.jpg",
     link: "/blockchain-supply-chain",
   },
   {
     title: "Blockchain In Finance",
-    desc: "Webcom Systems helps businesses in the finance industry to achieve greater efficiency, security, and control over their financial operations through customized blockchain solutions.",
+    desc: "Quantix Global helps businesses in the finance industry to achieve greater efficiency, security, and control over their financial operations through customized blockchain solutions.",
     image: "/assets/images/image_2.jpg",
     link: "/blockchain-finance",
   },
@@ -26,31 +26,31 @@ const industries = [
   },
   {
     title: "Blockchain In Healthcare",
-    desc: "Webcom Systems helps healthcare organizations implement blockchain networks that ensure the privacy and security of patient information, improving coordination between providers and enhancing patient care.",
+    desc: "Quantix Global helps healthcare organizations implement blockchain networks that ensure the privacy and security of patient information, improving coordination between providers and enhancing patient care.",
     image: "/assets/images/image_4.jpg",
     link: "/blockchain-healthcare",
   },
   {
     title: "Blockchain In Energy Oil And Gas",
-    desc: "Blockchain's decentralized and encrypted nature provides a secure environment. Webcom Systems assists in implementing blockchain solutions that optimize operations, leading to cost savings and improved productivity.",
+    desc: "Blockchain's decentralized and encrypted nature provides a secure environment. Quantix Global assists in implementing blockchain solutions that optimize operations, leading to cost savings and improved productivity.",
     image: "/assets/images/image_5.jpg",
     link: "/blockchain-energy",
   },
   {
     title: "Blockchain In Retail",
-    desc: "Webcom Systems provide online retailers with a more secure and efficient payment system by simplifying inventory tracking, automating payments using smart contracts and providing proof of authenticity.",
+    desc: "Quantix Global provide online retailers with a more secure and efficient payment system by simplifying inventory tracking, automating payments using smart contracts and providing proof of authenticity.",
     image: "/assets/images/Retail.jpg",
     link: "/blockchain-retail",
   },
   {
     title: "Blockchain In Transportation",
-    desc: "Blockchain Technology has many benefits that can solve many issues in the transport industry. Webcom Systems help transport companies manage data, and business processes and improve the way goods are shipped and transported through blockchain technology.",
+    desc: "Blockchain Technology has many benefits that can solve many issues in the transport industry. Quantix Global help transport companies manage data, and business processes and improve the way goods are shipped and transported through blockchain technology.",
     image: "/assets/images/Transportation_1.jpg",
     link: "/blockchain-transportation",
   },
   {
     title: "Blockchain In Agriculture",
-    desc: "Blockchain technology is being increasingly used in the agriculture industry to improve supply chain management, increase transparency, and enhance traceability. Webcom Systems ensures the integrity and security of agriculture data by using blockchain technology.",
+    desc: "Blockchain technology is being increasingly used in the agriculture industry to improve supply chain management, increase transparency, and enhance traceability. Quantix Global ensures the integrity and security of agriculture data by using blockchain technology.",
     image: "/assets/images/Agriculture_1.jpg",
     link: "/blockchain-agriculture",
   },
@@ -58,7 +58,7 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 overflow-hidden">
       <Container>
         <div className="text-center mb-16">
           <SectionHeading>

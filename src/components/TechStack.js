@@ -26,7 +26,7 @@ const techs = [
 
 export default function TechStack() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 overflow-hidden">
       <Container>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">

@@ -10,21 +10,21 @@ const testimonials = [
     role: "Blockchain In Healthcare Solutions",
     img: "/assets/images/martin.png",
     quote:
-      "I am extremely satisfied with the services provided by Webcom Systems, I hired the company for Blockchain In Healthcare Solutions. Their expertise in blockchain technology and healthcare solutions was high in the quality of the blockchain app they developed for me.",
+      "I am extremely satisfied with the services provided by Quantix Global, I hired the company for Blockchain In Healthcare Solutions. Their expertise in blockchain technology and healthcare solutions was high in the quality of the blockchain app they developed for me.",
   },
   {
     name: "Angena",
     role: "Retail App Development",
     img: "/assets/images/angena.png",
     quote:
-      "As a retail industry professional, I recently hired Webcom Systems to develop a retail app using blockchain technology. I am extremely satisfied with their services and would highly recommend them to anyone looking for reliable and professional blockchain development solutions.",
+      "As a retail industry professional, I recently hired Quantix Global to develop a retail app using blockchain technology. I am extremely satisfied with their services and would highly recommend them to anyone looking for reliable and professional blockchain development solutions.",
   },
   {
     name: "Daniel Richie",
     role: "Agriculture App",
     img: "/assets/images/daniel.png",
     quote:
-      "Webcom Systems provided solutions that perfectly met my business requirements. They took the time to understand the specific needs of the agriculture industry and developed a retail app that fit my goals.",
+      "Quantix Global provided solutions that perfectly met my business requirements. They took the time to understand the specific needs of the agriculture industry and developed a retail app that fit my goals.",
   },
   {
     name: "Eric",

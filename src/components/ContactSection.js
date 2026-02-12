@@ -185,7 +185,7 @@ export default function ContactSection() {
             <div className="flex-grow bg-white p-4 rounded-lg shadow-lg min-h-[500px] relative overflow-hidden">
               {/* Calendly iframe placeholder */}
               <iframe
-                src="https://calendly.com/webcomsystems?primary_color=09d0c6"
+                src="https://calendly.com/Quantix?primary_color=09d0c6"
                 width="100%"
                 height="100%"
                 frameBorder="0"
