@@ -242,7 +242,8 @@ const faqColumns = {
         "Metaverse healthcare app development services can benefit healthcare organizations by providing customized solutions for medical education and training, remote consultations, patient instruction and engagement, and virtual care. These solutions enhance patient care, improve efficiency, and offer personalized and convenient healthcare experiences.",
     },
     {
-      question: "How can metaverse solutions improve healthcare funding management?",
+      question:
+        "How can metaverse solutions improve healthcare funding management?",
       answer:
         "Metaverse solutions can help in the proper management of healthcare funds by providing decentralized finance (DeFi) platforms that ensure top security, interoperability, and privacy. These platforms enable transparent and efficient financial transactions within the healthcare ecosystem.",
     },
@@ -279,7 +280,8 @@ export default function Page() {
       <section
         className="relative min-h-[72vh] overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/image/metaverse-healthcare-banner.png')",
+          backgroundImage:
+            "url('/assets/image/metaverse-healthcare-banner.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -294,7 +296,7 @@ export default function Page() {
                 Explore the realm of the Healthcare Metaverse
               </p>
               <p className="mt-4 text-gray-200 text-sm md:text-lg leading-relaxed">
-                Let Webcom Systems expertise help you uncover the true dormant
+                Let quantix global expertise help you uncover the true dormant
                 of Metaverse in Healthcare.
               </p>
               <Link href="/contact-us" className="inline-block mt-8">
@@ -305,7 +307,7 @@ export default function Page() {
               </Link>
             </div>
 
-           <BannerForm />
+            <BannerForm />
           </div>
         </Container>
       </section>
@@ -315,11 +317,11 @@ export default function Page() {
         <Container className="max-w-7xl px-4 md:px-8 text-center">
           <h2 className="text-white text-2xl md:text-[40px] font-bold leading-tight tracking-tight max-w-5xl mx-auto">
             Power Of The Metaverse - Transforming Healthcare
-            <br className="hidden md:block" /> Solutions With Webcom Systems
+            <br className="hidden md:block" /> Solutions With quantix global
           </h2>
           <p className="mt-4 text-white/95 text-sm md:text-[16px] leading-relaxed max-w-5xl mx-auto">
-            Webcom Systems is leading the way in using Metaverse Technology to
-            transform healthcare solutions. Join us to know how Webcom Systems
+            quantix global is leading the way in using Metaverse Technology to
+            transform healthcare solutions. Join us to know how quantix global
             is leading the charge in transforming healthcare solutions by using
             this technology!
           </p>
@@ -347,7 +349,9 @@ export default function Page() {
                   <Image
                     src={
                       healthcareUseCaseImages[index] ??
-                      healthcareUseCaseImages[healthcareUseCaseImages.length - 1]
+                      healthcareUseCaseImages[
+                        healthcareUseCaseImages.length - 1
+                      ]
                     }
                     alt={item.title}
                     fill
@@ -447,7 +451,10 @@ export default function Page() {
 
           <div className="mt-10 flex justify-center">
             <Link href="/contact-us">
-              <Button variants="action" className="inline-flex items-center px-9">
+              <Button
+                variants="action"
+                className="inline-flex items-center px-9"
+              >
                 Talk To An Expert
                 <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>

@@ -268,9 +268,7 @@ export default function Page() {
                     <h3 className="text-xl md:text-2xl font-semibold leading-tight">
                       {benefit.title}
                     </h3>
-                    <p
-                      className="mt-3 text-sm md:text-base leading-relaxed text-[#4f5d72] group-hover:text-white/95"
-                    >
+                    <p className="mt-3 text-sm md:text-base leading-relaxed text-[#4f5d72] group-hover:text-white/95">
                       {benefit.description}
                     </p>
                   </div>
@@ -284,29 +282,29 @@ export default function Page() {
       {/* Meeting process */}
       <section className="bg-[#eef0f5] py-16 md:py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden w-full">
-            <div className="relative min-h-[300px] md:min-h-[420px]">
-              <Image
-                src="/assets/image/metaverse-virtual-meeting-work.png"
-                alt="Virtual meeting in metaverse"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="bg-[#1f468b] text-white px-8 py-10 md:px-12 md:py-12">
-              <h2 className="text-3xl md:text-[46px] font-bold leading-tight">
-                Virtual Meetings In Metaverse: How It Works?
-              </h2>
-              <ul className="mt-8 space-y-4">
-                {meetingSteps.map((step) => (
-                  <li key={step} className="flex gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-white/90 shrink-0" />
-                    <p className="text-white/95 text-base md:text-[20px] leading-relaxed">
-                      {step}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="relative min-h-[300px] md:min-h-[420px]">
+            <Image
+              src="/assets/image/metaverse-virtual-meeting-work.png"
+              alt="Virtual meeting in metaverse"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="bg-[#1f468b] text-white px-8 py-10 md:px-12 md:py-12">
+            <h2 className="text-3xl md:text-[46px] font-bold leading-tight">
+              Virtual Meetings In Metaverse: How It Works?
+            </h2>
+            <ul className="mt-8 space-y-4">
+              {meetingSteps.map((step) => (
+                <li key={step} className="flex gap-3">
+                  <span className="mt-2 h-2 w-2 rounded-full bg-white/90 shrink-0" />
+                  <p className="text-white/95 text-base md:text-[20px] leading-relaxed">
+                    {step}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -318,7 +316,7 @@ export default function Page() {
               Ready To Be A Part Of The Future Work?
             </h2>
             <p className="mt-6 text-[#4f5d72] text-sm md:text-[19px] leading-relaxed">
-              The future of the work is with Webcom Systems!
+              The future of the work is with quantix global!
               <br />
               We could be your Metaverse working Space development trusted
               partner paving the way for the development of exquisite virtual

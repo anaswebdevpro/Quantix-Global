@@ -105,7 +105,7 @@ export default function PancakeSwapClone() {
               this platform to ascertain user security and asset information
               inclusively. This great technology enables enhanced efficiency and
               security for potential investors and the creation of numerous
-              rewarding opportunities. At Webcom Systems, you will find
+              rewarding opportunities. At quantix global, you will find
               proficient blockchain professionals who put forward a
               comprehensive asset tokenization platform with state-of-art
               blockchain technology, functionalities, and traits that will bring
