@@ -25,7 +25,7 @@ export default function IntroSection() {
           <SectionHeading as="h2" className="">
             Quantix Global- Building Blockchain <br /> Solutions For Businesses
           </SectionHeading>
-          <SubHeading className="text-center max-w-7xl mx-auto">
+          <SubHeading className="text-center max-w-7xl my-5 mx-auto">
             In the dynamic world of technology,{" "}
             <strong className="font-bold text-gray-800">Quantix Global</strong>{" "}
             has emerged as a trailblazer in providing innovative blockchain

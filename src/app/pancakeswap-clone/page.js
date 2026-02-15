@@ -11,171 +11,30 @@ import ContactSection from "@/components/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
 import SupportCTA from "@/components/SupportCTA";
+import WebsiteSlider from "@/components/WebsiteSlider";
 
-const services = [
-  {
-    title: "Market-Making Consulting",
-    desc: "We’re directed towards establishing financial markets that potentially realize the customers’ proprietary algorithms. Besides, our team is improving the ingress of liquidity access to investors as well as democratizing the entire system.",
-    icon: "/assets/images/Market-Analysis.webp", // Best guess match
-  },
-  {
-    title: "Decentralized Crypto Banking",
-    desc: "We expedite the direct transfer of value between integrated parties backed by decentralization by ensuring an easy-flowing user experience. Our ready-to-launch white-label mobile payment applications lend a plethora of services like wallet integration, value holding.",
-    icon: "/assets/images/Finance-and-Banking-300x169.webp",
-  },
-  {
-    title: "DeFi Lottery System Development",
-    desc: "We present a no-loss lottery system that would be advantageous for participants completely. Our team measures steps to vanish the custodianship of the pooled capital. We authorize the investment of your capital in the other associated dApps.",
-    icon: "/assets/images/Game-Apps.png", // Generic match
-  },
-  {
-    title: "Derivatives Over Defi Platform",
-    desc: "We assure seamless access to derivatives and escalate your earning capability with numerous notches with the establishment of robust dApps, we also permit traders to hedge their portfolio investments and depreciate risks.",
-    icon: "/assets/images/Decentralized-Exchange.png",
-  },
-  {
-    title: "Decentralized Fund Management",
-    desc: "With this, all your crypto assets are managed to yield state-of-art performance in a decentralized exchange via smart contract and management. With extensive experience in investment exchanges coupled with our vast knowledge of defi.",
-    icon: "/assets/images/Asset-Lifecycle-Management.png",
-  },
-  {
-    title: "DeFi Insurance System Development",
-    desc: "We make sure that no such risks are existing in our smart contract. With the streamlined provision of our insurance services, we make sure that there is no chance of uncontrollable liquidity requests. Our team boxes futuristic risks, uncertainties.",
-    icon: "/assets/images/Insurance.png",
-  },
-  {
-    title: "DeFi Yield Farming Platform Development",
-    desc: "By yield farming, we are pointing to a technique through which the person can win on more cryptocurrencies by bringing into use his existing cryptos holding. Liquidity extends an important role in the renounce of yield farming.",
-    icon: "/assets/images/Agricultural-Finance-1.jpg",
-  },
-  {
-    title: "Defi Staking Platform Development",
-    desc: "Defi staking incorporates a mechanism where crypto assets would be staked on a supported wallet/exchange, as well as the passive income, will be earned. The rewards will be calculated relying on the quantity of staked assets.",
-    icon: "/assets/images/Defi_Staking1.png",
-  },
-  {
-    title: "Defi Lending Platform Development",
-    desc: "An enormous investment fetched in vigorous smart contract development is one of the primary reasons for the success of Defi services. Smart contracts are developed with a solid programming language that is highly encrypted and automates the activities.",
-    icon: "/assets/images/Smart-Contract-Development.png",
-  },
-  {
-    title: "DeFi Dapp Development",
-    desc: "Defi Dapp development plays a highly significant role to escape the potential risk of a central point failure. Since there is no central authority to interfere, it is considered extremely secure for the users.",
-    icon: "/assets/images/DApp-development.jpg",
-  },
-  {
-    title: "DeFi Tokens Development",
-    desc: "Defi tokens development plays an extremely important role in accelerating up the growth of decentralized applications. The value of these tokens is quite higher than that of bitcoin. Besides, it fetches a high trading volume.",
-    icon: "/assets/images/Defi-Token-blog-new12.jpg",
-  },
-  {
-    title: "DeFi Dex Development Like Uniswap",
-    desc: "Uniswap is the ultimate leading Defi project that has been undertaken. In this, you will find incentivized liquidity pools instead of streamlined order books. In addition, every Uniswap user is awarded a portion of fees levied.",
-    icon: "/assets/images/Decentralized-Exchange-Platform.jpg",
-  },
-  {
-    title: "DeFi Wallet Development",
-    desc: "Here, the traders will have entire control over their funds via the defi wallet development without any intervention from the authorities in the system. We assure you of a premium level of security without any compromise.",
-    icon: "/assets/images/Cryptocurrency-Wallet.png",
-  },
-  {
-    title: "DeFi Marketing Services",
-    desc: "To support Defi projects gain user engagement, marketing services are requisite. Our Defi marketing services encompass everything from white paper drafting, video/content marketing, legal advisory, to marketing/community management.",
-    icon: "/assets/images/Marketing.jpg",
-  },
-  {
-    title: "DeFi Solutions for Ecommerce",
-    desc: "Smoothen your E-commerce business with Defi and its realistic tools. In this, you can claim certain advantages such as intermediaries omission, faster shipping, supply chain management, as well as real-time tracking.",
-    icon: "/assets/images/Ecommerce-app2.jpg",
-  },
-  {
-    title: "DeFi Tokenization Development",
-    desc: "Tokenization development is one of the most real-time and oriented solutions that Defi presents. Users now have the ease to convert inoperative and underutilized assets into enormous profits by maintaining asset tokenization.",
-    icon: "/assets/images/Asset-Tokenization.png",
-  },
-  {
-    title: "DeFi Crowdfunding Platform Development",
-    desc: "Quantix Global extends a basket of potential benefits, DEXs are the prized innovation of Defi. DEXs make trading & transactions crypto accessible for crypto fanatics by offering perks like high-end security, durable liquidity.",
-    icon: "/assets/images/Crowdfunding-Platforms.png",
-  },
-  {
-    title: "DeFi Real Estate Platform Development",
-    desc: "Real Estate is also one of those sectors that have experienced the revolution of Defi development. With the help of blockchain-backed tokens, now real estate owners & investors can build a smooth platform for making seamless.",
-    icon: "/assets/images/Real-Estate-1.png",
-  },
-];
 
-const advantages = [
-  {
-    title: "Automation",
-    desc: "At Quantix Global, our platform is built on the phenomena of full-fledged automation; there is no requirement for manual interference through the efficient utilization of smart contracts.",
-    icon: "/assets/images/Automation.webp",
-  },
-  {
-    title: "Usage Of Smart Contracts",
-    desc: "Our Smart Contracts are trustability based and help external parties to accept non-editable mutual agreements with each other. They restrict the chances of possible conflicts through automation.",
-    icon: "/assets/images/Smart-Contracts.png",
-  },
-  {
-    title: "Strategized Investment Plans",
-    desc: "Our investment strategies are lucrative in a way that permits investors to store, trade and the management of their assets productively by asserting a relatively higher ROI than other traditional banks.",
-    icon: "/assets/images/Investment-Plan.png", // Generic placeholder if exact not found
-  },
-  {
-    title: "Lack Of a Third Party",
-    desc: "We bring up lower fees that ease transacting funds in the absence of an external party.",
-    icon: "/assets/images/No-Third-Party.png",
-  },
-  {
-    title: "Highly Secure",
-    desc: "We bring in a peer-to-peer procedure in our blockchain network with the usage of core operational nodes. It simply ceases any chances of data breaches or immediate shutdowns.",
-    icon: "/assets/images/High-Security.png",
-  },
-  {
-    title: "Ensure Global Access",
-    desc: "We strive to offer safe and unbiased decentralized financial services to every single user without taking into consideration the wealth, economic status, and geographical location.",
-    icon: "/assets/images/Global-Access.png",
-  },
-  {
-    title: "Interoperability",
-    desc: "We assure you of the ease to amalgamate numerous decentralized financial applications into a one only module turning it into an advanced and user-oriented program.",
-    icon: "/assets/images/Interoperability-in-blockchain.png",
-  },
-  {
-    title: "Transparent Protocols",
-    desc: "We eliminate all the intervention of a central authority who can take control of user’s data, the team at Quantix Global, maintain a premium level of trust and transparency through its reliable protocols.",
-    icon: "/assets/images/Trusted-Security.png", // Generic placeholder
-  },
-];
 
 const whyChooseUs = [
   {
-    title: "Client Collaboration",
-    desc: "At Quantix Global, we have a well-resourced and highly advanced team that is proficient in handling every step of your aspiration with utmost care for paramount perfection.",
+    title: "Reasonable Gas Fee",
+    desc: "More and more users are using this platform, as it has a reasonable gas fee.",
   },
   {
-    title: "Conformance To High Quality",
-    desc: "We undergo robust testing of our entire product basket whilst ascertaining all-inclusive quality checks. This assures users with their requirements getting addressed with the top-most industrial standards.",
+    title: "Cross-Chain Compatibility",
+    desc: "The exchange is compatible with other chains, and the user can trade in a hassle-free manner.",
   },
   {
-    title: "Presence Of an Expert Team",
-    desc: "Our team is composed of capable blockchain engineers who have a sizable amount of expertise in the deepest aspects of Decentralized Finance(Defi) Development.",
+    title: "Proof of Stake",
+    desc: "There will be proof of stake, so the user should not have to face any mismatch later.",
   },
   {
-    title: "Immediate Delivery",
-    desc: "We realize the importance of time for you and your business. Thus, we ensure the completion of projects on time and delivery of the project as soon as possible.",
+    title: "High-Speed Processing",
+    desc: "High-speed processing of transactions is guaranteed on this exchange.",
   },
   {
-    title: "Ease Of Post-Sales Support",
-    desc: "We have maintained an exceptionally capable and advanced technical team that extends top-notch services to our clients for the effective handling of any technical faults that may arise.",
-  },
-  {
-    title: "Promotes Innovation",
-    desc: "Innovation is the only key to success. This is the motto we follow and thus fall distinguishably different from our competitors to give you the best possible customized model for your overall satisfaction.",
-  },
-  {
-    title: "Offshore Recruitment",
-    desc: "Our hardworking team of blockchain experts & architects assist in the development of decentralized finance applications while maintaining robust and structured inputs.",
+    title: "Flexible Smart Contracts",
+    desc: "The smart contracts are flexible and can be customized as per the user’s needs.",
   },
 ];
 
@@ -191,35 +50,19 @@ export default function PancakeSwapClone() {
           backgroundPosition: "center",
         }}
       >
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-[80vh] z-0">
-          {/* <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
-        >
-          <source
-            src="/assets/images/Webcom_Banner_03_3mb.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video> */}
-          {/* Overlay */}
-          {/* <div className="absolute inset-0 bg-black/50 z-10"></div> */}
-        </div>
-
         {/* content */}
         <div className="h-[80vh] z-20 px-4 md:px-10 py-20 lg:py-24 lg:px-20 ">
           <div className="max-w-2xl flex flex-col items-start justify-center pt-10 space-y-4">
             <Heading as="h1" className="">
-              Blockchain Development Company
+              Create A Decentralized Exchange Similar To PancakeSwap
             </Heading>
             <SubHeading as="p" className="text-white py-2 max-w-lg">
-              Your trusted partner in building secure, scalable, and innovative
-              decentralized solutions for the future of
-              <span className="text-[#09d0c6]"> digital transformation.</span>
+              Now, you can create the best Decentralized Exchange on the BSC{" "}
+              <span className="text-[#09d0c6]">Blockchain</span>, similar to{" "}
+              <span className="text-[#09d0c6]">PancakeSwap</span>. It can be
+              considered the best one around in the recent times. We take pride
+              in extending our development platform services for the best DEX
+              creation.
             </SubHeading>
 
             <Link href="/contact-us">
@@ -236,24 +79,65 @@ export default function PancakeSwapClone() {
       </section>
 
       {/* Introduction Section */}
+      <section className="py-16 md:py-20 bg-gray-50">
+        <Container>
+          <div className="text-center max-w-5xl mx-auto">
+            <SectionHeading>
+              Tokenized Asset Offering- Tokenize All Your Real-World Assets
+            </SectionHeading>
+
+            <SubHeading className=" max-w-5xl mx-auto">
+              Tokenization of things or asset tokenization is the newest hype
+              created urrounding the blockchain and cryptocurrency industry. A
+              large number of businesses and huge giants have initiated a move
+              towards Tokenized Asset Offerings(TAOs) and Offering Tokenization
+              as a service(TaaS). You must have noticed a trend of market
+              evolvement from Bitcoin to ICOs and then to TAOs. Crypto
+              diversification counts as a natural succession since it permits
+              traditional real estate, art galleries, and illiquid asset classes
+              to move and load onto the blockchain.
+              <br />
+              <br />
+              Asset tokenization or tokenization of things refers to a process
+              of transitioning the ownership of real-world assets into multiple
+              digital tokens, doesn’t matter if it is venture capital funds,
+              equity shares, real estate, and precious metals like gold, silver,
+              or diamond etc. These tokens are supported by revolutionizing
+              blockchain technology that records & stores every transaction on
+              this platform to ascertain user security and asset information
+              inclusively. This great technology enables enhanced efficiency and
+              security for potential investors and the creation of numerous
+              rewarding opportunities. At Webcom Systems, you will find
+              proficient blockchain professionals who put forward a
+              comprehensive asset tokenization platform with state-of-art
+              blockchain technology, functionalities, and traits that will bring
+              a seamless working experience for valuable customers.
+            </SubHeading>
+            <p className="text-gray-600 mt-6 leading-relaxed"></p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Introduction with image Section */}
       <section className="py-16 md:py-20">
         <Container>
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
-              <div className="relative h-[400px] w-full rounded-2xl overflow-hidden">
+              <div className="relative w-full rounded-2xl overflow-hidden">
                 <Image
-                  src="/assets/image/image1.png"
+                  src="/assets/image/about_pancake.png"
                   alt="DeFi Development"
-                  fill
-                  className="object-cover"
+                  width={450}
+                  height={450}
+                  className="object-center mx-auto"
                 />
               </div>
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 flex flex-col items-center">
               <SectionHeading className="mb-6 text-left">
-                DEFI Solutions to Drive Business Growth
+                About PancakeSwap
               </SectionHeading>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              {/* <p className="text-gray-600 mb-6 leading-relaxed">
                 DeFi Development can act as a substantial propagandist in
                 today’s financial environment. It elevates access for everyone
                 to address many functions such as borrowing, lending, trading,
@@ -268,144 +152,115 @@ export default function PancakeSwapClone() {
                 Company, We empower you to unlock the power of Decentralized
                 Finance, revolutionizing your financial processes and driving
                 growth.
-              </p>
+              </p> */}
+              <SubHeading className="max-w-4xl">
+                Built on the Binance Smart Chain, PancakeSwap is a
+                cryptocurrency exchange platform. Users are now permitted to
+                carry out trade with both Binance Coins and tokens without
+                having to rely on the centralized services. All trades are
+                conducted through Smart Contracts. Many Blockchain security
+                companies have checked the platform for authenticity and passed
+                it. It presents itself as an entire ecosystem of DeFi tools.{" "}
+                <br />
+                <br />
+                It works with the help of an AMM or Automated Marketing Maker.
+                It is the key reason why this system is so efficient. Now, all
+                the traders trading in Cryptocurrencies can push transactions on
+                this renowned exchange platform. The digital ledger is
+                uncomplicated and you need not match it with that of other
+                user’s ledger platforms. The exchanges are happening in the same
+                location in real-time.
+              </SubHeading>
+            </div>
+          </div>
+        </Container>
+      </section>
+      {/* how does it works
+       */}
+      <section className="py-16 md:py-20">
+        <Container>
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="w-full md:w-1/2 flex flex-col items-center">
+              <SectionHeading className="mb-6 text-left">
+                How Does It Work?
+              </SectionHeading>
+
+              <SubHeading className="max-w-4xl">
+                PancakeSwap works primarily on the automation brought in by AMM
+                or Automated Marketing Maker. The user deposits the funds and
+                becomes the liquidity supplier in the exchange. The
+                decentralized exchange specifies what the investments are, after
+                the investment process is over. Being a user, you need to
+                integrate it with a digital money app or wallet on the exchange.
+                Trading with cryptocurrencies is easy, with the exchange
+                platform and digital wallet amalgamation. The Digjtal Wallet
+                permits the user to store their cryptocurrencies in a secure &
+                safe manner. Liquidity providers later share this. Once the
+                setting up and specifications of wallet is done, users can begin
+                exchanging their cryptocurrencies where the user’s identity is
+                also validated as an indispensable part of the process. The
+                three wallets used herein are MetaMask, TrustWallet, or
+                WalletConnect. A treasury is behind all the transactions.
+              </SubHeading>
+            </div>
+            <div className="w-full md:w-1/2">
+              <div className="relative w-full rounded-2xl overflow-hidden">
+                <Image
+                  src="/assets/image/workflow.png"
+                  alt="DeFi Development"
+                  width={450}
+                  height={450}
+                  className="object-center mx-auto"
+                />
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Credible Company Section */}
+   
       <section className="py-16 md:py-20 bg-gray-50">
         <Container>
           <div className="text-center max-w-5xl mx-auto">
             <SectionHeading>
-              We’re a Credible DeFi Development Company
+              Why Is PancakeSwap Better In Comparison To Other Exchanges?
             </SectionHeading>
 
             <SubHeading className=" max-w-5xl mx-auto">
-              We are a leading <strong>DeFi development company</strong>{" "}
-              dedicated to propelling innovation within the ever-evolving
-              decentralized finance ecosystem. Our team of seasoned
-              professionals combines extensive experience with a relentless
-              pursuit of cutting-edge solutions. This unwavering commitment
-              translates into reliable, secure, and scalable DeFi applications
-              that cater to the diverse and complex needs of our clients,
-              empowering them to navigate the dynamic landscape of decentralized
-              finance with confidence.
-              <br />
-              <br />
-              DeFi is a reliable space for users to have ease of convenience as
-              well as privacy. DeFi is reorienting the entire financial system
-              into a more secure and cordial space. We take pride in claiming
-              ourselves as a leading DeFi Development Company, having said that,
-              we try to structure a substantial impact in the markets with our
-              rewarding developments. The DeFi development at Quantix Global is
-              supervised by the most proficient professionals who have a
-              significant amount of experience as well as expertise in the
-              concerned sector.
+              Most cryptocurrency exchanges are built on the Ethereum
+              blockchain. However, that can limit the performance of such
+              systems to a certain extent. Many investors trade in Ethereum and
+              thus utilize these exchanges. With that, you might face a lot of
+              congestion on the trading and exchange routes. To overcome the
+              problem, Binance Smart Chain can be a credible solution. The
+              launch of PancakeSwap expedited the proper use of exchange
+              channels devoid of any congestion. The user can also bypass the
+              transaction costs involved there as well. This decentralized fund
+              management has made it possible to effect hassle-free
+              transactions. You get the best decentralized finance exchange
+              today.
             </SubHeading>
-            <p className="text-gray-600 mt-6 leading-relaxed"></p>
+            <div>
+              <Button className="mx-auto " variants="action">
+                Talk to An Expert
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
-
-      {/* Services Grid */}
-      <section className="py-16 md:py-20">
-        <Container>
-          <div className="text-center mb-12 md:mb-16">
-            <SectionHeading className="mx-auto">
-              Our Broad Range of Defi Development Services Includes
-            </SectionHeading>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center"
-              >
-                <div className="w-20 h-20 relative mb-4">
-                  <Image
-                    src={service.icon}
-                    alt={service.title}
-                    fill
-                    className="object-contain"
-                    onError={(e) => {
-                      e.target.style.display = "none"; // Hide if not found to assume text only fallback visually
-                    }}
-                  />
-                </div>
-                <h3 className="text-lg md:text-xl font-bold text-[#333d47] mb-3 group-hover:text-[#09d0c6] transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {service.desc}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Advantages Section */}
-      <section className="py-16 md:py-20 bg-[#f8f9fa]">
-        <Container>
-          <div className="text-center mb-12">
-            <SectionHeading>
-              Key Advantages of Our DeFi Development Services
-            </SectionHeading>
-            <p className="text-gray-600 mt-4">
-              Unleash the power of innovation and unlock new financial horizons
-              with Quantix Global’ DeFi development services.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {advantages.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:-translate-y-2 transition-transform duration-300"
-              >
-                <div className="w-16 h-16 relative mb-4 mx-auto">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h4 className="text-lg font-bold text-center text-[#333d47] mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-gray-600 text-center">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* CTA Section */}
-      <SupportCTA />
 
       {/* Why Choose Us */}
       <section className="py-16 md:py-20">
         <Container>
-          <div className="flex flex-col md:flex-row gap-12">
+          <div className="mb-8">
+            <SectionHeading className="text-center w-full">
+              Reasons To Create A Customized Cryptocurrency Exchange <br />{" "}
+              –Like Pancake Swap
+            </SectionHeading>
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
-              <SectionHeading className="mb-6 text-left">
-                Why Choose Quantix Global for Your DeFi Development Needs?
-              </SectionHeading>
-              <p className="text-gray-600 mb-6">
-                By choosing Quantix Global, you gain access to a team of
-                passionate experts who combine technical prowess with a deep
-                understanding of DeFi. We empower you to navigate the evolving
-                landscape confidently and unlock the transformative potential of
-                this revolutionary technology.
-              </p>
-              <div className="relative h-[300px] md:h-[400px] w-full mt-8">
+              <div className="relative h-[300px] md:h-[400px] w-full">
                 <Image
                   src="/assets/image/image2.png"
                   alt="Why Choose Us"
@@ -434,6 +289,11 @@ export default function PancakeSwapClone() {
           </div>
         </Container>
       </section>
+
+      <WebsiteSlider />
+
+      {/* CTA Section */}
+      <SupportCTA />
 
       {/* Contact Section */}
       <ContactSection />

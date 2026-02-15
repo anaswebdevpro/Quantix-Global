@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Container from './ui/container'
 import { SectionHeading } from './ui/SectionHeading'
