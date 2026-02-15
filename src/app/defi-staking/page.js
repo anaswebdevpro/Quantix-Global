@@ -92,12 +92,11 @@ const benefitsDecoded = [
 export default function DefiStaking() {
   return (
     <div className="">
-      
-
-        <section
+      <section
         className="relative min-h-[72vh] overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/image/metaverse-healthcare-banner.png')",
+          backgroundImage:
+            "url('/assets/image/metaverse-healthcare-banner.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -106,11 +105,12 @@ export default function DefiStaking() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center py-16 md:py-24">
             <div className="max-w-3xl text-white">
               <h1 className="text-4xl md:text-6xl font-bold leading-[1.04] tracking-tight">
-               Defi Staking Platform Development Services
+                Defi Staking Platform Development Services
               </h1>
-              
+
               <p className="mt-4 text-gray-200 text-sm md:text-lg leading-relaxed">
-               Start a DeFi Staking Platform Service, the Most Renowned Decentralized Platform today.
+                Start a DeFi Staking Platform Service, the Most Renowned
+                Decentralized Platform today.
               </p>
               <Link href="/contact-us" className="inline-block mt-8">
                 <Button variants="action" className="inline-flex items-center">
@@ -120,11 +120,10 @@ export default function DefiStaking() {
               </Link>
             </div>
 
-           <BannerForm />
+            <BannerForm />
           </div>
         </Container>
       </section>
-
 
       {/* Introduction Section */}
       <section className="py-16 md:py-20">
@@ -133,12 +132,12 @@ export default function DefiStaking() {
             <div className="w-full md:w-1/2">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="/assets/images/Defi-stacking-platform-development.png"
+                  src="/assets/image/Defi-stacking-platform-development.png"
                   alt="DeFi Staking Development"
                   fill
                   className="object-cover"
                   onError={(e) =>
-                    (e.currentTarget.src = "/assets/images/about_pancake.png")
+                    (e.currentTarget.src = "/assets/image/about_pancake.png")
                   }
                 />
               </div>
@@ -276,13 +275,13 @@ export default function DefiStaking() {
             <div className="w-full md:w-1/2">
               <div className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg bg-white">
                 <Image
-                  src="/assets/images/workflow.png"
+                  src="/assets/image/workflow.png"
                   alt="DeFi Workflow"
                   fill
                   className="object-contain p-4"
                   onError={(e) =>
                     (e.currentTarget.src =
-                      "/assets/images/Decentralized-Finance-Platform.jpg")
+                      "/assets/image/Decentralized-Finance-Platform.jpg")
                   }
                 />
               </div>

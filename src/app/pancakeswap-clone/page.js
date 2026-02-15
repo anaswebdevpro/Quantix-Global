@@ -13,8 +13,6 @@ import { Heading } from "@/components/ui/Heading";
 import SupportCTA from "@/components/SupportCTA";
 import WebsiteSlider from "@/components/WebsiteSlider";
 
-
-
 const whyChooseUs = [
   {
     title: "Reasonable Gas Fee",
@@ -45,7 +43,7 @@ export default function PancakeSwapClone() {
       <section
         className="relative w-full  min-h-[600px] flex   overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/images/healthcare_banner.jpg')",
+          backgroundImage: "url('/assets/image/healthcare_banner.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -218,7 +216,6 @@ export default function PancakeSwapClone() {
         </Container>
       </section>
 
-   
       <section className="py-16 md:py-20 bg-gray-50">
         <Container>
           <div className="text-center max-w-5xl mx-auto">

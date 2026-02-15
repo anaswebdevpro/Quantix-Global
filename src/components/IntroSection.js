@@ -7,14 +7,14 @@ import { SectionHeading } from "./ui/SectionHeading";
 import { SubHeading } from "./ui/subheading";
 
 const introItems = [
-  { title: "E-learning", icon: "/assets/images/elearning-1.png" },
-  { title: "Banking & Finance", icon: "/assets/images/Banking-Finance-1.png" },
-  { title: "Online shopping", icon: "/assets/images/Online-shopping-1.png" },
-  { title: "Healthcare", icon: "/assets/images/Healthcare-1.png" },
-  { title: "Cybersecurity", icon: "/assets/images/Cybersecurity-1.png" },
-  { title: "Travel", icon: "/assets/images/Travel-1.png" },
-  { title: "Online Music", icon: "/assets/images/Online-Music-1.png" },
-  { title: "Online Movies", icon: "/assets/images/Online-Movies-1.png" },
+  { title: "E-learning", icon: "/assets/image/elearning-1.png" },
+  { title: "Banking & Finance", icon: "/assets/image/Banking-Finance-1.png" },
+  { title: "Online shopping", icon: "/assets/image/Online-shopping-1.png" },
+  { title: "Healthcare", icon: "/assets/image/Healthcare-1.png" },
+  { title: "Cybersecurity", icon: "/assets/image/Cybersecurity-1.png" },
+  { title: "Travel", icon: "/assets/image/Travel-1.png" },
+  { title: "Online Music", icon: "/assets/image/Online-Music-1.png" },
+  { title: "Online Movies", icon: "/assets/image/Online-Movies-1.png" },
 ];
 
 export default function IntroSection() {

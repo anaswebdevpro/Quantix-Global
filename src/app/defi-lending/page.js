@@ -120,7 +120,7 @@ export default function DefiLending() {
       <section
         className="relative w-full min-h-[600px] flex items-center overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/images/Banner_Defi.jpg')", // Reusing a relevant banner or fallback
+          backgroundImage: "url('/assets/image/Banner_Defi.jpg')", // Reusing a relevant banner or fallback
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -159,12 +159,12 @@ export default function DefiLending() {
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
                 {/* Provide a specific image if available, else fallback */}
                 <Image
-                  src="/assets/images/Finance-and-Banking-scaled.webp"
+                  src="/assets/image/Finance-and-Banking-scaled.webp"
                   alt="DeFi Lending Development"
                   fill
                   className="object-cover"
                   onError={(e) =>
-                    (e.currentTarget.src = "/assets/images/about_pancake.png")
+                    (e.currentTarget.src = "/assets/image/about_pancake.png")
                   }
                 />
               </div>

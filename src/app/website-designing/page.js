@@ -17,32 +17,32 @@ const features = [
   {
     title: "PSD To HTML5",
     desc: "Our experts specialize in remoulding files from PSD to HTML5. Photoshopped files are transformed into design files in well-tabbed, W3C validated compatible HTML5 markups, which further enhances the final outcome of the process.",
-    icon: "/assets/images/html5.png",
+    icon: "/assets/image/html5.png",
   },
   {
     title: "Impressionable Designs",
     desc: "Along with having years of experience, what Quantix Global carries is a will to satisfy its clients and their requirements/ expectations of the website. We create impressionable content as we dive into various aspects of presentation, appearance, and innovation.",
-    icon: "/assets/images/Aesthetically-Designed-Website.png",
+    icon: "/assets/image/Aesthetically-Designed-Website.png",
   },
   {
     title: "Css3 & Animations",
     desc: "With ample awareness of software and applications, Quantix Global seems to specialize in CSS3 as well. Indulging animations and expressions in the site via Css3, we intend to vocalise the client’s aspirations to fetch healthy business and escalate the viewership of the site.",
-    icon: "/assets/images/css.png",
+    icon: "/assets/image/css.png",
   },
   {
     title: "Sass/LESS Application",
     desc: "Quantix Global constitute of SaaS and LESS Application specialists, who further ensures the best solution for your website and business.",
-    icon: "/assets/images/sassless.png",
+    icon: "/assets/image/sassless.png",
   },
   {
     title: "Click Funnel, Wix & Unbounce Templates",
     desc: "We are associated with top-notch template providers and firms to provide our clients with their tailored templates, to escalate their business, reach and profits.",
-    icon: "/assets/images/Landing-page-design.png",
+    icon: "/assets/image/Landing-page-design.png",
   },
   {
     title: "Kendo UI & Angular.js",
     desc: "Both of these tools enable us to instantly build a structured layout, as it is the most renowned Javascript frameworks and specialists in Quantix Global integrate it well for best results.",
-    icon: "/assets/images/angularjs1.png",
+    icon: "/assets/image/angularjs1.png",
   },
 ];
 
@@ -88,7 +88,7 @@ export default function WebsiteDesigning() {
             <div className="w-full md:w-1/2 mt-12 md:mt-0 relative">
               <div className="relative w-full aspect-[4/3] md:h-[500px]">
                 <Image
-                  src="/assets/images/Web_design_1.png"
+                  src="/assets/image/Web_design_1.png"
                   alt="Website Designing"
                   fill
                   className="object-contain"
@@ -140,7 +140,7 @@ export default function WebsiteDesigning() {
       </section>
 
       {/* CTA Section */}
-     <SupportCTA />
+      <SupportCTA />
       {/* Process/Info Section */}
       <section className="py-16 md:py-20">
         <Container>
@@ -148,7 +148,7 @@ export default function WebsiteDesigning() {
             <div className="w-full md:w-1/2 order-2 md:order-1">
               <div className="relative h-[300px] md:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
                 <Image
-                  src="/assets/images/Website-Designing.jpg"
+                  src="/assets/image/Website-Designing.jpg"
                   alt="Web Design Company"
                   fill
                   className="object-cover"

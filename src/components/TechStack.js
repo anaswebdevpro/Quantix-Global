@@ -5,23 +5,23 @@ import Container from "./ui/container";
 import { SectionHeading } from "./ui/SectionHeading";
 
 const techs = [
-  { name: "Binance", img: "/assets/images/Binance-1.png" },
-  { name: "Cardano", img: "/assets/images/Cardano-1-1.png" },
-  { name: "Polygon", img: "/assets/images/polygon-matic-logo-1.png" },
-  { name: "Ethereum", img: "/assets/images/Ethereum-Smart.png" },
-  { name: "Solana", img: "/assets/images/Solana-3.png" },
-  { name: "Tron", img: "/assets/images/tron-1.png" },
-  { name: "Avalanche", img: "/assets/images/avalanche-avax-logo-1.png" },
+  { name: "Binance", img: "/assets/image/Binance-1.png" },
+  { name: "Cardano", img: "/assets/image/Cardano-1-1.png" },
+  { name: "Polygon", img: "/assets/image/polygon-matic-logo-1.png" },
+  { name: "Ethereum", img: "/assets/image/Ethereum-Smart.png" },
+  { name: "Solana", img: "/assets/image/Solana-3.png" },
+  { name: "Tron", img: "/assets/image/tron-1.png" },
+  { name: "Avalanche", img: "/assets/image/avalanche-avax-logo-1.png" },
   {
     name: "Polkadot",
-    img: "/assets/images/polkadot-dot-logo-ED40B3633D-seeklogo.png",
+    img: "/assets/image/polkadot-dot-logo-ED40B3633D-seeklogo.png",
   },
-  { name: "Cosmos", img: "/assets/images/Cosmos.png" },
-  { name: "NEAR Protocol", img: "/assets/images/Near.png" },
-  { name: "ZetaChain", img: "/assets/images/zetachain-icon.png" },
-  { name: "ICP", img: "/assets/images/internet-computer-icp-logo.png" },
-  { name: "Ton", img: "/assets/images/ton_symbol.png" },
-  { name: "Ripple", img: "/assets/images/Ripple.png" },
+  { name: "Cosmos", img: "/assets/image/Cosmos.png" },
+  { name: "NEAR Protocol", img: "/assets/image/Near.png" },
+  { name: "ZetaChain", img: "/assets/image/zetachain-icon.png" },
+  { name: "ICP", img: "/assets/image/internet-computer-icp-logo.png" },
+  { name: "Ton", img: "/assets/image/ton_symbol.png" },
+  { name: "Ripple", img: "/assets/image/Ripple.png" },
 ];
 
 export default function TechStack() {

@@ -16,92 +16,92 @@ const services = [
   {
     title: "Market-Making Consulting",
     desc: "We’re directed towards establishing financial markets that potentially realize the customers’ proprietary algorithms. Besides, our team is improving the ingress of liquidity access to investors as well as democratizing the entire system.",
-    icon: "/assets/images/Market-Analysis.webp", // Best guess match
+    icon: "/assets/image/Market-Analysis.webp", // Best guess match
   },
   {
     title: "Decentralized Crypto Banking",
     desc: "We expedite the direct transfer of value between integrated parties backed by decentralization by ensuring an easy-flowing user experience. Our ready-to-launch white-label mobile payment applications lend a plethora of services like wallet integration, value holding.",
-    icon: "/assets/images/Finance-and-Banking-300x169.webp",
+    icon: "/assets/image/Finance-and-Banking-300x169.webp",
   },
   {
     title: "DeFi Lottery System Development",
     desc: "We present a no-loss lottery system that would be advantageous for participants completely. Our team measures steps to vanish the custodianship of the pooled capital. We authorize the investment of your capital in the other associated dApps.",
-    icon: "/assets/images/Game-Apps.png", // Generic match
+    icon: "/assets/image/Game-Apps.png", // Generic match
   },
   {
     title: "Derivatives Over Defi Platform",
     desc: "We assure seamless access to derivatives and escalate your earning capability with numerous notches with the establishment of robust dApps, we also permit traders to hedge their portfolio investments and depreciate risks.",
-    icon: "/assets/images/Decentralized-Exchange.png",
+    icon: "/assets/image/Decentralized-Exchange.png",
   },
   {
     title: "Decentralized Fund Management",
     desc: "With this, all your crypto assets are managed to yield state-of-art performance in a decentralized exchange via smart contract and management. With extensive experience in investment exchanges coupled with our vast knowledge of defi.",
-    icon: "/assets/images/Asset-Lifecycle-Management.png",
+    icon: "/assets/image/Asset-Lifecycle-Management.png",
   },
   {
     title: "DeFi Insurance System Development",
     desc: "We make sure that no such risks are existing in our smart contract. With the streamlined provision of our insurance services, we make sure that there is no chance of uncontrollable liquidity requests. Our team boxes futuristic risks, uncertainties.",
-    icon: "/assets/images/Insurance.png",
+    icon: "/assets/image/Insurance.png",
   },
   {
     title: "DeFi Yield Farming Platform Development",
     desc: "By yield farming, we are pointing to a technique through which the person can win on more cryptocurrencies by bringing into use his existing cryptos holding. Liquidity extends an important role in the renounce of yield farming.",
-    icon: "/assets/images/Agricultural-Finance-1.jpg",
+    icon: "/assets/image/Agricultural-Finance-1.jpg",
   },
   {
     title: "Defi Staking Platform Development",
     desc: "Defi staking incorporates a mechanism where crypto assets would be staked on a supported wallet/exchange, as well as the passive income, will be earned. The rewards will be calculated relying on the quantity of staked assets.",
-    icon: "/assets/images/Defi_Staking1.png",
+    icon: "/assets/image/Defi_Staking1.png",
   },
   {
     title: "Defi Lending Platform Development",
     desc: "An enormous investment fetched in vigorous smart contract development is one of the primary reasons for the success of Defi services. Smart contracts are developed with a solid programming language that is highly encrypted and automates the activities.",
-    icon: "/assets/images/Smart-Contract-Development.png",
+    icon: "/assets/image/Smart-Contract-Development.png",
   },
   {
     title: "DeFi Dapp Development",
     desc: "Defi Dapp development plays a highly significant role to escape the potential risk of a central point failure. Since there is no central authority to interfere, it is considered extremely secure for the users.",
-    icon: "/assets/images/DApp-development.jpg",
+    icon: "/assets/image/DApp-development.jpg",
   },
   {
     title: "DeFi Tokens Development",
     desc: "Defi tokens development plays an extremely important role in accelerating up the growth of decentralized applications. The value of these tokens is quite higher than that of bitcoin. Besides, it fetches a high trading volume.",
-    icon: "/assets/images/Defi-Token-blog-new12.jpg",
+    icon: "/assets/image/Defi-Token-blog-new12.jpg",
   },
   {
     title: "DeFi Dex Development Like Uniswap",
     desc: "Uniswap is the ultimate leading Defi project that has been undertaken. In this, you will find incentivized liquidity pools instead of streamlined order books. In addition, every Uniswap user is awarded a portion of fees levied.",
-    icon: "/assets/images/Decentralized-Exchange-Platform.jpg",
+    icon: "/assets/image/Decentralized-Exchange-Platform.jpg",
   },
   {
     title: "DeFi Wallet Development",
     desc: "Here, the traders will have entire control over their funds via the defi wallet development without any intervention from the authorities in the system. We assure you of a premium level of security without any compromise.",
-    icon: "/assets/images/Cryptocurrency-Wallet.png",
+    icon: "/assets/image/Cryptocurrency-Wallet.png",
   },
   {
     title: "DeFi Marketing Services",
     desc: "To support Defi projects gain user engagement, marketing services are requisite. Our Defi marketing services encompass everything from white paper drafting, video/content marketing, legal advisory, to marketing/community management.",
-    icon: "/assets/images/Marketing.jpg",
+    icon: "/assets/image/Marketing.jpg",
   },
   {
     title: "DeFi Solutions for Ecommerce",
     desc: "Smoothen your E-commerce business with Defi and its realistic tools. In this, you can claim certain advantages such as intermediaries omission, faster shipping, supply chain management, as well as real-time tracking.",
-    icon: "/assets/images/Ecommerce-app2.jpg",
+    icon: "/assets/image/Ecommerce-app2.jpg",
   },
   {
     title: "DeFi Tokenization Development",
     desc: "Tokenization development is one of the most real-time and oriented solutions that Defi presents. Users now have the ease to convert inoperative and underutilized assets into enormous profits by maintaining asset tokenization.",
-    icon: "/assets/images/Asset-Tokenization.png",
+    icon: "/assets/image/Asset-Tokenization.png",
   },
   {
     title: "DeFi Crowdfunding Platform Development",
     desc: "Quantix Global extends a basket of potential benefits, DEXs are the prized innovation of Defi. DEXs make trading & transactions crypto accessible for crypto fanatics by offering perks like high-end security, durable liquidity.",
-    icon: "/assets/images/Crowdfunding-Platforms.png",
+    icon: "/assets/image/Crowdfunding-Platforms.png",
   },
   {
     title: "DeFi Real Estate Platform Development",
     desc: "Real Estate is also one of those sectors that have experienced the revolution of Defi development. With the help of blockchain-backed tokens, now real estate owners & investors can build a smooth platform for making seamless.",
-    icon: "/assets/images/Real-Estate-1.png",
+    icon: "/assets/image/Real-Estate-1.png",
   },
 ];
 
@@ -109,42 +109,42 @@ const advantages = [
   {
     title: "Automation",
     desc: "At Quantix Global, our platform is built on the phenomena of full-fledged automation; there is no requirement for manual interference through the efficient utilization of smart contracts.",
-    icon: "/assets/images/Automation.webp",
+    icon: "/assets/image/Automation.webp",
   },
   {
     title: "Usage Of Smart Contracts",
     desc: "Our Smart Contracts are trustability based and help external parties to accept non-editable mutual agreements with each other. They restrict the chances of possible conflicts through automation.",
-    icon: "/assets/images/Smart-Contracts.png",
+    icon: "/assets/image/Smart-Contracts.png",
   },
   {
     title: "Strategized Investment Plans",
     desc: "Our investment strategies are lucrative in a way that permits investors to store, trade and the management of their assets productively by asserting a relatively higher ROI than other traditional banks.",
-    icon: "/assets/images/Investment-Plan.png", // Generic placeholder if exact not found
+    icon: "/assets/image/Investment-Plan.png", // Generic placeholder if exact not found
   },
   {
     title: "Lack Of a Third Party",
     desc: "We bring up lower fees that ease transacting funds in the absence of an external party.",
-    icon: "/assets/images/No-Third-Party.png",
+    icon: "/assets/image/No-Third-Party.png",
   },
   {
     title: "Highly Secure",
     desc: "We bring in a peer-to-peer procedure in our blockchain network with the usage of core operational nodes. It simply ceases any chances of data breaches or immediate shutdowns.",
-    icon: "/assets/images/High-Security.png",
+    icon: "/assets/image/High-Security.png",
   },
   {
     title: "Ensure Global Access",
     desc: "We strive to offer safe and unbiased decentralized financial services to every single user without taking into consideration the wealth, economic status, and geographical location.",
-    icon: "/assets/images/Global-Access.png",
+    icon: "/assets/image/Global-Access.png",
   },
   {
     title: "Interoperability",
     desc: "We assure you of the ease to amalgamate numerous decentralized financial applications into a one only module turning it into an advanced and user-oriented program.",
-    icon: "/assets/images/Interoperability-in-blockchain.png",
+    icon: "/assets/image/Interoperability-in-blockchain.png",
   },
   {
     title: "Transparent Protocols",
     desc: "We eliminate all the intervention of a central authority who can take control of user’s data, the team at Quantix Global, maintain a premium level of trust and transparency through its reliable protocols.",
-    icon: "/assets/images/Trusted-Security.png", // Generic placeholder
+    icon: "/assets/image/Trusted-Security.png", // Generic placeholder
   },
 ];
 
@@ -186,7 +186,7 @@ export default function DefiDevelopment() {
       <section
         className="py-20 md:py-32 text-white h-auto md:h-[90vh] flex items-center bg-[#153577]"
         style={{
-          backgroundImage: "url('/assets/images/Banner_defi-2.jpg')",
+          backgroundImage: "url('/assets/image/Banner_defi-2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
