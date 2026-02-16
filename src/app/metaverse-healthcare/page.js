@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import Button from "@/components/ui/button";
-import ContactSection from "@/components/ContactSection";
-import SupportCTA from "@/components/SupportCTA";
-import BannerForm from "@/components/bannerForm";
+import ContactSection from "@/components/Sections/ContactSection";
+import SupportCTA from "@/components/Sections/SupportCTA";
+import BannerForm from "@/components/Sections/bannerForm";
 
 const healthcareUseCases = [
   {

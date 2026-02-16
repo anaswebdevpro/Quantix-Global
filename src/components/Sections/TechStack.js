@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Container from "./ui/container";
-import { SectionHeading } from "./ui/SectionHeading";
+import Container from "../ui/container";
+import { SectionHeading } from "../ui/SectionHeading";
 
 const techs = [
   { name: "Binance", img: "/assets/image/Binance-1.png" },

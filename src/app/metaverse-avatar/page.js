@@ -4,10 +4,10 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import Button from "@/components/ui/button";
-import ContactSection from "@/components/ContactSection";
-import SupportCTA from "@/components/SupportCTA";
-import HeroVideo from "./HeroVideo.js";
-import FAQAccordion from "./FAQAccordion.js";
+import ContactSection from "@/components/Sections/ContactSection";
+import SupportCTA from "@/components/Sections/SupportCTA";
+import HeroVideo from "../../components/HeroVideo.js";
+import FAQAccordion from "../../components/Sections/FAQAccordion.js";
 
 const avatarServices = [
   {
@@ -257,8 +257,7 @@ const faqItems = [
       "Businesses can benefit from metaverse development services by expanding their online presence, creating innovative marketing strategies, conducting virtual events, and offering unique customer experiences in the virtual space.",
   },
   {
-    question:
-      "How do metaverse development services enhance user experiences?",
+    question: "How do metaverse development services enhance user experiences?",
     answer:
       "Metaverse development services enhance user experiences by providing realistic simulations, enabling seamless social interactions, and offering immersive environments where users can work, play, and communicate in ways not possible in the physical world.",
   },
@@ -361,8 +360,8 @@ export default function Page() {
           <p className="mt-4 text-white/95 text-sm md:text-[16px] leading-relaxed max-w-5xl mx-auto">
             Customize your metaverse avatar to suit your business needs and
             utilize it in the immersive 3D virtual world. Our team of experts
-            possesses vast experience in overseeing projects on various metaverse
-            avatar development platforms.
+            possesses vast experience in overseeing projects on various
+            metaverse avatar development platforms.
           </p>
         </Container>
       </section>

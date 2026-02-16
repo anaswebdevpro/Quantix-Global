@@ -8,15 +8,14 @@ import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import Testimonials from "@/components/Testimonials";
-import Stats from "@/components/Stats";
-import SupportCTA from "@/components/SupportCTA";
+import Testimonials from "@/components/Sections/Testimonials";
+import Stats from "@/components/Sections/Stats";
+import SupportCTA from "@/components/Sections/SupportCTA";
 
 const features = [
-
   {
     title: "Search Engine Optimization (SEO)",
     desc: "Our understanding of SEO has been gained through years of experience, which will be dispensed to elevate you into top-ranking brands online in no time. The experts working with us have an in-depth knowledge of keywords to precisely add the words that will bring the maximum potential customers to you. Our SEO strategies will enable you to attract free and organic traffic, bringing your website to the limelight of the market.",
@@ -41,7 +40,6 @@ const features = [
     title: "Online Reputation Management (ORM)",
     desc: "Our ORM strategies are specifically tailored for you to ensure that your audiences find the right material and information when the search your brand online. We are specialized in keeping your best interests by maintaining balance to assist you in engaging the highest endeavors and keep away from toxic trends.",
   },
-
 ];
 
 export default function DigitalMarketing() {
@@ -61,11 +59,13 @@ export default function DigitalMarketing() {
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
               <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-[#09d0c6]">Digital</span> Marketing{" "}
-                <br />
+                <span className="text-[#09d0c6]">Digital</span> Marketing <br />
               </Heading>
               <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
-             Our team comprises of industry experienced professionals who will bring forth the best digital marketing strategies to assist you in telling the story of your brand in order to connect with your audience. Your future success is our vision.
+                Our team comprises of industry experienced professionals who
+                will bring forth the best digital marketing strategies to assist
+                you in telling the story of your brand in order to connect with
+                your audience. Your future success is our vision.
               </SubHeading>
               <div className="flex justify-center md:justify-start">
                 <Link href="/contact-us">
@@ -172,8 +172,8 @@ export default function DigitalMarketing() {
         </Container>
       </section>
 
-      <Stats/>
-     <Testimonials/>
+      <Stats />
+      <Testimonials />
 
       {/* Contact Section */}
       <ContactSection />

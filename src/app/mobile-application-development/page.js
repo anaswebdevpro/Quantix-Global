@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +8,12 @@ import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import Testimonials from "@/components/Testimonials";
-import Stats from "@/components/Stats";
-import SupportCTA from "@/components/SupportCTA";
+import Testimonials from "@/components/Sections/Testimonials";
+import Stats from "@/components/Sections/Stats";
+import SupportCTA from "@/components/Sections/SupportCTA";
 
 const features = [
   {
@@ -43,11 +43,14 @@ export default function MobileApplicationDevelopment() {
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
               <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-[#09d0c6]">Mobile Application</span> Development{" "}
-                <br />
+                <span className="text-[#09d0c6]">Mobile Application</span>{" "}
+                Development <br />
               </Heading>
               <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
-              We have a reputation of being the pioneers in mobile application development for introducing humanized mobile apps that are not only user-friendly but also extremely engaging, helping the businesses generate revenues with expanded user engrossment.
+                We have a reputation of being the pioneers in mobile application
+                development for introducing humanized mobile apps that are not
+                only user-friendly but also extremely engaging, helping the
+                businesses generate revenues with expanded user engrossment.
               </SubHeading>
               <div className="flex justify-center md:justify-start">
                 <Link href="/contact-us">
@@ -155,10 +158,9 @@ export default function MobileApplicationDevelopment() {
         </Container>
       </section>
 
-      <Stats/>
+      <Stats />
 
-      
-     <Testimonials/>
+      <Testimonials />
 
       {/* Contact Section */}
       <ContactSection />

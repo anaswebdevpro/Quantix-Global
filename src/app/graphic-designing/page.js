@@ -8,16 +8,14 @@ import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import Testimonials from "@/components/Testimonials";
-import Stats from "@/components/Stats";
-import SupportCTA from "@/components/SupportCTA";
+import Testimonials from "@/components/Sections/Testimonials";
+import Stats from "@/components/Sections/Stats";
+import SupportCTA from "@/components/Sections/SupportCTA";
 
 const features = [
-
-    
   {
     title: "Wireframes for Web Applications",
     desc: "This is a visually creative process where a base plan is devised through making wireframes. It displays the basic architecture of the web application. These wireframes are the pictorial illustration of the general structure of a web application, demonstrating the complexities and levels of architecture to the client.",
@@ -42,8 +40,6 @@ const features = [
     title: "Brand Campaigns & Application",
     desc: "Before releasing the messages we created for your brand campaigns, the goals and aims are pre-set. They are specifically designed to shake your users and targeted consumers. Only after setting up of these goals we go ahead with link building.",
   },
-
-
 ];
 
 export default function GraphicDesigning() {
@@ -63,11 +59,13 @@ export default function GraphicDesigning() {
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
             <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
               <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-[#09d0c6]">Graphic</span> Designing{" "}
-                <br />
+                <span className="text-[#09d0c6]">Graphic</span> Designing <br />
               </Heading>
               <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
-             Graphic designing is a key variable of our multifold web-based explications where we listen to the client and thoroughly process their requirements to produce bold, creative and superior quality graphic solutions.
+                Graphic designing is a key variable of our multifold web-based
+                explications where we listen to the client and thoroughly
+                process their requirements to produce bold, creative and
+                superior quality graphic solutions.
               </SubHeading>
               <div className="flex justify-center md:justify-start">
                 <Link href="/contact-us">
@@ -175,8 +173,8 @@ export default function GraphicDesigning() {
         </Container>
       </section>
 
-      <Stats/>
-     <Testimonials/>
+      <Stats />
+      <Testimonials />
 
       {/* Contact Section */}
       <ContactSection />

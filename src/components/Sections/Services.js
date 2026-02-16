@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Container from "./ui/container";
-import { SectionHeading } from "./ui/SectionHeading";
+import Container from "../ui/container";
+import { SectionHeading } from "../ui/SectionHeading";
 
 const services = [
   {

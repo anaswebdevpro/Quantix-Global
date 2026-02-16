@@ -83,7 +83,7 @@ export default function WebsiteSlider() {
   const totalWidth = items.length * spacing;
 
   return (
-    <section className="bg-white overflow-hidden relative my-8">
+    <section className="bg-white overflow-hidden relative my-8 z-0">
       <Container>
         <div className="text-center max-w-6xl mx-auto ">
           <Heading className="mb-4 text-[#333d47] text-3xl md:text-5xl font-bold">

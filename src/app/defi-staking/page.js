@@ -19,12 +19,13 @@ import {
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import SupportCTA from "@/components/SupportCTA";
+import SupportCTA from "@/components/Sections/SupportCTA";
 import WebsiteSlider from "@/components/WebsiteSlider";
-import BannerForm from "@/components/bannerForm";
+import BannerForm from "@/components/Sections/bannerForm";
+import HeroWithForm from "@/components/Sections/heroWithform";
 
 const whyLaunchSolutions = [
   {
@@ -92,7 +93,7 @@ const benefitsDecoded = [
 export default function DefiStaking() {
   return (
     <div className="">
-      <section
+      {/* <section
         className="relative min-h-[72vh] overflow-hidden"
         style={{
           backgroundImage:
@@ -123,7 +124,12 @@ export default function DefiStaking() {
             <BannerForm />
           </div>
         </Container>
-      </section>
+      </section> */}
+      <HeroWithForm
+        heading="Defi Staking Platform Development Services"
+        text="The most renowned decentralized platform today."
+        bgimage="/assets/image/metaverse-healthcare-banner.png"
+      />
 
       {/* Introduction Section */}
       <section className="py-16 md:py-20">

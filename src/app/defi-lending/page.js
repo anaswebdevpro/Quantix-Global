@@ -22,10 +22,10 @@ import {
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import SupportCTA from "@/components/SupportCTA";
+import SupportCTA from "@/components/Sections/SupportCTA";
 import WebsiteSlider from "@/components/WebsiteSlider";
 
 const benefitsList = [

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Container from "./ui/container";
-import { SectionHeading } from "./ui/SectionHeading";
+import Container from "../ui/container";
+import { SectionHeading } from "../ui/SectionHeading";
 
 const stats = [
   { value: "150+", label: "TOTAL EMPLOYEES" },

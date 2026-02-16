@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
+import SupportCTA from "@/components/Sections/SupportCTA";
 import Button from "@/components/ui/button";
-import Stats from "@/components/Stats";
+import Stats from "@/components/Sections/Stats";
 
 const workspaceFeatures = [
   {

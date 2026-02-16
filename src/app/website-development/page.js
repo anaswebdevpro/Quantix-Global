@@ -8,12 +8,12 @@ import { ChevronRight } from "lucide-react";
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubHeading } from "@/components/ui/subheading";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
-import Testimonials from "@/components/Testimonials";
-import Stats from "@/components/Stats";
-import SupportCTA from "@/components/SupportCTA";
+import Testimonials from "@/components/Sections/Testimonials";
+import Stats from "@/components/Sections/Stats";
+import SupportCTA from "@/components/Sections/SupportCTA";
 
 const features = [
   {
@@ -70,7 +70,7 @@ export default function WebsiteDevelopment() {
               <div className="flex justify-center md:justify-start">
                 <Link href="/contact-us">
                   <button className="group bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#153577] transition-all duration-300 flex items-center gap-2 font-semibold">
-                    Let's Discuss
+                    Lets Discuss
                     <ChevronRight
                       size={20}
                       className="group-hover:translate-x-1 transition-transform"
@@ -173,10 +173,9 @@ export default function WebsiteDevelopment() {
         </Container>
       </section>
 
-      <Stats/>
+      <Stats />
 
-      
-     <Testimonials/>
+      <Testimonials />
 
       {/* Contact Section */}
       <ContactSection />

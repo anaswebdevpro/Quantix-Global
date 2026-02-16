@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Container from "./ui/container";
+import Container from "../ui/container";
 
 const footerLinks = {
   services: {
