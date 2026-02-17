@@ -5,11 +5,11 @@ import Button from "../ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-const HeroWithForm = ({ heading, text, bgimage }) => {
+const HeroWithForm = ({ heading, text, bgimage, className }) => {
   return (
     <div>
       <section
-        className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[72vh] overflow-hidden"
+        className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] overflow-hidden"
         style={{
           backgroundImage: `url('${bgimage}')`,
           backgroundSize: "cover",
@@ -38,8 +38,11 @@ const HeroWithForm = ({ heading, text, bgimage }) => {
                 </Button>
               </Link>
             </div>
+            <div className={className}>
 
-            <BannerForm />
+
+            <BannerForm  />
+            </div>
           </div>
         </Container>
       </section>
