@@ -20,28 +20,17 @@ import ContactSection from "@/components/Sections/ContactSection";
 import Button from "@/components/ui/button";
 import { Heading } from "@/components/ui/Heading";
 import Stats from "@/components/Sections/Stats";
+import IntroSection from "@/components/IntroSection";
 
-const visionPoints = [
-  {
-    title: "Your own dealing conditions",
-    desc: "We support you making your dealing conditions, prospering your business, your way!",
-  },
-  {
-    title: "Technical solutions",
-    desc: "We provide the consultancy for the Forex Trading Software to new brokers and financial institutions.",
-  },
-  {
-    title: "STP and Market Maker",
-    desc: "We help to set a forex trading platform and support for liquidity solutions.",
-  },
-  {
-    title: "Easy access to Liquidity",
-    desc: "We help to set a forex trading platform and support for liquidity solutions.",
-  },
-  {
-    title: "24/7 technical support",
-    desc: "We have pooled best Forex experts that support 24X7, so that you never have to settle for less.",
-  },
+const introItems = [
+  { title: "E-learning", icon: "/assets/image/elearning-1.png" },
+  { title: "Banking & Finance", icon: "/assets/image/Banking-Finance-1.png" },
+  { title: "Online shopping", icon: "/assets/image/Online-shopping-1.png" },
+  { title: "Healthcare", icon: "/assets/image/Healthcare-1.png" },
+  { title: "Cybersecurity", icon: "/assets/image/Cybersecurity-1.png" },
+  { title: "Travel", icon: "/assets/image/Travel-1.png" },
+  { title: "Online Music", icon: "/assets/image/Online-Music-1.png" },
+  { title: "Online Movies", icon: "/assets/image/Online-Movies-1.png" },
 ];
 
 const features = [
@@ -77,18 +66,11 @@ const features = [
   },
 ];
 
-const stats = [
-  { value: "15+", label: "Team Members" },
-  { value: "14+", label: "Projects Completed" },
-  { value: "8+", label: "Global Clients" },
-  { value: "4+", label: "Total Blockchain Experience" },
-];
-
 export default function ForexTrading() {
   return (
     <div className="">
       {/* Hero Section */}
-        <section
+      <section
         className="relative w-full  min-h-[600px] flex   overflow-hidden"
         style={{
           backgroundImage: "url('/assets/image/healthcare_banner.jpg')",
@@ -100,10 +82,13 @@ export default function ForexTrading() {
         <div className="h-[80vh] z-20 px-4 md:px-10 py-20 lg:py-24 lg:px-20 ">
           <div className="max-w-2xl flex flex-col items-start justify-center pt-10 space-y-4">
             <Heading as="h1" className="">
-            #1 Forex Trading Software
+              #1 Forex Trading Software
             </Heading>
             <SubHeading as="p" className="text-white py-2 max-w-lg">
-           Webcom offers help in setting up a forex trading software as it further encouraging liquified solutions to all. We support you making your dealing conditions, prospering your business, your way!
+              Webcom offers help in setting up a forex trading software as it
+              further encouraging liquified solutions to all. We support you
+              making your dealing conditions, prospering your business, your
+              way!
             </SubHeading>
 
             <Link href="/contact-us">
@@ -118,10 +103,9 @@ export default function ForexTrading() {
           </div>
         </div>
       </section>
-     
 
       {/* Introduction Section */}
-      <section className="py-16 md:py-20">
+      {/* <section className="py-16 md:py-20">
         <Container>
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
@@ -162,24 +146,45 @@ export default function ForexTrading() {
             </div>
           </div>
         </Container>
-      </section>
+      </section> */}
+      <IntroSection
+        className="max-w-6xl mx-auto bg-white"
+        heading={<>Forex Trading Software Solutions</>}
+        text={
+          <>
+            We provide the consultancy for the Forex Trading Software to new
+            brokers and financial institutions. We help to set a forex trading
+            platform and support for liquidity solutions. <br /> <br />
+            At the heart of Webcom Systems’ offerings is a comprehensive suite
+            of trading platforms designed to cater to traders of all levels,
+            from beginners to seasoned professionals. These platforms are
+            equipped with real-time market data, customizable charting tools,
+            technical indicators, and risk management features, enabling traders
+            to make well-informed decisions and execute trades with confidence.
+            <br />
+            <br />
+            Whether you are an individual trader looking to explore the Forex
+            market or a financial institution seeking scalable and customizable
+            trading solutions, Webcom Systems‘ Forex trading software offers a
+            comprehensive suite of features to meet diverse trading needs. With
+            a commitment to innovation, reliability, and customer satisfaction,
+            Webcom Systems continues to be a driving force in shaping the future
+            of Forex trading technology.
+            <br />
+          </>
+        }
+        items={introItems}
+      />
 
       {/* Our Vision */}
       <section className="py-16 md:py-20 bg-gray-50">
         <Container>
-          <div className="text-center mb-12">
+          <div className="text-center mb-5">
             <SectionHeading>Our Vision</SectionHeading>
             <SubHeading className="max-w-3xl mx-auto mt-4">
               Forex Trading software allows you to become a competitive Forex
               broker without considerable investments and technical issues.
             </SubHeading>
-            <div className="mt-8">
-              <Link href="/contact-us">
-                <Button className="bg-[#09d0c6] hover:bg-[#08b8af] text-white rounded-full">
-                  Request Free Demo
-                </Button>
-              </Link>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
@@ -261,9 +266,7 @@ export default function ForexTrading() {
 
       {/* Stats Section */}
 
-<Stats/>
-  
-  
+      <Stats />
 
       {/* Contact Section */}
       <ContactSection />
