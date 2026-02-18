@@ -18,11 +18,7 @@ const services = [
     desc: "We’re directed towards establishing financial markets that potentially realize the customers’ proprietary algorithms. Besides, our team is improving the ingress of liquidity access to investors as well as democratizing the entire system.",
     icon: "/assets/image/Market-Analysis.webp", // Best guess match
   },
-  {
-    title: "Decentralized Crypto Banking",
-    desc: "We expedite the direct transfer of value between integrated parties backed by decentralization by ensuring an easy-flowing user experience. Our ready-to-launch white-label mobile payment applications lend a plethora of services like wallet integration, value holding.",
-    icon: "/assets/image/Finance-and-Banking-300x169.webp",
-  },
+  
   {
     title: "DeFi Lottery System Development",
     desc: "We present a no-loss lottery system that would be advantageous for participants completely. Our team measures steps to vanish the custodianship of the pooled capital. We authorize the investment of your capital in the other associated dApps.",
@@ -43,11 +39,7 @@ const services = [
     desc: "We make sure that no such risks are existing in our smart contract. With the streamlined provision of our insurance services, we make sure that there is no chance of uncontrollable liquidity requests. Our team boxes futuristic risks, uncertainties.",
     icon: "/assets/image/Insurance.png",
   },
-  {
-    title: "DeFi Yield Farming Platform Development",
-    desc: "By yield farming, we are pointing to a technique through which the person can win on more cryptocurrencies by bringing into use his existing cryptos holding. Liquidity extends an important role in the renounce of yield farming.",
-    icon: "/assets/image/Agricultural-Finance-1.jpg",
-  },
+ 
   {
     title: "Defi Staking Platform Development",
     desc: "Defi staking incorporates a mechanism where crypto assets would be staked on a supported wallet/exchange, as well as the passive income, will be earned. The rewards will be calculated relying on the quantity of staked assets.",
@@ -58,35 +50,19 @@ const services = [
     desc: "An enormous investment fetched in vigorous smart contract development is one of the primary reasons for the success of Defi services. Smart contracts are developed with a solid programming language that is highly encrypted and automates the activities.",
     icon: "/assets/image/Smart-Contract-Development.png",
   },
-  {
-    title: "DeFi Dapp Development",
-    desc: "Defi Dapp development plays a highly significant role to escape the potential risk of a central point failure. Since there is no central authority to interfere, it is considered extremely secure for the users.",
-    icon: "/assets/image/DApp-development.jpg",
-  },
-  {
-    title: "DeFi Tokens Development",
-    desc: "Defi tokens development plays an extremely important role in accelerating up the growth of decentralized applications. The value of these tokens is quite higher than that of bitcoin. Besides, it fetches a high trading volume.",
-    icon: "/assets/image/Defi-Token-blog-new12.jpg",
-  },
-  {
-    title: "DeFi Dex Development Like Uniswap",
-    desc: "Uniswap is the ultimate leading Defi project that has been undertaken. In this, you will find incentivized liquidity pools instead of streamlined order books. In addition, every Uniswap user is awarded a portion of fees levied.",
-    icon: "/assets/image/Decentralized-Exchange-Platform.jpg",
-  },
+
+  
+
   {
     title: "DeFi Wallet Development",
     desc: "Here, the traders will have entire control over their funds via the defi wallet development without any intervention from the authorities in the system. We assure you of a premium level of security without any compromise.",
     icon: "/assets/image/Cryptocurrency-Wallet.png",
   },
-  {
-    title: "DeFi Marketing Services",
-    desc: "To support Defi projects gain user engagement, marketing services are requisite. Our Defi marketing services encompass everything from white paper drafting, video/content marketing, legal advisory, to marketing/community management.",
-    icon: "/assets/image/Marketing.jpg",
-  },
+ 
   {
     title: "DeFi Solutions for Ecommerce",
     desc: "Smoothen your E-commerce business with Defi and its realistic tools. In this, you can claim certain advantages such as intermediaries omission, faster shipping, supply chain management, as well as real-time tracking.",
-    icon: "/assets/image/Ecommerce-app2.jpg",
+    icon: "/assets/image/Decentralized-Exchange.png",
   },
   {
     title: "DeFi Tokenization Development",
@@ -95,7 +71,7 @@ const services = [
   },
   {
     title: "DeFi Crowdfunding Platform Development",
-    desc: "Quantix Global extends a basket of potential benefits, DEXs are the prized innovation of Defi. DEXs make trading & transactions crypto accessible for crypto fanatics by offering perks like high-end security, durable liquidity.",
+    desc: "Avner Global extends a basket of potential benefits, DEXs are the prized innovation of Defi. DEXs make trading & transactions crypto accessible for crypto fanatics by offering perks like high-end security, durable liquidity.",
     icon: "/assets/image/Crowdfunding-Platforms.png",
   },
   {
@@ -108,7 +84,7 @@ const services = [
 const advantages = [
   {
     title: "Automation",
-    desc: "At Quantix Global, our platform is built on the phenomena of full-fledged automation; there is no requirement for manual interference through the efficient utilization of smart contracts.",
+    desc: "At Avner Global, our platform is built on the phenomena of full-fledged automation; there is no requirement for manual interference through the efficient utilization of smart contracts.",
     icon: "/assets/image/Automation.webp",
   },
   {
@@ -116,11 +92,7 @@ const advantages = [
     desc: "Our Smart Contracts are trustability based and help external parties to accept non-editable mutual agreements with each other. They restrict the chances of possible conflicts through automation.",
     icon: "/assets/image/Smart-Contracts.png",
   },
-  {
-    title: "Strategized Investment Plans",
-    desc: "Our investment strategies are lucrative in a way that permits investors to store, trade and the management of their assets productively by asserting a relatively higher ROI than other traditional banks.",
-    icon: "/assets/image/Investment-Plan.png", // Generic placeholder if exact not found
-  },
+  
   {
     title: "Lack Of a Third Party",
     desc: "We bring up lower fees that ease transacting funds in the absence of an external party.",
@@ -141,17 +113,13 @@ const advantages = [
     desc: "We assure you of the ease to amalgamate numerous decentralized financial applications into a one only module turning it into an advanced and user-oriented program.",
     icon: "/assets/image/Interoperability-in-blockchain.png",
   },
-  {
-    title: "Transparent Protocols",
-    desc: "We eliminate all the intervention of a central authority who can take control of user’s data, the team at Quantix Global, maintain a premium level of trust and transparency through its reliable protocols.",
-    icon: "/assets/image/Trusted-Security.png", // Generic placeholder
-  },
+
 ];
 
 const whyChooseUs = [
   {
     title: "Client Collaboration",
-    desc: "At Quantix Global, we have a well-resourced and highly advanced team that is proficient in handling every step of your aspiration with utmost care for paramount perfection.",
+    desc: "At Avner Global, we have a well-resourced and highly advanced team that is proficient in handling every step of your aspiration with utmost care for paramount perfection.",
   },
   {
     title: "Conformance To High Quality",
@@ -254,7 +222,7 @@ export default function DefiDevelopment() {
                 help of smart contracts.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Unleash the potential of your business with Quantix Global’
+                Unleash the potential of your business with Avner Global’
                 innovative DEFI solutions. As a leading DEFI Development
                 Company, We empower you to unlock the power of Decentralized
                 Finance, revolutionizing your financial processes and driving
@@ -290,7 +258,7 @@ export default function DefiDevelopment() {
               into a more secure and cordial space. We take pride in claiming
               ourselves as a leading DeFi Development Company, having said that,
               we try to structure a substantial impact in the markets with our
-              rewarding developments. The DeFi development at Quantix Global is
+              rewarding developments. The DeFi development at Avner Global is
               supervised by the most proficient professionals who have a
               significant amount of experience as well as expertise in the
               concerned sector.
@@ -351,7 +319,7 @@ export default function DefiDevelopment() {
             </SectionHeading>
             <p className="text-gray-600 mt-4">
               Unleash the power of innovation and unlock new financial horizons
-              with Quantix Global’ DeFi development services.
+              with Avner Global’ DeFi development services.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -387,10 +355,10 @@ export default function DefiDevelopment() {
           <div className="flex flex-col md:flex-row gap-12">
             <div className="w-full md:w-1/2">
               <SectionHeading className="mb-6 text-left">
-                Why Choose Quantix Global for Your DeFi Development Needs?
+                Why Choose Avner Global for Your DeFi Development Needs?
               </SectionHeading>
               <p className="text-gray-600 mb-6">
-                By choosing Quantix Global, you gain access to a team of
+                By choosing Avner Global, you gain access to a team of
                 passionate experts who combine technical prowess with a deep
                 understanding of DeFi. We empower you to navigate the evolving
                 landscape confidently and unlock the transformative potential of

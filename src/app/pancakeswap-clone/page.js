@@ -105,11 +105,11 @@ export default function PancakeSwapClone() {
               this platform to ascertain user security and asset information
               inclusively. This great technology enables enhanced efficiency and
               security for potential investors and the creation of numerous
-              rewarding opportunities. At quantix global, you will find
-              proficient blockchain professionals who put forward a
-              comprehensive asset tokenization platform with state-of-art
-              blockchain technology, functionalities, and traits that will bring
-              a seamless working experience for valuable customers.
+              rewarding opportunities. At Avner Global, you will find proficient
+              blockchain professionals who put forward a comprehensive asset
+              tokenization platform with state-of-art blockchain technology,
+              functionalities, and traits that will bring a seamless working
+              experience for valuable customers.
             </SubHeading>
             <p className="text-gray-600 mt-6 leading-relaxed"></p>
           </div>
@@ -145,7 +145,7 @@ export default function PancakeSwapClone() {
                 help of smart contracts.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Unleash the potential of your business with Quantix Global’
+                Unleash the potential of your business with Avner Global’
                 innovative DEFI solutions. As a leading DEFI Development
                 Company, We empower you to unlock the power of Decentralized
                 Finance, revolutionizing your financial processes and driving

@@ -98,7 +98,7 @@ const advantages = [
   },
   {
     title: "Integration With Existing Site",
-    desc: "Webcom integrates seamlessly with your website and other software platforms and processes that you already use.",
+    desc: "Avner Global integrates seamlessly with your website and other software platforms and processes that you already use.",
     icon: <Globe className="w-8 h-8 text-[#09d0c6]" />,
   },
 ];
@@ -121,7 +121,16 @@ export default function MoneyTransfer() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative text-white h-auto md:h-[90vh] flex flex-col md:flex-row bg-[#152336] overflow-hidden">
+      <section
+        className="relative text-white h-auto md:h-[90vh] flex flex-col md:flex-row  overflow-hidden"
+        style={{
+          backgroundImage: "url('/assets/image/moneytransfer.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/80 md:to-black/20"></div>
+
         <div className="w-full md:w-1/2 h-full z-20 px-10 py-20 lg:px-20 flex flex-col justify-center">
           <div className="max-w-3xl flex flex-col items-start justify-center space-y-6">
             <Heading as="h1" className="text-white">
@@ -145,16 +154,7 @@ export default function MoneyTransfer() {
             </Link>
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-full relative">
-          <Image
-            src="/assets/images/Start-Online-Money-Transfer-Business-with-money-transfer-software.jpg"
-            alt="Money Remittance Software Development"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#152336]/80 md:to-[#152336]/20"></div>
-        </div>
+        
       </section>
 
       {/* Intro Section */}
@@ -167,14 +167,14 @@ export default function MoneyTransfer() {
                   Money Remittance Software Development Company
                 </h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  Webcom Systems provide a comprehensive & fully supported
+                  Avner Global provide a comprehensive & fully supported
                   solution for your money transfer business. The most innovative
                   money transfer software application for your global money
                   transfer business. A comprehensive money remittance software
                   for companies/business/enterprise of any size, worldwide. With
                   us, you are all ready to set up enormous success for your
-                  business online. Our team at Webcom Systems is always geared
-                  up to bring your money transfer apps ideas to life in no time.
+                  business online. Our team at Avner Global is always geared up
+                  to bring your money transfer apps ideas to life in no time.
                 </p>
               </div>
             </div>
@@ -258,11 +258,14 @@ export default function MoneyTransfer() {
                 ))}
               </ul>
             </div>
-            <div className="w-full md:w-1/2 relative h-[400px]">
-              {/* Visual Representation or Abstract Shape */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#09d0c6]/20 to-transparent rounded-2xl flex items-center justify-center border border-[#09d0c6]/30">
-                <Globe className="w-32 h-32 text-[#09d0c6]/50 animate-pulse" />
-              </div>
+            <div className="w-full md:w-1/2 relative h-[500px] md:h-[600px] flex items-center justify-center">
+              <Image
+                src="/assets/image/moneybenefit1.png"
+                alt="Money Transfer Benefits"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
           </div>
         </Container>
@@ -274,8 +277,8 @@ export default function MoneyTransfer() {
           <div className="text-center mb-16">
             <SectionHeading>Advantages</SectionHeading>
             <SubHeading className="max-w-3xl mx-auto mt-4">
-              Go digital with Webcom. We’ll help you all the way and scale with
-              you, even to a global level.
+              Go digital with Avner Global. We’ll help you all the way and scale
+              with you, even to a global level.
             </SubHeading>
           </div>
 

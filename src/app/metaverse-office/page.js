@@ -317,7 +317,7 @@ export default function Page() {
               Ready To Be A Part Of The Future Work?
             </h2>
             <p className="mt-6 text-[#4f5d72] text-sm md:text-[19px] leading-relaxed">
-              The future of the work is with quantix global!
+              The future of the work is with Avner Global!
               <br />
               We could be your Metaverse working Space development trusted
               partner paving the way for the development of exquisite virtual

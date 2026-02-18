@@ -85,8 +85,8 @@ export default function ForexTrading() {
               #1 Forex Trading Software
             </Heading>
             <SubHeading as="p" className="text-white py-2 max-w-lg">
-              Webcom offers help in setting up a forex trading software as it
-              further encouraging liquified solutions to all. We support you
+              Avner Global offers help in setting up a forex trading software as
+              it further encouraging liquified solutions to all. We support you
               making your dealing conditions, prospering your business, your
               way!
             </SubHeading>
@@ -118,7 +118,7 @@ export default function ForexTrading() {
                 trading platform and support for liquidity solutions.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                At the heart of Webcom Systems’ offerings is a comprehensive
+                At the heart of Avner Global’ offerings is a comprehensive
                 suite of trading platforms designed to cater to traders of all
                 levels, from beginners to seasoned professionals. These
                 platforms are equipped with real-time market data, customizable
@@ -129,7 +129,7 @@ export default function ForexTrading() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Whether you are an individual trader looking to explore the
                 Forex market or a financial institution seeking scalable and
-                customizable trading solutions, Webcom Systems‘ Forex trading
+                customizable trading solutions, Avner Global‘ Forex trading
                 software offers a comprehensive suite of features to meet
                 diverse trading needs.
               </p>
@@ -155,20 +155,20 @@ export default function ForexTrading() {
             We provide the consultancy for the Forex Trading Software to new
             brokers and financial institutions. We help to set a forex trading
             platform and support for liquidity solutions. <br /> <br />
-            At the heart of Webcom Systems’ offerings is a comprehensive suite
-            of trading platforms designed to cater to traders of all levels,
-            from beginners to seasoned professionals. These platforms are
-            equipped with real-time market data, customizable charting tools,
-            technical indicators, and risk management features, enabling traders
-            to make well-informed decisions and execute trades with confidence.
+            At the heart of Avner Global’ offerings is a comprehensive suite of
+            trading platforms designed to cater to traders of all levels, from
+            beginners to seasoned professionals. These platforms are equipped
+            with real-time market data, customizable charting tools, technical
+            indicators, and risk management features, enabling traders to make
+            well-informed decisions and execute trades with confidence.
             <br />
             <br />
             Whether you are an individual trader looking to explore the Forex
             market or a financial institution seeking scalable and customizable
-            trading solutions, Webcom Systems‘ Forex trading software offers a
+            trading solutions, Avner Global‘ Forex trading software offers a
             comprehensive suite of features to meet diverse trading needs. With
             a commitment to innovation, reliability, and customer satisfaction,
-            Webcom Systems continues to be a driving force in shaping the future
+            Avner Global continues to be a driving force in shaping the future
             of Forex trading technology.
             <br />
           </>

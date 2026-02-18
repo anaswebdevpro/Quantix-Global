@@ -160,7 +160,7 @@ export default function TradingPlatform() {
               Trading Platform Development
             </Heading>
             <SubHeading as="p" className="text-white py-2 max-w-lg">
-              Webcom intends to provide a reliable platform to create new
+              Avner Global intends to provide a reliable platform to create new
               strategies that encourage the products to be in the client’s best
               interest.
             </SubHeading>

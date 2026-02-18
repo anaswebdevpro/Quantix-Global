@@ -78,7 +78,7 @@ const services = [
   // {
   //   title: "Play to Earn NFT games",
   //   description:
-  //     "Play to Earn NFT games are a type of online game that uses the blockchain to provide traders with an opportunity to earn rewards for playing games. Webcom Systems helps you to find the best nft games for your fun.",
+  //     "Play to Earn NFT games are a type of online game that uses the blockchain to provide traders with an opportunity to earn rewards for playing games. Avner Global helps you to find the best nft games for your fun.",
   //   icon: <Gamepad2 className="w-10 h-10 text-[#09d0c6]" />,
   // },
   // {
@@ -90,7 +90,7 @@ const services = [
   // {
   //   title: "Fractionalized NFT",
   //   description:
-  //     "Fractionalized NFTs brings in the liberty of letting in even the small investors own the NFTs and make the decisions on when to sell or buy in the market. Webcom Systems helps you with the complexities of fractionalized NFTs.",
+  //     "Fractionalized NFTs brings in the liberty of letting in even the small investors own the NFTs and make the decisions on when to sell or buy in the market. Avner Global helps you with the complexities of fractionalized NFTs.",
   //   icon: <PieChart className="w-10 h-10 text-[#09d0c6]" />,
   // },
   // {
@@ -114,7 +114,7 @@ const services = [
   {
     title: "NFT for the fashion industry",
     description:
-      "The fashion industry has always been a leader in innovation with the latest trends and crazes. Webcom Systems helps you to use NFTs to allow customers to mix, match and make their own unique designs.",
+      "The fashion industry has always been a leader in innovation with the latest trends and crazes. Avner Global helps you to use NFTs to allow customers to mix, match and make their own unique designs.",
     icon: <Shirt className="w-10 h-10 text-[#09d0c6]" />,
   },
   {
@@ -126,7 +126,7 @@ const services = [
   {
     title: "NFT for the real estate industry",
     description:
-      "NFTs provide means of verifying the authenticity and ownership of virtual land that can be bought in a game or other metaverse platform. Webcom Systems help you to understand how to integrate blockchain technology and virtual real estate.",
+      "NFTs provide means of verifying the authenticity and ownership of virtual land that can be bought in a game or other metaverse platform. Avner Global help you to understand how to integrate blockchain technology and virtual real estate.",
     icon: <Building2 className="w-10 h-10 text-[#09d0c6]" />,
   },
   {
@@ -163,7 +163,7 @@ const additionalServices = [
     icon: <ShoppingCart className="w-8 h-8 text-[#09d0c6]" />,
   },
   {
-    title: "Webcom Systems NFT Platform Development Services",
+    title: "Avner Global NFT Platform Development Services",
     description:
       "Build a solution that drives growth. We develop the best blockchain-based platform with a wide range of features, personalized to suit your specific need. Whether you are a start-up looking to create a new cryptocurrency or an enterprise blockchain, we are the perfect partner.",
     icon: <ShieldCheck className="w-8 h-8 text-[#09d0c6]" />,
@@ -359,7 +359,7 @@ export default function NFTDevelopmentPage() {
                   </h4>
                   <p>
                     The power of blockchain will change the way you work,
-                    conduct business and make decisions. Webcom Systems is a
+                    conduct business and make decisions. Avner Global is a
                     leading developer of blockchain apps and NFTs. With an
                     experienced team of developers and business experts, we are
                     well-positioned to be your trusted blockchain partner.

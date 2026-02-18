@@ -194,7 +194,7 @@ export default function OrderMatchingEngine() {
                   Order Matching Engine
                 </h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  At Webcom, we consider in building cutting edge technology to
+                  At Avner Global, we consider in building cutting edge technology to
                   empower financial markets ahead. On the subject of trading in
                   stock market, the essential factor aside from the strategy is
                   the buying and selling software that you use. And we’re

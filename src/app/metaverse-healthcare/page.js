@@ -296,8 +296,8 @@ export default function Page() {
                 Explore the realm of the Healthcare Metaverse
               </p>
               <p className="mt-4 text-gray-200 text-sm md:text-lg leading-relaxed">
-                Let quantix global expertise help you uncover the true dormant
-                of Metaverse in Healthcare.
+                Let Avner Global expertise help you uncover the true dormant of
+                Metaverse in Healthcare.
               </p>
               <Link href="/contact-us" className="inline-block mt-8">
                 <Button variants="action" className="inline-flex items-center">
@@ -317,12 +317,12 @@ export default function Page() {
         <Container className="max-w-7xl px-4 md:px-8 text-center">
           <h2 className="text-white text-2xl md:text-[40px] font-bold leading-tight tracking-tight max-w-5xl mx-auto">
             Power Of The Metaverse - Transforming Healthcare
-            <br className="hidden md:block" /> Solutions With quantix global
+            <br className="hidden md:block" /> Solutions With Avner Global
           </h2>
           <p className="mt-4 text-white/95 text-sm md:text-[16px] leading-relaxed max-w-5xl mx-auto">
-            quantix global is leading the way in using Metaverse Technology to
-            transform healthcare solutions. Join us to know how quantix global
-            is leading the charge in transforming healthcare solutions by using
+            Avner Global is leading the way in using Metaverse Technology to
+            transform healthcare solutions. Join us to know how Avner Global is
+            leading the charge in transforming healthcare solutions by using
             this technology!
           </p>
         </Container>
@@ -519,12 +519,12 @@ export default function Page() {
       <section className="bg-[#efeff1] py-16 md:py-20">
         <Container className="max-w-7xl px-4 md:px-8">
           <h2 className="text-3xl md:text-[54px] font-bold leading-tight text-center">
-            Why Choose Webcom For Your Metaverse In Healthcare Project?
+            Why Choose Avner Global For Your Metaverse In Healthcare Project?
           </h2>
           <p className="mt-4 text-[#5d6b82] text-center text-sm md:text-lg leading-relaxed max-w-5xl mx-auto">
-            Webcom is one of the most trusted, reputed, and reliable providers
-            of metaverse healthcare development services and solutions that are
-            perfect to meet the varied needs of businesses.
+            Avner Global is one of the most trusted, reputed, and reliable
+            providers of metaverse healthcare development services and solutions
+            that are perfect to meet the varied needs of businesses.
           </p>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">

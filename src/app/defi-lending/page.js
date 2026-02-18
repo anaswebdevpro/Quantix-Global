@@ -183,7 +183,7 @@ export default function DefiLending() {
                   Aave, and Compound, and many more.
                 </p>
                 <p>
-                  At quantix global, we provide industry-oriented services that
+                  At Avner Global, we provide industry-oriented services that
                   deliver the best and most profitable results for our clients.
                   Our DeFi lending and borrowing platform are built on the
                   latest frameworks and offer state-of-the-art features. If you
@@ -235,7 +235,7 @@ export default function DefiLending() {
             <p className="opacity-90 max-w-2xl mx-auto">
               The platform provides a host of benefits to the users. Here we
               present a few of the benefits, if you get the platform developed
-              from quantix global.
+              from Avner Global.
             </p>
           </div>
 
@@ -259,7 +259,7 @@ export default function DefiLending() {
               Development?
             </SectionHeading>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              At quantix global, we have devised the perfect methodology and to
+              At Avner Global, we have devised the perfect methodology and to
               create a well-performing DeFi Lending and Borrowing Platform to
               meet all your needs.
             </p>
@@ -293,7 +293,7 @@ export default function DefiLending() {
         <Container>
           <div className="text-center mb-12">
             <SectionHeading>
-              How Does quantix global DeFi Lending and Borrowing Platform Work?
+              How Does Avner Global DeFi Lending and Borrowing Platform Work?
             </SectionHeading>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
               We have many years of experience in the sector, and know what
@@ -369,14 +369,10 @@ export default function DefiLending() {
             <div className="w-full md:w-1/2">
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl bg-gray-100">
                 <Image
-                  src="/assets/images/How-does-DeFi-staking-platform-integrate-borrowing-and-lending-functionalities.jpg"
+                  src="/assets/image/defi-why.png"
                   alt="Why Choose DeFi"
                   fill
                   className="object-cover"
-                  onError={(e) =>
-                    (e.currentTarget.src =
-                      "/assets/images/Decentralized-Finance-Platform.jpg")
-                  }
                 />
               </div>
             </div>
@@ -384,15 +380,15 @@ export default function DefiLending() {
         </Container>
       </section>
 
-      {/* Why Webcom Section */}
+      {/* Why Avner Global Section */}
       <section className="py-16 md:py-20 bg-blue-50">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <SectionHeading className="mb-6">
-              Why Choose quantix global Defi Lending Platform Development?
+              Why Choose Avner Global Defi Lending Platform Development?
             </SectionHeading>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              At quantix global, we work with a team of financial and web
+              At Avner Global, we work with a team of financial and web
               development experts, with real-world knowledge of such ecosystems.
               Our team has the right technical know-how, to deal with all kinds
               of smart contracts development, defi platform development, defi

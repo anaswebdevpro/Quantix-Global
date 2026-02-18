@@ -167,7 +167,7 @@ export default function DefiStaking() {
                   The defi staking platform is better than most traditional
                   finance and banking platforms. We have empowered users with
                   the power to transact freely, with the help of smart contracts
-                  that the users themselves can customize. At quantix global, we
+                  that the users themselves can customize. At Avner Global, we
                   have the best experts in the DeFi services arena. You can
                   trust us with your cryptocurrency management goals and
                   aspirations. Moreover, we offer a broad range of services that
@@ -364,8 +364,8 @@ export default function DefiStaking() {
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               The DeFi environment is constantly evolving. Therefore, it is
               important to acquire the best Defi Staking Platform Development
-              Company on board. We at quantix global, carry years of experience
-              in various domains where Blockchain and cryptocurrency are amongst
+              Company on board. We at Avner Global, carry years of experience in
+              various domains where Blockchain and cryptocurrency are amongst
               them. We work with a team of expert developers, market analysts,
               and marketers who can give you best platform to succeed. Above
               all, our entire services suite is whitelabel and personizable thus

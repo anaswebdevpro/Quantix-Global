@@ -21,17 +21,17 @@ const features = [
   },
   {
     title: "Impressionable Designs",
-    desc: "Along with having years of experience, what Quantix Global carries is a will to satisfy its clients and their requirements/ expectations of the website. We create impressionable content as we dive into various aspects of presentation, appearance, and innovation.",
+    desc: "Along with having years of experience, what Avner Global carries is a will to satisfy its clients and their requirements/ expectations of the website. We create impressionable content as we dive into various aspects of presentation, appearance, and innovation.",
     icon: "/assets/image/Aesthetically-Designed-Website.png",
   },
   {
     title: "Css3 & Animations",
-    desc: "With ample awareness of software and applications, Quantix Global seems to specialize in CSS3 as well. Indulging animations and expressions in the site via Css3, we intend to vocalise the client’s aspirations to fetch healthy business and escalate the viewership of the site.",
+    desc: "With ample awareness of software and applications, Avner Global seems to specialize in CSS3 as well. Indulging animations and expressions in the site via Css3, we intend to vocalise the client’s aspirations to fetch healthy business and escalate the viewership of the site.",
     icon: "/assets/image/css.png",
   },
   {
     title: "Sass/LESS Application",
-    desc: "Quantix Global constitute of SaaS and LESS Application specialists, who further ensures the best solution for your website and business.",
+    desc: "Avner Global constitute of SaaS and LESS Application specialists, who further ensures the best solution for your website and business.",
     icon: "/assets/image/sassless.png",
   },
   {
@@ -41,7 +41,7 @@ const features = [
   },
   {
     title: "Kendo UI & Angular.js",
-    desc: "Both of these tools enable us to instantly build a structured layout, as it is the most renowned Javascript frameworks and specialists in Quantix Global integrate it well for best results.",
+    desc: "Both of these tools enable us to instantly build a structured layout, as it is the most renowned Javascript frameworks and specialists in Avner Global integrate it well for best results.",
     icon: "/assets/image/angularjs1.png",
   },
 ];
@@ -58,11 +58,11 @@ export default function WebsiteDesigning() {
           backgroundPosition: "center",
         }}
       >
-        <Container className="max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
-            <div className="flex flex-col w-full md:w-1/2 text-center md:text-left">
+        <Container className="max-w-7xl">
+          <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+            <div className="flex flex-col w-full md:w-[48%] text-center md:text-left ">
               <Heading className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-[#09d0c6]">Website</span> Designing <br />
+                <span className="text-[#09d0c6]">Website Designing</span>{" "}
                 Company
               </Heading>
               <SubHeading className="text-gray-200 text-base md:text-lg leading-relaxed">
@@ -73,7 +73,7 @@ export default function WebsiteDesigning() {
                 developers and designers, working their magic round the clock to
                 ensure cost-efficiency, creativity, and innovation.
               </SubHeading>
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-start pt-2">
                 <Link href="/contact-us">
                   <button className="group bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#153577] transition-all duration-300 flex items-center gap-2 font-semibold">
                     Let's Discuss
@@ -85,8 +85,8 @@ export default function WebsiteDesigning() {
                 </Link>
               </div>
             </div>
-            <div className="w-full md:w-1/2 mt-12 md:mt-0 relative">
-              <div className="relative w-full aspect-[4/3] md:h-[500px]">
+            <div className="w-full md:w-[52%] mt-12 md:mt-0 relative flex justify-center md:justify-end">
+              <div className="relative w-full max-w-[650px] aspect-[4/3]">
                 <Image
                   src="/assets/image/Web_design_1.png"
                   alt="Website Designing"
@@ -117,7 +117,7 @@ export default function WebsiteDesigning() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col items-start"
               >
-                <div className="mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center p-3 rounded-full bg-blue-50 group-hover:bg-[#09d0c6]/10 transition-colors">
+                <div className="mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center p-3 rounded-full bg-[#153577] group-hover:bg-[#09d0c6] transition-colors duration-300">
                   <div className="relative w-full h-full">
                     <Image
                       src={feature.icon}
@@ -160,7 +160,7 @@ export default function WebsiteDesigning() {
                 Web Design Company
               </SectionHeading>
               <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
-                Quantix Global proffers alluring, cost-efficient web design
+                Avner Global proffers alluring, cost-efficient web design
                 solutions for organizations ranging from small-scale to
                 flourishing, large-scale enterprises. The solutions extend from
                 alternatives such as HTML to CSS to Jquery to provide our

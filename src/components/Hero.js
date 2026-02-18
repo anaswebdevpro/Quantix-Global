@@ -8,9 +8,9 @@ import Button from "./ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative w-full  min-h-[600px] flex   overflow-hidden">
+    <section className="relative w-full h-[90vh] flex   overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-[80vh] z-0">
+      <div className="absolute inset-0 w-full h-[90vh] z-0">
         <video
           autoPlay
           muted
@@ -18,10 +18,7 @@ export default function Hero() {
           playsInline
           className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
         >
-          <source
-            src="/assets/image/Webcom_Banner_03_3mb.mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/image/main-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* Overlay */}

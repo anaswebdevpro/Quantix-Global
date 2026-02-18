@@ -9,7 +9,7 @@ const HeroWithForm = ({ heading, text, bgimage, className }) => {
   return (
     <div>
       <section
-        className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] overflow-hidden"
+        className="relative min-h-[80vh] sm:min-h-[85vh] lg:min-h-[90vh] overflow-hidden "
         style={{
           backgroundImage: `url('${bgimage}')`,
           backgroundSize: "cover",
@@ -39,9 +39,7 @@ const HeroWithForm = ({ heading, text, bgimage, className }) => {
               </Link>
             </div>
             <div className={className}>
-
-
-            <BannerForm  />
+              <BannerForm />
             </div>
           </div>
         </Container>

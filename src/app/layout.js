@@ -10,9 +10,9 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Blockchain Development Company | Web 3.0 Solutions - Quantix Global",
+  title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
   description:
-    "Dive into Web 3.0 with Quantix Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
+    "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
 };
 
 export default function RootLayout({ children }) {

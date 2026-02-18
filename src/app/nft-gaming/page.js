@@ -357,7 +357,7 @@ export default function NFTGamingPage() {
               Why Choose Us for NFT Gaming Platform Development?
             </SectionHeading>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-              At Webcom Systems, our team of dedicated professionals specializes
+              At Avner Global, our team of dedicated professionals specializes
               in blockchain innovation and game development. We offer end-to-end
               solutions to create immersive NFT gaming experiences that drive
               engagement and revenue for your business.

@@ -8,13 +8,13 @@ import { SectionHeading } from "./ui/SectionHeading";
 const industries = [
   {
     title: "Blockchain In Supply Chain",
-    desc: "By embracing blockchain technology, businesses can future-proof their supply chain operations and stay ahead of the curve. Quantix Global helps supply chain leaders use data to handle the disruptions of today and build resiliency for the future.",
+    desc: "By embracing blockchain technology, businesses can future-proof their supply chain operations and stay ahead of the curve. Avner Global helps supply chain leaders use data to handle the disruptions of today and build resiliency for the future.",
     image: "/assets/image/supply_chain.jpg",
     link: "/blockchain-supply-chain",
   },
   {
     title: "Blockchain In Finance",
-    desc: "Quantix Global helps businesses in the finance industry to achieve greater efficiency, security, and control over their financial operations through customized blockchain solutions.",
+    desc: "Avner Global helps businesses in the finance industry to achieve greater efficiency, security, and control over their financial operations through customized blockchain solutions.",
     image: "/assets/image/image_2.jpg",
     link: "/blockchain-finance",
   },
@@ -26,31 +26,31 @@ const industries = [
   },
   {
     title: "Blockchain In Healthcare",
-    desc: "Quantix Global helps healthcare organizations implement blockchain networks that ensure the privacy and security of patient information, improving coordination between providers and enhancing patient care.",
+    desc: "Avner Global helps healthcare organizations implement blockchain networks that ensure the privacy and security of patient information, improving coordination between providers and enhancing patient care.",
     image: "/assets/image/image_4.jpg",
     link: "/blockchain-healthcare",
   },
   {
     title: "Blockchain In Energy Oil And Gas",
-    desc: "Blockchain's decentralized and encrypted nature provides a secure environment. Quantix Global assists in implementing blockchain solutions that optimize operations, leading to cost savings and improved productivity.",
+    desc: "Blockchain's decentralized and encrypted nature provides a secure environment. Avner Global assists in implementing blockchain solutions that optimize operations, leading to cost savings and improved productivity.",
     image: "/assets/image/image_5.jpg",
     link: "/blockchain-energy",
   },
   {
     title: "Blockchain In Retail",
-    desc: "Quantix Global provide online retailers with a more secure and efficient payment system by simplifying inventory tracking, automating payments using smart contracts and providing proof of authenticity.",
+    desc: "Avner Global provide online retailers with a more secure and efficient payment system by simplifying inventory tracking, automating payments using smart contracts and providing proof of authenticity.",
     image: "/assets/image/Retail.jpg",
     link: "/blockchain-retail",
   },
   {
     title: "Blockchain In Transportation",
-    desc: "Blockchain Technology has many benefits that can solve many issues in the transport industry. Quantix Global help transport companies manage data, and business processes and improve the way goods are shipped and transported through blockchain technology.",
+    desc: "Blockchain Technology has many benefits that can solve many issues in the transport industry. Avner Global help transport companies manage data, and business processes and improve the way goods are shipped and transported through blockchain technology.",
     image: "/assets/image/Transportation_1.jpg",
     link: "/blockchain-transportation",
   },
   {
     title: "Blockchain In Agriculture",
-    desc: "Blockchain technology is being increasingly used in the agriculture industry to improve supply chain management, increase transparency, and enhance traceability. Quantix Global ensures the integrity and security of agriculture data by using blockchain technology.",
+    desc: "Blockchain technology is being increasingly used in the agriculture industry to improve supply chain management, increase transparency, and enhance traceability. Avner Global ensures the integrity and security of agriculture data by using blockchain technology.",
     image: "/assets/image/Agriculture_1.jpg",
     link: "/blockchain-agriculture",
   },

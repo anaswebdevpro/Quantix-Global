@@ -65,7 +65,7 @@ const steps = [
   {
     step: "Step 1",
     description:
-      "Searching for illiquid assets to tokenize such as commercial estate. Our experts at Webcom Systems work with conscientiousness for tokenization purposes.",
+      "Searching for illiquid assets to tokenize such as commercial estate. Our experts at Avner Global work with conscientiousness for tokenization purposes.",
   },
   {
     step: "Step 2",
@@ -80,7 +80,7 @@ const steps = [
   {
     step: "Step 4",
     description:
-      "The strength and proficiency behind the assets tokenization is the manpower & expertise of professionals at Webcom Systems. As per our belief, ERC-20 is not a hypothetical solution for TAO due to certain reasons like gas prices, network congestion, and alterations in protocols. We build personalized inbuilt smart contracts on the tip of Ethereum and Hyperledger or Stellar.",
+      "The strength and proficiency behind the assets tokenization is the manpower & expertise of professionals at Avner Global. As per our belief, ERC-20 is not a hypothetical solution for TAO due to certain reasons like gas prices, network congestion, and alterations in protocols. We build personalized inbuilt smart contracts on the tip of Ethereum and Hyperledger or Stellar.",
   },
   {
     step: "Step 5",
@@ -125,6 +125,7 @@ export default function TokenizedAssetOffering() {
         heading="Legally Compliant Asset-Supported Tokens"
         text="Integrate immediately with our newfangled asset tokenization platform."
         bgimage="/assets/image/Token_banner-1.jpg"
+        className=""
       />
 
       {/* Intro Section */}
@@ -155,11 +156,11 @@ export default function TokenizedAssetOffering() {
               this platform to ascertain user security and asset information
               inclusively. This great technology enables enhanced efficiency and
               security for potential investors and the creation of numerous
-              rewarding opportunities. At Webcom Systems, you will find
-              proficient blockchain professionals who put forward a
-              comprehensive asset tokenization platform with state-of-art
-              blockchain technology, functionalities, and traits that will bring
-              a seamless working experience for valuable customers.
+              rewarding opportunities. At Avner Global, you will find proficient
+              blockchain professionals who put forward a comprehensive asset
+              tokenization platform with state-of-art blockchain technology,
+              functionalities, and traits that will bring a seamless working
+              experience for valuable customers.
             </p>
             <h4 className="text-xl font-bold text-[#333d47] mb-8 max-w-4xl mx-auto">
               Tokenized Asset Offering is an amazing resolution for financial
@@ -202,7 +203,7 @@ export default function TokenizedAssetOffering() {
                 White Label Asset Tokenization Platform
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Webcom Systems serves as an all-inclusive tokenization assets
+                Avner Global serves as an all-inclusive tokenization assets
                 issuance platform for both issuers and the specific target
                 industry. Both residential real estate and commercial assets can
                 be tokenized by the issuance companies.
@@ -370,7 +371,7 @@ export default function TokenizedAssetOffering() {
               Potentially known, the Ethereum Blockchain with ERC-20 doesn’t
               stand on the needs of asset supported tokens. The primary issues
               that might come up are gas prices, network congestion, and
-              protocol issues. To put all this to an end, Webcom Systems has
+              protocol issues. To put all this to an end, Avner Global has
               popped up with a solution of creating customized & personalized
               scalable blockchain and smart contracts to satisfy the
               requirements on Ethereum/Hyperledger or Stellar.
@@ -393,7 +394,7 @@ export default function TokenizedAssetOffering() {
               },
               {
                 title: "Wallet",
-                desc: "The professionals at Webcom Systems are crafting a technology that permits issuance companies for tokens reissuing to the investors, in case the investor loses their wallet keys put through to terms and conditions.",
+                desc: "The professionals at Avner Global are crafting a technology that permits issuance companies for tokens reissuing to the investors, in case the investor loses their wallet keys put through to terms and conditions.",
               },
             ].map((item, index) => (
               <div

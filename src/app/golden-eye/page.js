@@ -120,7 +120,7 @@ const advantages = [
   },
   {
     title: "24*7 Support",
-    desc: "As we know the opportune moment could be at any time, Webcom technical experts remain in your corner 24*7.",
+    desc: "As we know the opportune moment could be at any time, Avner Global technical experts remain in your corner 24*7.",
     icon: <Headphones className="w-8 h-8 text-[#09d0c6]" />,
   },
 ];
@@ -156,7 +156,7 @@ export default function GoldenEye() {
         </div>
         <div className="w-full md:w-1/2 h-full relative">
           <Image
-            src="/assets/images/goldeneye.jpg"
+            src="/assets/image/goldeneye.jpg"
             alt="Golden Eye Trading Tool"
             fill
             className="object-cover"

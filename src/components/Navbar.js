@@ -134,7 +134,7 @@ export default function Navbar() {
             <div className="transition-all">
               <Image
                 src="/assets/image/Avner_global.png"
-                alt="Quantix Global"
+                alt="Avner Global"
                 width={140}
                 height={10}
                 priority

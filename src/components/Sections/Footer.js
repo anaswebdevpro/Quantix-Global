@@ -172,8 +172,7 @@ export default function Footer() {
             <div className="bg-[#122e66] p-6 rounded-lg border-l-4 border-[#09d0c6]">
               <h4 className="font-bold mb-2 text-[#09d0c6]">India Office</h4>
               <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                323 - 324, 3rd Floor, Block B, Bestech Business Tower, Sector
-                66, Sahibzada Ajit Singh Nagar, Punjab 160066, India
+                abc tower  1600xx
               </p>
               <a
                 href="tel:+918699701099"
@@ -182,10 +181,10 @@ export default function Footer() {
                 +91 86997 01099
               </a>
               <a
-                href="mailto:sales@webcomsystem.net"
+                href="mailto:sales@avnerglobal.net"
                 className="block text-gray-300 hover:text-[#09d0c6] transition-colors"
               >
-                sales@webcomsystem.net
+                sales@avnerglobal.net
               </a>
             </div>
           </div>
@@ -194,7 +193,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-sm text-gray-400">
-            © Copyright {new Date().getFullYear()} Quantix Global
+            © Copyright {new Date().getFullYear()} Avner Global
           </p>
 
           <div className="flex gap-4">

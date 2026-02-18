@@ -69,7 +69,7 @@ const services = [
   {
     title: "Open Trading place",
     description:
-      "NFTs can be used to provide secure management by assigning each token a unique value. With Webcom Systems expertise, you can easily optimize your NFT and maximize its development potential. NFTs are used to manage digital assets like artwork, music, and more.",
+      "NFTs can be used to provide secure management by assigning each token a unique value. With Avner Global expertise, you can easily optimize your NFT and maximize its development potential. NFTs are used to manage digital assets like artwork, music, and more.",
     icon: <Store className="w-10 h-10 text-[#09d0c6]" />,
   },
   {
@@ -102,7 +102,7 @@ const designProcess = [
   {
     title: "Wallet Selection",
     description:
-      "Webcom Systems recommend highly customized wallets selection to our clients, based on their business requirements.",
+      "Avner Global recommend highly customized wallets selection to our clients, based on their business requirements.",
     icon: <Wallet className="w-8 h-8 text-[#09d0c6]" />,
   },
   {
@@ -136,8 +136,6 @@ const designProcess = [
     icon: <Wrench className="w-8 h-8 text-[#09d0c6]" />,
   },
 ];
-
-
 
 const faqs = [
   {
@@ -183,13 +181,12 @@ export default function NFTWalletPage() {
             <SubHeading as="p" className="text-white py-2 max-w-lg">
               Now, you can create the best Decentralized Exchange on the BSC{" "}
               <span className="text-[#09d0c6]">Blockchain</span>, similar to{" "}
-
-PancakeSwap. <span className="hidden lg:inline">
-  It can be considered the best one around in the recent times. We take pride
-  in extending our development platform services for the best DEX
-  creation.
-</span>
-
+              PancakeSwap.{" "}
+              <span className="hidden lg:inline">
+                It can be considered the best one around in the recent times. We
+                take pride in extending our development platform services for
+                the best DEX creation.
+              </span>
             </SubHeading>
 
             <Link href="/contact-us">
@@ -361,7 +358,7 @@ PancakeSwap. <span className="hidden lg:inline">
               Our Approach For Developing Nft Wallets
             </SectionHeading>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Webcom Systems offers a unique process for NFT wallet development.
+              Avner Global offers a unique process for NFT wallet development.
               We provide solutions to each client’s individual needs, ensuring
               they get the best fit for their business.
             </p>
@@ -393,7 +390,6 @@ PancakeSwap. <span className="hidden lg:inline">
       <SupportCTA />
 
       {/* Why Choose Us Section */}
-   
 
       {/* FAQ Section */}
       <div className="py-16 md:py-24 bg-white">

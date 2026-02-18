@@ -130,7 +130,7 @@ export default function MobileApplicationDevelopment() {
                 Web Development Company
               </SectionHeading>
               <p className="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
-                Quantix Global proffers alluring, cost-efficient web design
+                Avner Global proffers alluring, cost-efficient web design
                 solutions for organizations ranging from small-scale to
                 flourishing, large-scale enterprises. The solutions extend from
                 alternatives such as HTML to CSS to Jquery to provide our

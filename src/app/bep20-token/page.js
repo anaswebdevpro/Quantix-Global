@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     question:
-      "How soon can Webcom Systems start with the development of my project?",
+      "How soon can Avner Global start with the development of my project?",
     answer:
       "Your time-to-market will be accelerated by our services alone. As soon as you get in touch with us with your requirements, we’ll work together to create a clear plan that will expedite the creation of your Binance Smart Chain, giving you a competitive advantage and prompt market access.",
   },
@@ -134,20 +134,20 @@ export default function Bep20Token() {
               mainly in Decentralized Finance Space. One such latest development
               was Binance Smart Chain. However, the Binance Smart Chain offers
               incentives and benefits like no other in the Decentralized
-              Exchange Spectrum. Here at Webcom, our current offering is the
-              standard token, which works on the Binance Smart Chain and is
+              Exchange Spectrum. Here at Avner Global, our current offering is
+              the standard token, which works on the Binance Smart Chain and is
               similar to the BEP20. The new BEP20 token has numerous benefits
               that make it a very sound investment, and businesses looking
               forward to launching a token like this are on the right track.
               <br />
               <br />
-              At Webcom Systems, our seasoned developers and highly experienced
+              At Avner Global, our seasoned developers and highly experienced
               connoisseur in DeFi and blockchain development, create, develop,
               and help companies launch the most prolific BEP20-like tokens on
               the BSC or Binance Smart Chain. We have spent years analyzing the
               intricacies of DeFi smart contracts, Lending, Borrowing platforms,
               Yield Farming, Tokens, as well as Tokenization development making
-              Webcom System the ideal choice for your BEP20-like token
+              Avner Global System the ideal choice for your BEP20-like token
               development.
             </SubHeading>
             <div>
@@ -308,16 +308,16 @@ export default function Bep20Token() {
         </Container>
       </section>
 
-      {/* Webcom Systems Expert Section */}
+      {/* Avner Global Expert Section */}
       <section className="py-16 md:py-24 bg-[#153577] text-white">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <SectionHeading className="!text-white mb-6">
-              Webcom Systems: An Adept Token Development Company
+              Avner Global: An Adept Token Development Company
             </SectionHeading>
             <p className="text-gray-200 mb-8 leading-relaxed text-lg">
               Having developed and successfully launched numerous projects
-              within the cryptocurrencies and prolific DeFi, Webcom Systems have
+              within the cryptocurrencies and prolific DeFi, Avner Global have
               the expertise to take your next Token development to the colossal
               heights. Harness our rigorous research, design thinking-driven
               approach and unmatched solutions in strategy, consulting,

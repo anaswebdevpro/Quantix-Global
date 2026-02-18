@@ -27,22 +27,22 @@ export default function Home() {
       <IntroSection
         heading={
           <>
-            Quantix Global- Building Blockchain <br /> Solutions For Businesses
+            Avner Global- Building Blockchain <br /> Solutions For Businesses
           </>
         }
         text={
           <>
             In the dynamic world of technology,{" "}
-            <strong className="font-bold text-gray-800">Quantix Global</strong>{" "}
+            <strong className="font-bold text-gray-800">Avner Global</strong>{" "}
             has emerged as a trailblazer in providing innovative blockchain
             solutions tailored for businesses. With a mission to harness the
-            transformative potential of blockchain technology, Quantix Global
-            has positioned itself as a leading player in the industry, offering
-            a range of services designed to enhance efficiency, security, and
-            transparency. <br /> <br/>
+            transformative potential of blockchain technology, Avner Global has
+            positioned itself as a leading player in the industry, offering a
+            range of services designed to enhance efficiency, security, and
+            transparency. <br /> <br />
             <strong>Blockchain technology,</strong> known for its decentralized
             and immutable nature, is revolutionizing the way businesses operate.{" "}
-            <strong>Quantix Global</strong> leverages this technology to create
+            <strong>Avner Global</strong> leverages this technology to create
             customized solutions that address the unique challenges faced by
             various industries. From supply chain management and finance to
             healthcare and real estate, the applications of blockchain are vast

@@ -160,11 +160,11 @@ export default function MLMSoftware() {
               <span className="text-[#09d0c6]">Development Company</span>
             </Heading>
             <SubHeading as="p" className="text-white py-2 max-w-lg">
-              Streamline and scale your MLM business with Webcom’s advanced MLM
-              Software Development solutions. Designed for enterprises,
-              startups, and direct-selling companies, our software empowers you
-              to manage leads, track sales, monitor downlines, and boost
-              productivity seamlessly.
+              Streamline and scale your MLM business with Avner Global’s
+              advanced MLM Software Development solutions. Designed for
+              enterprises, startups, and direct-selling companies, our software
+              empowers you to manage leads, track sales, monitor downlines, and
+              boost productivity seamlessly.
             </SubHeading>
 
             <Link href="/contact-us">
@@ -199,7 +199,7 @@ export default function MLMSoftware() {
                   MLM Software Development Services
                 </h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  Webcom Systems is a trusted partner for direct selling and
+                  Avner Global is a trusted partner for direct selling and
                   network marketing industries. We offer comprehensive MLM
                   software solutions to help you manage your business
                   efficiently.

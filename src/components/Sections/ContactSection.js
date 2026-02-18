@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import Container from "./../ui/container";
 
 export default function ContactSection() {
@@ -16,72 +17,160 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-20 bg-[#f8f8f8]">
+    <section className="py-20 lg:py-28 bg-[#f8f9fa] relative overflow-hidden">
+      {/* Decorative Elements */}
+      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-gray-100 to-transparent -z-10" />
+      <div className="absolute -left-24 top-24 w-96 h-96 bg-[#09d0c6]/5 rounded-full blur-3xl -z-10" />
+      <div className="absolute -right-24 bottom-24 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl -z-10" />
+
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          {/* Left Column: Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-8 rounded-lg shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-[#333d47] mb-2">
-              Talk to Our Experts
-            </h3>
-            <p className="text-gray-500 mb-6 text-sm">
-              If you have any queries or doubts related with our services, don’t
-              hesitate to get in touch with our experts.
-            </p>
+            <div className="sticky top-24">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#153577] mb-6 leading-tight">
+                Talk to Our <span className="text-[#153577]">Experts</span>
+              </h2>
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                If you have any queries or doubts related to our services, don’t
+                hesitate to get in touch with our experts. We're here to help
+                you build the future.
+              </p>
 
-            <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 rounded-full bg-[#09d0c6]/10 flex items-center justify-center shrink-0 text-[#09d0c6]">
+                    <MapPin size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#153577] mb-1">Visit Us</h4>
+                    <p className="text-gray-500 text-sm leading-relaxed">
+                      abc Tower Sector , Sahibzada Ajit Singh Nagar, Punjab
+                      160066, India
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="tel:+918699701099"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100 hover:border-[#09d0c6] hover:shadow-md transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-[#09d0c6]/10 flex items-center justify-center shrink-0 text-[#09d0c6] group-hover:bg-[#09d0c6] group-hover:text-white transition-colors">
+                    <Phone size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#153577] mb-1">Call Us</h4>
+                    <p className="text-gray-500 text-sm group-hover:text-[#09d0c6] transition-colors">
+                      +91 86997 01099
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:sales@Avner Globalsystem.net"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100 hover:border-[#09d0c6] hover:shadow-md transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-[#09d0c6]/10 flex items-center justify-center shrink-0 text-[#09d0c6] group-hover:bg-[#09d0c6] group-hover:text-white transition-colors">
+                    <Mail size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#153577] mb-1">Email Us</h4>
+                    <p className="text-gray-500 text-sm group-hover:text-[#09d0c6] transition-colors">
+                      sales@avnerglobal.net
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="https://wa.me/918699701099"
+                  target="_blank"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-[#25D366]/5 border border-[#25D366]/20 hover:bg-[#25D366]/10 transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shrink-0 text-white shadow-lg shadow-[#25D366]/30">
+                    <MessageCircle size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#153577] mb-1">
+                      Chat on WhatsApp
+                    </h4>
+                    <p className="text-gray-500 text-sm">
+                      Get instant responses from our team
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Contact Form */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white p-8 lg:p-10 rounded-2xl shadow-xl border border-gray-100 relative"
+          >
+            <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="space-y-1">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                    Full Name
+                  </label>
                   <input
                     type="text"
-                    placeholder="Full Name*"
+                    placeholder="John Doe"
                     {...register("fullName", {
                       required: "Full name is required",
                     })}
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                    className={`w-full px-5 py-3  border rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all ${
                       errors.fullName ? "border-red-500" : "border-gray-200"
                     }`}
                   />
                   {errors.fullName && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span className="text-red-500 text-xs ml-1">
                       {errors.fullName.message}
                     </span>
                   )}
                 </div>
-                <div>
+                <div className="space-y-1">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                    Email Address
+                  </label>
                   <input
                     type="email"
-                    placeholder="Your Email*"
+                    placeholder="john@example.com"
                     {...register("email", { required: "Email is required" })}
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                    className={`w-full px-5 py-3 border rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all ${
                       errors.email ? "border-red-500" : "border-gray-200"
                     }`}
                   />
                   {errors.email && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span className="text-red-500 text-xs ml-1">
                       {errors.email.message}
                     </span>
                   )}
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="space-y-1">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                    Service Interest
+                  </label>
                   <select
                     {...register("service", {
                       required: "Service is required",
                     })}
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500 ${
+                    className={`w-full px-5 py-3  order rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all text-gray-600 ${
                       errors.service ? "border-red-500" : "border-gray-200"
                     }`}
                   >
-                    <option value="">Services I want*</option>
+                    <option value="">Select Service</option>
                     <option value="Website Designing">Website Designing</option>
                     <option value="Mobile App Development">
                       Mobile App Development
@@ -91,21 +180,24 @@ export default function ContactSection() {
                     </option>
                   </select>
                   {errors.service && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span className="text-red-500 text-xs ml-1">
                       {errors.service.message}
                     </span>
                   )}
                 </div>
-                <div>
+                <div className="space-y-1">
+                  <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                    Product Area
+                  </label>
                   <select
                     {...register("product", {
                       required: "Product is required",
                     })}
-                    className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors text-gray-500 ${
+                    className={`w-full px-5 py-3  border rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all text-gray-600 ${
                       errors.product ? "border-red-500" : "border-gray-200"
                     }`}
                   >
-                    <option value="">Product I want*</option>
+                    <option value="">Select Product</option>
                     <option value="Blockchain Softwares">
                       Blockchain Softwares
                     </option>
@@ -113,85 +205,54 @@ export default function ContactSection() {
                     <option value="Other">Other</option>
                   </select>
                   {errors.product && (
-                    <span className="text-red-500 text-xs mt-1">
+                    <span className="text-red-500 text-xs ml-1">
                       {errors.product.message}
                     </span>
                   )}
                 </div>
               </div>
 
-              <div>
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                  Phone Number
+                </label>
                 <input
                   type="tel"
-                  placeholder="Phone Number*"
+                  placeholder="+1 (555) 000-0000"
                   {...register("phone", {
                     required: "Phone number is required",
                   })}
-                  className={`w-full px-4 py-3 bg-gray-50 border rounded focus:outline-none focus:border-[#09d0c6] transition-colors ${
+                  className={`w-full px-5 py-3  border rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all ${
                     errors.phone ? "border-red-500" : "border-gray-200"
                   }`}
                 />
                 {errors.phone && (
-                  <span className="text-red-500 text-xs mt-1">
+                  <span className="text-red-500 text-xs ml-1">
                     {errors.phone.message}
                   </span>
                 )}
               </div>
 
-              <textarea
-                rows="4"
-                placeholder="Enter your message.."
-                {...register("message")}
-                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded focus:outline-none focus:border-[#09d0c6] transition-colors resize-none"
-              ></textarea>
-
-              <div className="g-recaptcha" data-sitekey="your-site-key"></div>
+              <div className="space-y-1">
+                <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider ml-1">
+                  Your Message
+                </label>
+                <textarea
+                  rows="4"
+                  placeholder="Tell us about your project requirements..."
+                  {...register("message")}
+                  className="w-full px-5 py-3  border border-gray-200 rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all resize-none"
+                ></textarea>
+              </div>
 
               <button
                 type="submit"
-                className="px-8 py-3 bg-[#09d0c6] text-white font-bold rounded shadow-lg hover:bg-[#08b8af] transition-all transform hover:-translate-y-1"
+                className="w-full py-4 bg-[#153577] text-white font-bold rounded-lg shadow-lg shadow-[#09d0c6]/30 hover:shadow-xl hover:shadow-[#09d0c6]/40 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
               >
-                Submit
+                <Send size={20} />
+                Send Message
               </button>
             </form>
-
-            <div className="mt-6 pt-6 border-t border-gray-100">
-              <a
-                href="https://wa.me/918699701099"
-                target="_blank"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#128c7e] text-white font-bold rounded hover:bg-[#075e54] transition-colors w-full text-center"
-              >
-                Connect With Whatsapp
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Calendly / Meeting */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col h-full"
-          >
-            <h3 className="text-2xl font-bold text-[#333d47] mb-4 text-center">
-              Schedule A Meeting
-            </h3>
-            <p className="text-gray-600 mb-8 text-center max-w-md mx-auto">
-              If you’re interested in our services, you can have a meeting
-              scheduled with our professionals at any point in time.
-            </p>
-
-            <div className="flex-grow bg-white p-4 rounded-lg shadow-lg min-h-[500px] relative overflow-hidden">
-              {/* Calendly iframe placeholder */}
-              <iframe
-                src="https://calendly.com/Quantix?primary_color=09d0c6"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                className="absolute inset-0 w-full h-full"
-              ></iframe>
-            </div>
           </motion.div>
         </div>
       </Container>
