@@ -129,8 +129,9 @@ export default function GoldenEye() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative text-white h-auto md:h-[90vh] flex flex-col md:flex-row bg-gradient-to-r from-[#112934] to-[#0CC9E2]  overflow-hidden">
-        <div className="w-full md:w-1/2 h-full z-20 px-10 py-20 lg:px-20 flex flex-col justify-center bg-[#153577]/90 md:bg-transparent">
+
+      <section className="relative text-white h-auto md:h-[90vh] flex flex-col md:flex-row bg-gradient-to-r from-[#16222E] to-[#446076] overflow-hidden">
+        <div className="w-full md:w-1/2 h-full z-20 px-10 py-20 lg:px-20 flex flex-col justify-center  md:bg-transparent">
           <div className="max-w-3xl flex flex-col items-start justify-center space-y-6">
             <Heading as="h1" className="">
               The modern-day culture <br />
@@ -153,16 +154,16 @@ export default function GoldenEye() {
             </Link>
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-[400px] md:h-full relative">
+        <div className="w-full md:w-1/2 h-full relative">
           <Image
             src="/assets/images/goldeneye.jpg"
-            alt="Golden Eye Technical Analysis"
+            alt="Golden Eye Trading Tool"
             fill
             className="object-cover"
+            priority
           />
         </div>
       </section>
-
       {/* Our Vision Section */}
       <section className="py-20 bg-gray-50/50">
         <Container>

@@ -115,16 +115,7 @@ const menuItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleSubmenu = (index) => {
     setActiveSubmenu(activeSubmenu === index ? null : index);
@@ -132,27 +123,19 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Navbar */}
-
       <header
         className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-300",
-          scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-3",
+          "fixed top-0 z-50 w-full transition-all duration-300 bg-white shadow-sm py-1",
         )}
       >
-        <Container className="flex justify-between items-center  md:px-18 max-w-[1600px] mx-auto">
+        <Container className="flex justify-between items-center py-1  ">
           {/* Logo */}
           <Link href="/" className="relative z-50 flex-shrink-0">
-            <div
-              className={cn(
-                "transition-all",
-                !scrolled ? "brightness-0 invert" : "",
-              )}
-            >
+            <div className="transition-all">
               <Image
-                src="/assets/image/quantix.png"
+                src="/assets/image/Avner_global.png"
                 alt="Quantix Global"
-                width={180}
+                width={140}
                 height={10}
                 priority
                 className=" "
@@ -161,16 +144,13 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex items-center gap-2 xl:gap-8 ml-4">
+          <nav className="hidden lg:flex items-center gap-2 xl:gap-6 ml-4">
             {menuItems.map((item, index) => (
               <div key={index} className="relative group">
                 <Link
                   href={item.href}
                   className={cn(
-                    "font-bold text-[13px] xl:text-[15px] uppercase tracking-wide transition-colors flex items-center gap-1 py-4",
-                    scrolled
-                      ? "text-[#333d47] hover:text-[#09d0c6]"
-                      : "text-white hover:text-[#09d0c6]",
+                    "font-bold text-[13px] xl:text-[14px] uppercase tracking-wide transition-colors flex items-center gap-1 py-3 text-[#333d47] hover:text-[#09d0c6]",
                   )}
                 >
                   {item.title}
@@ -200,10 +180,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className={cn(
-              "lg:hidden relative z-50 p-2",
-              scrolled ? "text-slate-800" : "text-white",
-            )}
+            className="lg:hidden relative z-50 p-2 text-slate-800"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
