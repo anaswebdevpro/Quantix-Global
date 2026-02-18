@@ -133,10 +133,10 @@ export default function Navbar() {
           <Link href="/" className="relative z-50 flex-shrink-0">
             <div className="transition-all">
               <Image
-                src="/assets/image/Avner_global.png"
+                src="/assets/image/Avner_Global.png"
                 alt="Avner Global"
-                width={140}
-                height={10}
+                width={150}
+                height={50}
                 priority
                 className=" "
               />
@@ -180,7 +180,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="lg:hidden relative z-50 p-2 text-slate-800"
+            className="lg:hidden relative z-50 p-2 text-[#333d47]"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -196,26 +196,33 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#1a1a1a] text-white overflow-y-auto pt-24 pb-10 px-6"
+            className="fixed inset-0 z-40 bg-white text-[#333d47] overflow-y-auto pt-24 pb-10 px-6"
           >
             <nav className="flex flex-col gap-2">
               {menuItems.map((item, index) => (
                 <div
                   key={index}
-                  className="border-b border-white/10 last:border-0"
+                  className="border-b border-gray-100 last:border-0"
                 >
                   <div className="flex justify-between items-center">
                     <Link
                       href={item.href}
-                      className="py-3 text-lg font-semibold block flex-1"
-                      onClick={() => !item.submenu && setIsOpen(false)}
+                      className="py-3 text-lg font-bold block flex-1 text-[#333d47] hover:text-[#09d0c6] transition-colors"
+                      onClick={(e) => {
+                        if (item.submenu) {
+                          e.preventDefault();
+                          toggleSubmenu(index);
+                        } else {
+                          setIsOpen(false);
+                        }
+                      }}
                     >
                       {item.title}
                     </Link>
                     {item.submenu && (
                       <button
                         onClick={() => toggleSubmenu(index)}
-                        className="p-3"
+                        className="p-3 text-gray-500 hover:text-[#09d0c6]"
                       >
                         <ChevronDown
                           size={20}
@@ -234,14 +241,14 @@ export default function Navbar() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden bg-black/20"
+                        className="overflow-hidden bg-gray-50 rounded-lg"
                       >
-                        <ul className="pl-4 py-2">
+                        <ul className="pl-4 py-2 space-y-1">
                           {item.submenu.map((subItem, subIndex) => (
                             <li key={subIndex}>
                               <Link
                                 href={subItem.href}
-                                className="block py-2 text-gray-400 hover:text-[#09d0c6]"
+                                className="block py-2 text-sm text-gray-600 hover:text-[#09d0c6] font-medium transition-colors"
                                 onClick={() => setIsOpen(false)}
                               >
                                 {subItem.title}
