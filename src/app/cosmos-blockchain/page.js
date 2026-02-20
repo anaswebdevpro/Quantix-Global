@@ -20,6 +20,8 @@ import {
   Settings,
   ShieldCheck,
   Smartphone,
+  Store,
+  Users,
   Wallet,
   Zap,
 } from "lucide-react";
@@ -315,5 +317,3 @@ export default function Page() {
     </>
   );
 }
-
-import { Store } from "lucide-react";

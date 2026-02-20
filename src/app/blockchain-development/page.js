@@ -215,6 +215,18 @@ const faqs = [
   },
 ];
 
+const introBoxes = [
+ "Smart Contracts",
+ "Private Blockchain",
+ "Decentralized consensus",
+ "Trusted computing",
+ "Focused on innovation",
+ "Top notch engineers",
+ "Enhanced security",
+ "Quick transactions",
+
+];
+
 export default function Page() {
   const [activeTab, setActiveTab] = useState(solutions[0].id);
 
@@ -223,9 +235,66 @@ export default function Page() {
       <HeroWithForm
         heading="Blockchain Development Company"
         text="If you think blockchain development is complex, tedious or time-consuming, Avner Global delivers a one-stop solution to you. Create your blockchain applications on Hyperledger, Ethereum and Hashgraph."
-        bgimage="/assets/image/Banner-1.jpg" // Using an existing banner image
-        className=""
+        bgimage="/assets/image/block_dev.png" 
+        className="hidden"
       />
+{/* intro with boxes  */}
+       <section className="py-20 bg-gray-50/50">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex border-l-[6px] border-[#153577] pl-8 mb-12">
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#333d47]">
+                  Cryptocurrency Exchange Development
+                </h2>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  <strong>
+                    {" "}
+                    Crafting Unique Success Stories With Bespoke Solutions{" "}
+                  </strong>
+                  <br />
+                  <br />
+                  The finance industry is amidst a profound paradigm shift
+                  steered by factors such as free trade policies, evolving
+                  customer demands, technological innovations, and various
+                  macroeconomic forces. To remain relevant as a provider in the
+                  transformative landscape, both emerging and existing
+                  businesses must embrace cryptocurrency.
+                  <br />
+                  <br />
+                  Crypto exchange software, while sharing similarities with
+                  conventional exchanges, facilitates digital, secure, and
+                  boundary-less trading. Avner Global, a leading cryptocurrency
+                  exchange development company, is translating innovative ideas
+                  into professional solutions for businesses interested in
+                  venturing into the multi-billion dollar industry. <br />
+                  <br />
+                  Harness Avner Global's expertise in cryptocurrency exchange
+                  platform development to establish a strong foundation for
+                  success in the cryptocurrency industry.
+                </p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed text-lg py-4">
+              {" "}
+              <strong>
+                Cryptocurrency Exchange Software Development - Key Features
+              </strong>
+            </p>
+            {/* Feature Boxes Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {introBoxes.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-[#1f2937] text-white py-4 px-6 flex items-center justify-center text-center font-medium rounded hover:bg-[#153577] transition-colors min-h-[80px] shadow-sm text-sm md:text-base"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
 
       {/* Blockchain Solutions We Build (Tabs) */}
       <section className="py-20 bg-gray-50">
@@ -411,17 +480,16 @@ export default function Page() {
       </section>
 
       {/* Why Choose Us & Stats */}
-      <section className="py-20  relative overflow-hidden  " style={{
+      <section
+        className="py-20  relative overflow-hidden  "
+        style={{
           backgroundImage: `url('/assets/image/waves-min.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-        }}>
-       
-        <div className="absolute top-0 right-0 w-1/3 h-full " 
-         
-       
-         />
+        }}
+      >
+        <div className="absolute top-0 right-0 w-1/3 h-full " />
         <Container className="relative z-10">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="w-full lg:w-1/2">

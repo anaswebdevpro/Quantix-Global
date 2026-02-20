@@ -145,8 +145,8 @@ export default function Page() {
       <HeroWithForm
         heading="Blockchain In Insurance"
         text="Avner Global Blockchain Business offers solutions that help the insurance industry digitize legacy processes. Transform your insurance business with secure, transparent, and efficient blockchain technology."
-        bgimage="/assets/image/Insurance.jpg" // Assuming this image exists or using a placeholder name
-        className=""
+        bgimage="/assets/image/block_insurance.png" // Assuming this image exists or using a placeholder name
+        className=" hidden"
       />
 
       {/* Intro Section */}
@@ -155,11 +155,11 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/Insurance.png" // Placeholder
+                src="/assets/image/block_intro.png" // Placeholder
                 alt="Blockchain in Insurance"
                 width={600}
-                height={400}
-                className="rounded-2xl shadow-lg"
+                height={600}
+                className=""
               />
             </div>
             <div className="w-full md:w-1/2">

@@ -52,39 +52,6 @@ const services = [
   },
 ];
 
-const useCases = [
-  {
-    title: "Cross-Border Payments",
-    desc: "Blockchain technology can facilitate fast and low-cost cross-border payments by eliminating the need for intermediaries and reducing the time and costs associated with traditional payment methods.",
-    icon: <Globe className="w-8 h-8 text-white" />,
-  },
-  {
-    title: "Lending platforms",
-    desc: "Blockchain-based lending platforms can offer more transparency and accessibility, while also reducing the risk of fraud and defaults.",
-    icon: <HandCoins className="w-8 h-8 text-white" />,
-  },
-  {
-    title: "Credit score",
-    desc: "Blockchain can be used to create a more accurate and transparent credit scoring system, by providing a secure and immutable record of an individual's financial history.",
-    icon: <FileBarChart className="w-8 h-8 text-white" />,
-  },
-  {
-    title: "Invoice management and billing solution",
-    desc: "Blockchain can help automate invoice management and billing processes, reducing the time and costs associated with traditional methods.",
-    icon: <FileText className="w-8 h-8 text-white" />,
-  },
-  {
-    title: "Fund investment",
-    desc: "Blockchain can be used to create more transparent and accessible fund investment platforms, by providing a secure and immutable record of transactions and holdings.",
-    icon: <Briefcase className="w-8 h-8 text-white" />,
-  },
-  {
-    title: "Government expenses",
-    desc: "Blockchain can help governments to improve transparency and reduce waste in their spending, by providing a secure and transparent record of financial transactions.",
-    icon: <Landmark className="w-8 h-8 text-white" />,
-  },
-];
-
 const faqs = [
   {
     question: "How does blockchain improve financial transactions?",
@@ -124,7 +91,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/Banking-Finance-1.png" // Placeholder or mapped
+                src="/assets/image/coin_finance.jpg" // Placeholder or mapped
                 alt="Blockchain in Finance"
                 width={600}
                 height={400}
@@ -185,65 +152,120 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-[#153577] text-white">
-        <Container>
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-full md:w-1/2">
-              <SectionHeading className="text-white text-left mb-6">
-                Why Choose Us
-              </SectionHeading>
-              <p className="text-blue-100 text-lg leading-relaxed mb-6">
-                Avner Global's blockchain solutions can help financial
-                institutions to improve efficiency and reduce costs, while also
-                providing greater security and transparency.
-              </p>
-              <p className="text-blue-100 text-lg leading-relaxed">
-                Our solutions are designed to be scalable and secure, and we
-                offer a range of services to help financial institutions get the
-                most out of blockchain technology.
-              </p>
-            </div>
-            <div className="w-full md:w-1/2">
-              <Image
-                src="/assets/image/coin.png"
-                alt="Why Choose Us"
-                width={500}
-                height={500}
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </Container>
-      </section>
-
       {/* Use Cases Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-white">
         <Container>
-          <div className="text-center mb-16">
-            <SectionHeading className="text-[#333d47]">
+          <div className="text-center max-w-4xl mx-auto mb-20 px-4">
+            <SectionHeading className="!text-5xl  mb-8 text-[#2f3d4f]">
               Blockchain Finance Use Cases
             </SectionHeading>
+            <p className="text-gray-500 text-lg leading-relaxed font-medium">
+              As a blockchain development company, we understand the potential
+              of blockchain technology in the finance industry. Here are some of
+              the use cases of blockchain finance industry
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {useCases.map((useCase, index) => (
-              <div
-                key={index}
-                className="flex gap-4 p-6 bg-white rounded-lg shadow-sm border-l-4 border-[#00D9FF] hover:shadow-md transition-all"
-              >
-                <div className="shrink-0 p-3 bg-[#153577] rounded-full h-fit">
-                  {useCase.icon}
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start lg:px-6">
+            {/* Left Column */}
+            <div className="space-y-4 pt-4">
+              {[
+                {
+                  number: "01",
+                  title: "Cross-Border Payments",
+                  desc: "We help financial institutions to make cross-border payments faster, cheaper, and more secure by developing blockchain-based payment systems that eliminate intermediaries, reduce transaction times, and lower costs.",
+                },
+                {
+                  number: "02",
+                  title: "Lending platforms",
+                  desc: "Our innovative platform facilitates direct connections between lenders and borrowers, lowering borrowing costs and expanding credit access for financial institutions.",
+                },
+                {
+                  number: "03",
+                  title: "Credit score",
+                  desc: "We decentralized credit scoring system that is more transparent and accurate than traditional credit scoring systems, increasing access to credit for people who are currently underserved by traditional credit scoring.",
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="relative group">
+                  <div className="absolute -top-12 -left-2 text-[100px] font-black text-gray-100/80 leading-none select-none -z-10 group-hover:text-gray-200/80 transition-colors">
+                    {item.number}
+                  </div>
+                  <div className="relative z-10 pt-4">
+                    <h3 className="text-2xl font-bold text-[#2f3d4f] mb-4">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-500 text-[15px] leading-relaxed max-w-sm">
+                      {item.desc}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-lg font-bold text-[#333d47] mb-2">
-                    {useCase.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {useCase.desc}
-                  </p>
+              ))}
+            </div>
+
+            {/* Middle Column (Images) */}
+            <div className="flex flex-col gap-8">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden ">
+                  <Image
+                    src="/assets/image/usecase1.jpg"
+                    fill
+                    className="object-cover"
+                    alt="Payments"
+                  />
+                </div>
+                <div className="relative aspect-[4/3] rounded-[24px] overflow-hidden ">
+                  <Image
+                    src="/assets/image/usecase2.jpg"
+                    fill
+                    className="object-cover"
+                    alt="Savings"
+                  />
                 </div>
               </div>
-            ))}
+              <div className="relative aspect-[4/5] rounded-[24px] overflow-hidden ">
+                <Image
+                  src="/assets/image/usecase3.jpg"
+                  fill
+                  className="object-cover"
+                  alt="Audit and Analysis"
+                />
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-4 pt-4">
+              {[
+                {
+                  number: "04",
+                  title: "Invoice management and billing solution",
+                  desc: "Our advanced approach to invoice management and billing simplifies processes while improving efficiency and transparency.",
+                },
+                {
+                  number: "05",
+                  title: "Fund investment",
+                  desc: "We create a more efficient and transparent fund investment platform, reducing the time and resources required for fund investment and increasing access to investment opportunities.",
+                },
+                {
+                  number: "06",
+                  title: "Government expenses",
+                  desc: "By simplifying processes and minimizing inherent risks, we facilitate effective management of public funds while enhancing transparency and responsibility within government institutions.",
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="relative group">
+                  <div className="absolute -top-12 -left-2 text-[100px] font-black text-gray-100/80 leading-none select-none -z-10 group-hover:text-gray-200/80 transition-colors">
+                    {item.number}
+                  </div>
+                  <div className="relative z-10 pt-4">
+                    <h3 className="text-2xl font-bold text-[#2f3d4f] mb-4">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-500 text-[15px] leading-relaxed max-w-sm">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </Container>
       </section>
