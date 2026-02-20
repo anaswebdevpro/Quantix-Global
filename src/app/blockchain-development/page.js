@@ -411,16 +411,24 @@ export default function Page() {
       </section>
 
       {/* Why Choose Us & Stats */}
-      <section className="py-20 bg-gray-50 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-50 to-transparent pointer-events-none" />
+      <section className="py-20  relative overflow-hidden  " style={{
+          backgroundImage: `url('/assets/image/waves-min.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}>
+       
+        <div className="absolute top-0 right-0 w-1/3 h-full " 
+         
+       
+         />
         <Container className="relative z-10">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="w-full lg:w-1/2">
-              <SectionHeading className="text-[#153577] text-left mb-6">
+              <SectionHeading className="text-white text-left mb-6">
                 Why hire Avner Global for Blockchain Development?
               </SectionHeading>
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              <p className="text-white mb-6 text-lg leading-relaxed">
                 We bring together a team of seasoned experts dedicated to
                 delivering top-tier blockchain solutions. Our commitment to
                 transparency, security, and innovation ensures that your project
@@ -435,13 +443,13 @@ export default function Page() {
                   "Deep Industry Knowledge",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#00D9FF]" />
-                    <span className="text-gray-700 font-medium">{item}</span>
+                    <CheckCircle2 className="w-5 h-5 text-[#ffffff]" />
+                    <span className="text-white font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
               <Link href="/contact-us">
-                <Button variants="primary" className="px-8 py-3">
+                <Button variants="action" className="px-8 py-3">
                   Connect With Experts
                 </Button>
               </Link>

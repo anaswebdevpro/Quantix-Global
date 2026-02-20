@@ -65,7 +65,15 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#153577] text-white pt-20 pb-10">
+    <footer className=" text-white pt-20 pb-10 relative"
+    style={{
+          backgroundImage: `url('/assets/image/waves-min.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+    >
+      
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Services */}
@@ -78,7 +86,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="hover:text-[#09d0c6] transition-colors"
+                    className="hover:text-[#09d0c6] text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -97,7 +105,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="hover:text-[#09d0c6] transition-colors"
+                    className="hover:text-[#09d0c6] text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -112,7 +120,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="hover:text-[#09d0c6] transition-colors"
+                    className="hover:text-[#09d0c6] text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -131,7 +139,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="hover:text-[#09d0c6] transition-colors"
+                    className="hover:text-[#09d0c6] text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -147,7 +155,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={link.href}
-                    className="hover:text-[#09d0c6] transition-colors"
+                    className="hover:text-[#09d0c6] text-white  transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -161,7 +169,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-[2px] after:bg-[#09d0c6]">
               Keep Up With Us.
             </h3>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-sm text-white mb-4">
               Join our mailing list to receive news and announcements.
             </p>
             <form className="flex mb-8">
@@ -182,18 +190,18 @@ export default function Footer() {
               <h4 className="font-bold mb-2 text-[#09d0c6]">
                 Avner Global Inc.
               </h4>
-              <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+              <p className="text-sm text-white mb-4 leading-relaxed">
                 Calgary, Alberta, Canada
               </p>
               <a
                 href="mailto:info@avnerglobal.com"
-                className="block text-gray-300 hover:text-[#09d0c6] transition-colors mb-1"
+                className="block text-white hover:text-[#09d0c6] transition-colors mb-1"
               >
                 Email: info@avnerglobal.com
               </a>
               {/* <a
                 href="https://www.avnerglobal.com"
-                className="block text-gray-300 hover:text-[#09d0c6] transition-colors"
+                className="block text-white hover:text-[#09d0c6] transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -205,7 +213,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-white">
             © {new Date().getFullYear()} Avner Global Inc. All rights reserved.
           </p>
 
