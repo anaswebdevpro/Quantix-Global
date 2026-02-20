@@ -147,9 +147,9 @@ export default function Page() {
     },
     {
       question:
-        "Why is Webcom Systems Considered as best white label platform developers?",
+        "Why is Avner Global Considered as best white label platform developers?",
       answer:
-        "Webcom Systems is recognized for its extensive experience in blockchain, delivery of highly secure and scalable solutions, dedicated 24/7 support, and a client-centric approach that offers deep customization to meet specific business needs.",
+        "Avner Global is recognized for its extensive experience in blockchain, delivery of highly secure and scalable solutions, dedicated 24/7 support, and a client-centric approach that offers deep customization to meet specific business needs.",
     },
     {
       question:
@@ -377,7 +377,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="w-full lg:w-1/2 lg:order-1 order-2">
               <SectionHeading className="text-left text-[#153577] mb-6">
-                Why Choose Webcom Systems for White Label Crypto Exchange
+                Why Choose Avner Global for White Label Crypto Exchange
                 Development?
               </SectionHeading>
               <ul className="space-y-4">
@@ -403,7 +403,7 @@ export default function Page() {
             <div className="w-full lg:w-1/2 flex justify-center lg:order-2 order-1">
               <Image
                 src="/assets/image/whitelabel2.png"
-                alt="Why Choose Webcom"
+                alt="Why Choose Avner Global"
                 width={600}
                 height={400}
                 className="object-contain"

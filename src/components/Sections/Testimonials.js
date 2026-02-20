@@ -31,7 +31,7 @@ const testimonials = [
     role: "Blockchain Consulting",
     img: "/assets/image/eric.png",
     quote:
-      "I appreciate Avner Global System's one-on-one consulting approach and thorough evaluation of my current business model and identification of the best blockchain solutions for my needs.",
+      "I appreciate Avner Global's one-on-one consulting approach and thorough evaluation of my current business model and identification of the best blockchain solutions for my needs.",
   },
 ];
 

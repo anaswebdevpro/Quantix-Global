@@ -222,7 +222,7 @@ export default function Page() {
     <>
       <HeroWithForm
         heading="Blockchain Development Company"
-        text="If you think blockchain development is complex, tedious or time-consuming, Webcom Systems delivers a one-stop solution to you. Create your blockchain applications on Hyperledger, Ethereum and Hashgraph."
+        text="If you think blockchain development is complex, tedious or time-consuming, Avner Global delivers a one-stop solution to you. Create your blockchain applications on Hyperledger, Ethereum and Hashgraph."
         bgimage="/assets/image/Banner-1.jpg" // Using an existing banner image
         className=""
       />
@@ -418,7 +418,7 @@ export default function Page() {
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="w-full lg:w-1/2">
               <SectionHeading className="text-[#153577] text-left mb-6">
-                Why hire Webcom Systems for Blockchain Development?
+                Why hire Avner Global for Blockchain Development?
               </SectionHeading>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
                 We bring together a team of seasoned experts dedicated to

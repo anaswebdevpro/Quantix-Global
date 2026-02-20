@@ -24,8 +24,6 @@ const BannerForm = () => {
           </select>
 
           <div className="flex items-center rounded-lg border border-gray-300 bg-white px-3 h-10 transition focus-within:border-[#1cd1a1] focus-within:ring-2 focus-within:ring-[#1cd1a1]/25">
-            <span className="mr-2 text-sm">🇮🇳</span>
-            <span className="mr-2 text-sm text-[#2f3d4f]">+91</span>
             <input
               type="tel"
               placeholder="Phone Number*"

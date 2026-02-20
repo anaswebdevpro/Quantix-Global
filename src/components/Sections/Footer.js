@@ -13,23 +13,29 @@ const footerLinks = {
       { name: "Website Designing", href: "/website-designing" },
       { name: "Graphic Designing", href: "/graphic-designing" },
       { name: "Digital Marketing", href: "/digital-marketing" },
-      { name: "Mobile Application Development", href: "/mobile-app-dev" },
+      {
+        name: "Mobile Application Development",
+        href: "/mobile-application-development",
+      },
       { name: "Video Animation", href: "/video-animation" },
     ],
   },
   defi: {
     title: "DEFI",
     links: [
-      { name: "Decentralized Finance Defi Development", href: "/defi-dev" },
-      { name: "PancakeSwap like Dex Development", href: "/pancakeswap" },
-      { name: "DeFI Staking Platform Development", href: "/staking" },
-      { name: "Defi Lending And Borrowing Platform", href: "/lending" },
+      {
+        name: "Decentralized Finance Defi Development",
+        href: "/defi-development",
+      },
+      { name: "PancakeSwap like Dex Development", href: "/pancakeswap-clone" },
+      { name: "DeFI Staking Platform Development", href: "/defi-staking" },
+      { name: "Defi Lending And Borrowing Platform", href: "/defi-lending" },
     ],
   },
   token: {
     title: "Token",
     links: [
-      { name: "Tokenized Asset Offering", href: "/tao" },
+      { name: "Tokenized Asset Offering", href: "/tokenized-asset-offering" },
       { name: "BSC Based Token Development", href: "/bsc-token" },
       { name: "Token Development Like BEP 20", href: "/bep20-token" },
     ],
@@ -37,19 +43,22 @@ const footerLinks = {
   blockchain: {
     title: "Blockchain",
     links: [
-      { name: "Blockchain Development", href: "/blockchain-dev" },
-      { name: "Blockchain Development Platform", href: "/platform-dev" },
+      { name: "Blockchain Development", href: "/blockchain-development" },
+      {
+        name: "Blockchain Development Platform",
+        href: "/blockchain-development",
+      },
       { name: "Tron DAPP Development", href: "/tron-dapp" },
-      { name: "Blockchain In Insurance", href: "/insurance" },
+      { name: "Blockchain In Insurance", href: "/blockchain-insurance" },
     ],
   },
   corporate: {
     title: "Corporate",
     links: [
-      { name: "About Us", href: "/about-us" },
+      { name: "About Us", href: "#" },
       { name: "Contact Us", href: "/contact-us" },
       { name: "Blog", href: "/blog" },
-      { name: "Current Openings", href: "/careers" },
+      { name: "Current Openings", href: "#" },
     ],
   },
 };
@@ -170,22 +179,26 @@ export default function Footer() {
             </form>
 
             <div className="bg-[#122e66] p-6 rounded-lg border-l-4 border-[#09d0c6]">
-              <h4 className="font-bold mb-2 text-[#09d0c6]">India Office</h4>
+              <h4 className="font-bold mb-2 text-[#09d0c6]">
+                Avner Global Inc.
+              </h4>
               <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                abc tower  1600xx
+                Calgary, Alberta, Canada
               </p>
               <a
-                href="tel:+918699701099"
-                className="block text-[#09d0c6] font-bold mb-1 hover:underline"
+                href="mailto:info@avnerglobal.com"
+                className="block text-gray-300 hover:text-[#09d0c6] transition-colors mb-1"
               >
-                +91 86997 01099
+                Email: info@avnerglobal.com
               </a>
-              <a
-                href="mailto:sales@avnerglobal.net"
+              {/* <a
+                href="https://www.avnerglobal.com"
                 className="block text-gray-300 hover:text-[#09d0c6] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                sales@avnerglobal.net
-              </a>
+                Website: www.avnerglobal.com
+              </a> */}
             </div>
           </div>
         </div>
@@ -193,7 +206,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-sm text-gray-400">
-            © Copyright {new Date().getFullYear()} Avner Global
+            © {new Date().getFullYear()} Avner Global Inc. All rights reserved.
           </p>
 
           <div className="flex gap-4">
@@ -229,10 +242,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <Link
-            href="/privacy-policy"
-            className="text-sm text-gray-400 hover:text-white"
-          >
+          <Link href="#" className="text-sm text-gray-400 hover:text-white">
             Privacy Policy
           </Link>
         </div>

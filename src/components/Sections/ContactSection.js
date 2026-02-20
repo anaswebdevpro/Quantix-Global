@@ -50,29 +50,13 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-bold text-[#153577] mb-1">Visit Us</h4>
                     <p className="text-gray-500 text-sm leading-relaxed">
-                      abc Tower Sector , Sahibzada Ajit Singh Nagar, Punjab
-                      160066, India
+                      Calgary, Alberta, Canada
                     </p>
                   </div>
                 </div>
 
                 <a
-                  href="tel:+918699701099"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100 hover:border-[#09d0c6] hover:shadow-md transition-all group"
-                >
-                  <div className="w-12 h-12 rounded-full bg-[#09d0c6]/10 flex items-center justify-center shrink-0 text-[#09d0c6] group-hover:bg-[#09d0c6] group-hover:text-white transition-colors">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#153577] mb-1">Call Us</h4>
-                    <p className="text-gray-500 text-sm group-hover:text-[#09d0c6] transition-colors">
-                      +91 86997 01099
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="mailto:sales@Avner Globalsystem.net"
+                  href="mailto:info@avnerglobal.com"
                   className="flex items-center gap-4 p-4 rounded-xl bg-white shadow-sm border border-gray-100 hover:border-[#09d0c6] hover:shadow-md transition-all group"
                 >
                   <div className="w-12 h-12 rounded-full bg-[#09d0c6]/10 flex items-center justify-center shrink-0 text-[#09d0c6] group-hover:bg-[#09d0c6] group-hover:text-white transition-colors">
@@ -81,25 +65,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-bold text-[#153577] mb-1">Email Us</h4>
                     <p className="text-gray-500 text-sm group-hover:text-[#09d0c6] transition-colors">
-                      sales@avnerglobal.net
-                    </p>
-                  </div>
-                </a>
-
-                <a
-                  href="https://wa.me/918699701099"
-                  target="_blank"
-                  className="flex items-center gap-4 p-4 rounded-xl bg-[#25D366]/5 border border-[#25D366]/20 hover:bg-[#25D366]/10 transition-all group"
-                >
-                  <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center shrink-0 text-white shadow-lg shadow-[#25D366]/30">
-                    <MessageCircle size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#153577] mb-1">
-                      Chat on WhatsApp
-                    </h4>
-                    <p className="text-gray-500 text-sm">
-                      Get instant responses from our team
+                      info@avnerglobal.com
                     </p>
                   </div>
                 </a>

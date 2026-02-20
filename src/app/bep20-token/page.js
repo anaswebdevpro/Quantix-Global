@@ -147,7 +147,7 @@ export default function Bep20Token() {
               the BSC or Binance Smart Chain. We have spent years analyzing the
               intricacies of DeFi smart contracts, Lending, Borrowing platforms,
               Yield Farming, Tokens, as well as Tokenization development making
-              Avner Global System the ideal choice for your BEP20-like token
+              Avner Global the ideal choice for your BEP20-like token
               development.
             </SubHeading>
             <div>

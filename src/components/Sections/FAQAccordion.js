@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { SectionHeading } from "../ui/SectionHeading";
 
 export default function FAQAccordion({ items }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -11,7 +12,20 @@ export default function FAQAccordion({ items }) {
   };
 
   return (
-    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-6xl mx-auto">
+    
+    <div>
+      <div className="text-center mt-16">
+
+           <SectionHeading>
+       Frequently Asked <span className="text-[#09d0c6]">Questions</span>(FAQ)
+          </SectionHeading>
+      </div>
+
+
+    
+    
+    <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-6xl mx-auto">
+
       {items?.map((item, index) => {
         const isOpen = openIndex === index;
         return (
@@ -66,6 +80,7 @@ export default function FAQAccordion({ items }) {
           </div>
         );
       })}
+    </div>
     </div>
   );
 }

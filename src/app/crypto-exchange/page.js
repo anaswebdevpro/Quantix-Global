@@ -15,7 +15,6 @@ import {
   LayoutTemplate,
   ArrowRightLeft,
   Settings,
- 
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { motion } from "framer-motion";
@@ -61,7 +60,7 @@ export default function Page() {
     },
     {
       title: "Issuer Dashboard",
-      desc: "Webcom Blockchain Development will incur a user-friendly issuer dashboard where the scheme owner can add details about the scheme/ project, observe demand -supply of tokens, manage token supply, etc.",
+      desc: "Avner Global Blockchain Development will incur a user-friendly issuer dashboard where the scheme owner can add details about the scheme/ project, observe demand -supply of tokens, manage token supply, etc.",
       icon: <CheckCheck className="w-8 h-8 text-[#09d0c6]" />,
     },
     {
@@ -148,15 +147,14 @@ export default function Page() {
                   <br />
                   Crypto exchange software, while sharing similarities with
                   conventional exchanges, facilitates digital, secure, and
-                  boundary-less trading. Webcom Systems, a leading
-                  cryptocurrency exchange development company, is translating
-                  innovative ideas into professional solutions for businesses
-                  interested in venturing into the multi-billion dollar
-                  industry. <br />
+                  boundary-less trading. Avner Global, a leading cryptocurrency
+                  exchange development company, is translating innovative ideas
+                  into professional solutions for businesses interested in
+                  venturing into the multi-billion dollar industry. <br />
                   <br />
-                  Harness Webcom’s expertise in cryptocurrency exchange platform
-                  development to establish a strong foundation for success in
-                  the cryptocurrency industry.
+                  Harness Avner Global's expertise in cryptocurrency exchange
+                  platform development to establish a strong foundation for
+                  success in the cryptocurrency industry.
                 </p>
               </div>
             </div>
@@ -269,9 +267,8 @@ export default function Page() {
         </Container>
       </section>
 
-      <Stats/>
-      <Testimonials/>
-     
+      <Stats />
+      <Testimonials />
     </>
   );
 }
