@@ -16,6 +16,7 @@ import {
   Stethoscope,
   Truck,
   Users,
+  Check,
 } from "lucide-react";
 import Container from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -115,7 +116,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/healthcare-usecase-1.png" // Placeholder or mapped
+                src="/assets/image/blockchainSolution.jpg"
                 alt="Blockchain in Healthcare"
                 width={600}
                 height={400}
@@ -175,62 +176,66 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-[#153577] text-white">
-        <Container>
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-full md:w-1/2">
-              <SectionHeading className="text-white text-left mb-6">
-                Why Choose Us?
+      {/* Benefits of Blockain with side image 50%*/}
+      <section className="bg-[#153577] text-white overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 relative min-h-[350px] md:min-h-[500px]">
+            <Image
+              src="/assets/image/ladysupport.jpg"
+              alt="Why Choose Us"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+          <div className="w-full md:w-1/2 py-12 px-6 md:px-12 lg:px-20 bg-[#153577] flex items-center">
+            <div className="max-w-xl">
+              <SectionHeading className="text-white text-left mb-2 py-0 leading-tight">
+                Benefits of Blockchain in Healthcare
               </SectionHeading>
-              <ul className="space-y-6">
+
+              <p className="text-blue-100 text-base mb-4 leading-relaxed">
+                Blockchain technology offers numerous benefits to the healthcare
+                industry, including improved data security, interoperability,
+                and patient care.
+              </p>
+
+              <p className="text-blue-200 font-semibold mb-4 text-sm">
+                Here are some of the benefits of blockchain in healthcare:
+              </p>
+
+              <ul className="space-y-3 mb-6">
                 {[
-                  {
-                    title: "Secure Data Sharing",
-                    desc: "Facilitates safe collaboration between healthcare providers.",
-                  },
-                  {
-                    title: "Global Interoperability",
-                    desc: "Secure data exchange regardless of location or system.",
-                  },
-                  {
-                    title: "Operational Efficiency",
-                    desc: "Increased patient care quality combined with decreased administrative costs.",
-                  },
-                  {
-                    title: "Tailored Solutions",
-                    desc: "Customized blockchain answers for specific healthcare needs.",
-                  },
-                  {
-                    title: "Expertise & Innovation",
-                    desc: "Focus on security, interoperability, and long-term partnership.",
-                  },
+                  "Our solution facilitates secure data sharing between healthcare providers, enabling them to collaborate more effectively and provide better patient care.",
+                  "Our solution provides interoperability in blockchain, allowing providers to send or receive patient data to another provider in any location in a secure way.",
+                  "Increased patient care, decreased costs, and more efficient operations are made possible by our solutions.",
+                  "Our company is committed to tailoring blockchain answers to the precise demands of healthcare clients.",
                 ].map((item, i) => (
-                  <li key={i} className="flex gap-4">
-                    <div className="mt-1 bg-[#00D9FF] p-1 rounded-full h-fit">
-                      <HeartPulse className="w-4 h-4 text-black" />
+                  <li key={i} className="flex gap-3 group">
+                    <div className="mt-1 shrink-0">
+                      <Check
+                        className="w-5 h-5 text-[#00D9FF]"
+                        strokeWidth={3}
+                      />
                     </div>
-                    <div>
-                      <h4 className="font-bold text-lg">{item.title}</h4>
-                      <p className="text-blue-100 text-sm leading-relaxed">
-                        {item.desc}
-                      </p>
-                    </div>
+                    <p className="text-blue-50 text-sm leading-relaxed">
+                      {item}
+                    </p>
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="w-full md:w-1/2 flex justify-center">
-              <Image
-                src="/assets/image/coin.png"
-                alt="Why Choose Us"
-                width={400}
-                height={400}
-                className="object-contain"
-              />
+
+              <div className="pt-4 border-t border-blue-800/50">
+                <p className="text-blue-200 text-xs leading-relaxed italic">
+                  Our company is a great choice for blockchain healthcare
+                  solutions because of your expertise, innovation, customer
+                  focus, focus on security, focus on interoperability, and
+                  commitment to partnership.
+                </p>
+              </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
 
       {/* Use Cases Section */}

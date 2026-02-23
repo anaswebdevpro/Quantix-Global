@@ -526,10 +526,10 @@ export default function Page() {
             <div className="w-full lg:w-1/2">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { val: "7+", label: "Total Team" },
-                  { val: "8+", label: "Projects Made" },
-                  { val: "9+", label: "Global Clients" },
-                  { val: "4", label: "Years Exp." },
+                  { val: "19+", label: "Total Team" },
+                  { val: "288+", label: "Projects Made" },
+                  { val: "165+", label: "Global Clients" },
+                  { val: "11+", label: "Years Exp." },
                 ].map((stat, idx) => (
                   <div
                     key={idx}

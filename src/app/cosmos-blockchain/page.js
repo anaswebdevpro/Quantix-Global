@@ -146,8 +146,8 @@ export default function Page() {
       <HeroWithForm
         heading="Expertise in Cosmos Blockchain Development"
         text="We take a holistic approach from planning to implementation, ensuring your business realizes the maximum value of blockchain technology. Build interoperable and scalable solutions with Cosmos."
-        bgimage="/assets/image/Cosmos-Blockchain-Development.png" // Placeholder
-        className=""
+        bgimage="/assets/image/cryptobanner.png" // Placeholder
+        className="hidden"
       />
 
       {/* Intro Section */}
@@ -156,7 +156,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/Cosmos-Development.png" // Placeholder
+                src="/assets/image/cosmoimg.jpg" // Placeholder
                 alt="Cosmos Blockchain Development"
                 width={600}
                 height={400}
@@ -298,7 +298,7 @@ export default function Page() {
             </div>
             <div className="w-full md:w-1/2 flex justify-center">
               <Image
-                src="/assets/image/coin.png"
+                src="/assets/image/trondapp_development6.png"
                 alt="Why Choose Avner Global"
                 width={400}
                 height={400}

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ArrowRightLeft,
+  Check,
   ClipboardCheck,
   Coins,
   Database,
@@ -27,6 +28,7 @@ import Button from "@/components/ui/button";
 import HeroWithForm from "@/components/Sections/heroWithform";
 import FAQAccordion from "@/components/Sections/FAQAccordion";
 import Stats from "@/components/Sections/Stats";
+import SupportCTA from "@/components/Sections/SupportCTA";
 
 const services = [
   {
@@ -107,11 +109,7 @@ const useCases = [
     desc: "Direct negotiation features enable fair pricing models that benefit the primary producers.",
     icon: <Users className="w-8 h-8 text-white" />,
   },
-  {
-    title: "Upgrading Farm Management Software",
-    desc: "Integrate blockchain into existing FMS to automate manual data entry and ensure data integrity.",
-    icon: <Tractor className="w-8 h-8 text-white" />,
-  },
+ 
 ];
 
 const faqs = [
@@ -137,13 +135,13 @@ const faqs = [
   },
 ];
 
-export default function Page() {
+export default function Agriculture() {
   return (
     <>
       <HeroWithForm
         heading="Blockchain In Agriculture"
         text="We provide blockchain solutions for the agriculture industry that improve transparency, efficiency, and sustainability. Secure your supply chain and empower farmers with decentralized technology."
-        bgimage="/assets/image/Agriculture_1.jpg" // Using an existing agriculture image
+        bgimage="/assets/image/Agriculture.jpg" // Using an existing agriculture image
         className=""
       />
 
@@ -180,39 +178,8 @@ export default function Page() {
           </div>
         </Container>
       </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-white">
-        <Container>
-          <div className="text-center mb-16">
-            <SectionHeading className="text-[#333d47]">
-              Our Blockchain Services For the Agriculture Industry
-            </SectionHeading>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
-              >
-                <div className="mb-6 p-4 rounded-full bg-white shadow-sm inline-block group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold text-[#333d47] mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">{service.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Use Cases Section */}
+      
+           {/* Use Cases Section */}
       <section className="py-20 bg-gray-50">
         <Container>
           <div className="text-center mb-16">
@@ -247,53 +214,109 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 bg-[#153577] text-white">
-        <Container>
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="w-full md:w-1/2">
-              <SectionHeading className="text-white text-left mb-6">
-                Technology for a Sustainable Future
+            {/* Why Choose Us Section */}
+     <section className="bg-[#153577] text-white overflow-hidden">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 relative min-h-[350px] md:min-h-[500px]">
+            <Image
+              src="/assets/image/agriculture_tab.jpg"
+              alt="Why Choose Us"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+          <div className="w-full md:w-1/2 py-12 px-6 md:px-12 lg:px-20 bg-[#153577] flex items-center">
+            <div className="max-w-xl">
+              <SectionHeading className="text-white text-left mb-2 py-0 leading-tight">
+                Benefits of Blockchain in Agriculture
               </SectionHeading>
-              <p className="text-blue-100 text-lg leading-relaxed mb-6">
-                We combine deep agricultural knowledge with cutting-edge
-                blockchain expertise (Hyperledger, Solidity, Cosmos, Substrate)
-                to solve real-world challenges.
+
+              <p className="text-blue-100 text-base mb-4 leading-relaxed">
+                Blockchain technology offers numerous benefits to the agriculture
+                industry, including improved data security, interoperability,
+                and   patient care.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <Sprout className="w-8 h-8 text-[#00D9FF] mb-2" />
-                  <h4 className="font-bold">Sustainable</h4>
-                </div>
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <Shield className="w-8 h-8 text-[#00D9FF] mb-2" />
-                  <h4 className="font-bold">Secure</h4>
-                </div>
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <Users className="w-8 h-8 text-[#00D9FF] mb-2" />
-                  <h4 className="font-bold">Fair</h4>
-                </div>
-                <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <Zap className="w-8 h-8 text-[#00D9FF] mb-2" />
-                  <h4 className="font-bold">Fast</h4>
-                </div>
+
+              <p className="text-blue-200 font-semibold mb-4 text-sm">
+                Here are some of the benefits of blockchain in agriculture:
+              </p>
+
+              <ul className="space-y-3 mb-6">
+                {[
+                  "Our solution facilitates secure data sharing between  healthcare providers, enabling them to collaborate more effectively and provide better patient care.",
+                  "Our solution provides interoperability in blockchain, allowing providers to send or receive patient data to another provider in any location in a secure way.",
+                  "Increased patient care, decreased costs, and more efficient operations are made possible by our solutions.",
+                  "Our company is committed to tailoring blockchain answers to the precise demands of healthcare clients.",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 group">
+                    <div className="mt-1 shrink-0">
+                      <Check
+                        className="w-5 h-5 text-[#00D9FF]"
+                        strokeWidth={3}
+                      />
+                    </div>
+                    <p className="text-blue-50 text-sm leading-relaxed">
+                      {item}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="pt-4 border-t border-blue-800/50">
+                <p className="text-blue-200 text-xs leading-relaxed italic">
+                  Our company is a great choice for blockchain agriculture
+                  solutions because of your expertise, innovation, customer
+                  focus, focus on security, focus on interoperability, and
+                  commitment to partnership.
+                </p>
               </div>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center">
-              <Image
-                src="/assets/image/coin.png"
-                alt="Tech Stack"
-                width={400}
-                height={400}
-                className="object-contain opacity-80"
-              />
-            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Services Section */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center mb-16">
+            <SectionHeading className="text-[#333d47]">
+              Our Blockchain Services For the Agriculture Industry
+            </SectionHeading>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="p-8 rounded-xl bg-gray-50 border border-gray-100 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
+              >
+                <div className="mb-6 p-4 rounded-full bg-white shadow-sm inline-block group-hover:scale-110 transition-transform">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold text-[#333d47] mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </Container>
       </section>
 
+ 
+
+
       {/* Stats */}
-      <Stats />
+
+      <SupportCTA />
+
+
+      {/* <Stats /> */}
 
       {/* FAQs */}
       <FAQAccordion items={faqs} />
