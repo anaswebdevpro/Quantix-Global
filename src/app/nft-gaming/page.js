@@ -167,7 +167,12 @@ export default function NFTGamingPage() {
     <div className="bg-white">
       <HeroWithForm
         heading="NFT Gaming Platform Development"
-        text="Create & Monetize Games with Our Expert NFT Gaming Solutions."
+        text="Create & Monetize Games with Our Expert NFT Gaming Solutions.
+
+Build secure, scalable, and engaging gaming ecosystems with our cutting-edge blockchain technology.
+
+        
+        "
         bgimage="/assets/image/banner-20.jpg"
         className="hidden"
       />

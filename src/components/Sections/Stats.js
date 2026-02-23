@@ -11,7 +11,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-20 bg-[#153577] text-white relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-[#16222E] to-[#446076] text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#153577] to-[#0d224d] opacity-50"></div>
       <Container className="relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">

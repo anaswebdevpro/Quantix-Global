@@ -51,12 +51,12 @@ export default function WebsiteDesigning() {
     <div className="">
       {/* Hero Section */}
       <section
-        className="py-20 md:py-32 text-white h-auto md:h-[90vh] flex items-center bg-[#153577]"
-        style={{
-          backgroundImage: "url('/assets/image/banner-service.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="py-20 md:py-32 text-white h-auto md:h-[90vh] flex items-center bg-gradient-to-r from-[#16222E] to-[#446076]"
+        // style={{
+        //   backgroundImage: "url('/assets/image/banner-service.jpg')",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
       >
         <Container className="max-w-7xl">
           <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20">

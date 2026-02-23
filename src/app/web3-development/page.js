@@ -167,8 +167,8 @@ export default function Page() {
       <HeroWithForm
         heading="Web3 Development Company"
         text="Creating dynamic Web 3.0 solutions that integrate blockchain, AI, and IoT technologies for enhanced interactivity. Step into the future of the decentralized internet."
-        bgimage="/assets/image/Web-3.0-Development.jpg" // Placeholder
-        className=""
+        bgimage="/assets/image/Banner-1-5.jpg" // Placeholder
+        className="hidden"
       />
 
       {/* Intro Section */}
@@ -177,7 +177,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/Web-3.0-Development-1.png" // Placeholder
+                src="/assets/image/web3.jpg" // Placeholder
                 alt="Web 3.0 Development"
                 width={600}
                 height={400}
