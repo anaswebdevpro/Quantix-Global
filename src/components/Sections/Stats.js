@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 import Container from "../ui/container";
 import { SectionHeading } from "../ui/SectionHeading";
 
-const stats = [
+const defaultStats = [
   { value: "150+", label: "TOTAL EMPLOYEES" },
   { value: "10299", label: "PROJECT COMPLETED" },
   { value: "1257", label: "GLOBAL CLIENTS" },
 ];
 
-export default function Stats() {
+export default function Stats({
+  stats = defaultStats,
+  heading = "Why Choose Us",
+  description = "We have the expertise to handle complex blockchain projects. We have successfully delivered multiple blockchain projects, gaining valuable industry experience along the way. This experience allows us to understand the unique challenges and requirements of different industries, ensuring that our solutions are tailored to your specific industry needs.",
+}) {
   return (
     <section className="py-20 bg-gradient-to-r from-[#16222E] to-[#446076] text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#153577] to-[#0d224d] opacity-50"></div>
@@ -17,7 +21,7 @@ export default function Stats() {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <SectionHeading className="text-white mb-6">
-              Why Choose Us
+              {heading}
             </SectionHeading>
             <motion.p
               initial={{ opacity: 0, x: -30 }}
@@ -26,12 +30,7 @@ export default function Stats() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-gray-300 leading-relaxed mb-8"
             >
-              We have the expertise to handle complex blockchain projects. We
-              have successfully delivered multiple blockchain projects, gaining
-              valuable industry experience along the way. This experience allows
-              us to understand the unique challenges and requirements of
-              different industries, ensuring that our solutions are tailored to
-              your specific industry needs.
+              {description}
             </motion.p>
           </div>
 

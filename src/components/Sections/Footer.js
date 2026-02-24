@@ -55,9 +55,10 @@ const footerLinks = {
   corporate: {
     title: "Corporate",
     links: [
-      { name: "About Us", href: "#" },
+      { name: "About Us", href: "/about-us" },
       { name: "Contact Us", href: "/contact-us" },
       { name: "Blog", href: "/blog" },
+      { name: "Terms & Conditions", href: "/terms-and-conditions" },
       { name: "Current Openings", href: "#" },
     ],
   },
@@ -65,15 +66,15 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className=" text-white pt-20 pb-10 relative"
-    style={{
-          backgroundImage: `url('/assets/image/waves-min.jpg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+    <footer
+      className=" text-white pt-20 pb-10 relative"
+      style={{
+        backgroundImage: `url('/assets/image/waves-min.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
-      
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Services */}
@@ -191,7 +192,10 @@ export default function Footer() {
                 Avner Global Inc.
               </h4>
               <p className="text-sm text-white mb-4 leading-relaxed">
-                Calgary, Alberta, Canada
+                Incorporated in Alberta, Canada
+              </p>
+              <p className="text-sm text-white mb-4 leading-relaxed">
+                Registered Office: Calgary, Alberta, Canada
               </p>
               <a
                 href="mailto:info@avnerglobal.com"
@@ -250,8 +254,11 @@ export default function Footer() {
             </a>
           </div>
 
-          <Link href="#" className="text-sm text-gray-400 hover:text-white">
-            Privacy Policy
+          <Link
+            href="/terms-and-conditions"
+            className="text-sm text-gray-400 hover:text-white transition-colors"
+          >
+            Terms & Conditions | Refund Policy | Privacy Policy
           </Link>
         </div>
       </Container>

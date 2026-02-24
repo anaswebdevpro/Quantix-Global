@@ -27,26 +27,18 @@ export default function Home() {
       <IntroSection
         heading={
           <>
-            Avner Global- Building Blockchain <br /> Solutions For Businesses
+           About Us
           </>
         }
         text={
           <>
-            In the dynamic world of technology,{" "}
-            <strong className="font-bold text-gray-800">Avner Global</strong>{" "}
-            has emerged as a trailblazer in providing innovative blockchain
-            solutions tailored for businesses. With a mission to harness the
-            transformative potential of blockchain technology, Avner Global has
-            positioned itself as a leading player in the industry, offering a
-            range of services designed to enhance efficiency, security, and
-            transparency. <br /> <br />
-            <strong>Blockchain technology,</strong> known for its decentralized
-            and immutable nature, is revolutionizing the way businesses operate.{" "}
-            <strong>Avner Global</strong> leverages this technology to create
-            customized solutions that address the unique challenges faced by
-            various industries. From supply chain management and finance to
-            healthcare and real estate, the applications of blockchain are vast
-            and varied.
+          <p className="font-bold text-gray-800 text-2xl "> Building the Future of Digital Innovation</p> <br />
+          
+          <strong>Avner Global Inc.</strong> is a forward-thinking blockchain and digital solutions company headquartered in <b>Calgary, Alberta, Canada</b>. We specialize in delivering secure, scalable, and enterprise-grade Web3 and software development solutions that empower businesses to thrive in the rapidly evolving digital economy.
+           <br />
+           <br />
+
+Founded with a vision to bridge the gap between emerging technologies and real-world business needs, Avner Global combines deep technical expertise with strategic insight to help organizations innovate with confidence. From startups exploring blockchain adoption to established enterprises modernizing their infrastructure, we provide end-to-end technology solutions tailored for measurable impact.
           </>
         }
         items={introItems}
