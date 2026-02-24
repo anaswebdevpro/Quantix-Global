@@ -13,6 +13,31 @@ export const metadata = {
   title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
   description:
     "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
+  icons: {
+    icon: "/assets/image/favicon.png",
+    apple: "/assets/image/favicon.png",
+  },
+  openGraph: {
+    title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
+    description:
+      "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
+    images: [
+      {
+        url: "/assets/image/favicon.png",
+        width: 512,
+        height: 512,
+        alt: "Avner Global Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
+    description:
+      "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
+    images: ["/assets/image/favicon.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
