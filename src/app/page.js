@@ -25,21 +25,30 @@ export default function Home() {
     <>
       <Hero />
       <IntroSection
-        heading={
-          <>
-           About Us
-          </>
-        }
+        heading={<>About Us</>}
         text={
-          <>
-          <p className="font-bold text-gray-800 text-2xl "> Building the Future of Digital Innovation</p> <br />
-          
-          <strong>Avner Global Inc.</strong> is a forward-thinking blockchain and digital solutions company headquartered in <b>Calgary, Alberta, Canada</b>. We specialize in delivering secure, scalable, and enterprise-grade Web3 and software development solutions that empower businesses to thrive in the rapidly evolving digital economy.
-           <br />
-           <br />
-
-Founded with a vision to bridge the gap between emerging technologies and real-world business needs, Avner Global combines deep technical expertise with strategic insight to help organizations innovate with confidence. From startups exploring blockchain adoption to established enterprises modernizing their infrastructure, we provide end-to-end technology solutions tailored for measurable impact.
-          </>
+          <div className="space-y-4">
+            <span className="block font-bold text-gray-800 text-2xl mb-4">
+              Building the Future of Digital Innovation
+            </span>
+            <p className="leading-relaxed">
+              <strong>Avner Global Inc.</strong> is a forward-thinking
+              blockchain and digital solutions company headquartered in{" "}
+              <b>Calgary, Alberta, Canada</b>. We specialize in delivering
+              secure, scalable, and enterprise-grade Web3 and software
+              development solutions that empower businesses to thrive in the
+              rapidly evolving digital economy.
+            </p>
+            <p className="leading-relaxed pt-2">
+              Founded with a vision to bridge the gap between emerging
+              technologies and real-world business needs, Avner Global combines
+              deep technical expertise with strategic insight to help
+              organizations innovate with confidence. From startups exploring
+              blockchain adoption to established enterprises modernizing their
+              infrastructure, we provide end-to-end technology solutions
+              tailored for measurable impact.
+            </p>
+          </div>
         }
         items={introItems}
       />

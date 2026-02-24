@@ -495,7 +495,6 @@ const TermsPage = () => {
   return (
     <div className="bg-white min-h-screen text-gray-900 relative overflow-hidden">
 
-
       <Container className="py-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Navigation Sidebar */}

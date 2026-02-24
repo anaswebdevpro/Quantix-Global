@@ -20,7 +20,7 @@ export default function IntroSection({
           <SectionHeading as="h2" className="">
             {heading}
           </SectionHeading>
-          <SubHeading className="text-center max-w-7xl my-5 mx-auto">
+          <SubHeading as="div" className="text-center max-w-7xl my-5 mx-auto">
             {text}
           </SubHeading>
         </div>
