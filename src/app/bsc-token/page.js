@@ -158,7 +158,7 @@ export default function BSCTokenPage() {
       <HeroWithForm
         heading="Binance Smart Chain Development Services Company"
         text="Owing to the rigidity of the Binance Coin and Coin address, the Binance Smart Chain Development has come into the arena today. Both Binance Chain and Binance Block Chain are working side by side in the cryptocurrency environment."
-        bgimage="/assets/image/banner-1.jpg"
+        bgimage="/assets/image/Banner-1.jpg"
       />
 
       {/* Intro Section */}

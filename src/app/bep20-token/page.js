@@ -117,7 +117,7 @@ export default function Bep20Token() {
       <HeroWithForm
         heading="BEP20 Token Development Company"
         text="BEP20 Token Development On Binance Smart Cross-Chain"
-        bgimage="/assets/image/banner-1.jpg"
+        bgimage="/assets/image/Banner-1.jpg"
       />
 
       {/* intro section  */}
