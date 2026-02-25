@@ -109,7 +109,6 @@ const useCases = [
     desc: "Direct negotiation features enable fair pricing models that benefit the primary producers.",
     icon: <Users className="w-8 h-8 text-white" />,
   },
- 
 ];
 
 const faqs = [
@@ -141,7 +140,7 @@ export default function Agriculture() {
       <HeroWithForm
         heading="Blockchain In Agriculture"
         text="We provide blockchain solutions for the agriculture industry that improve transparency, efficiency, and sustainability. Secure your supply chain and empower farmers with decentralized technology."
-        bgimage="/assets/image/Agriculture.jpg" // Using an existing agriculture image
+        bgimage="/assets/image/agriculture.jpg"
         className=""
       />
 
@@ -178,8 +177,8 @@ export default function Agriculture() {
           </div>
         </Container>
       </section>
-      
-           {/* Use Cases Section */}
+
+      {/* Use Cases Section */}
       <section className="py-20 bg-gray-50">
         <Container>
           <div className="text-center mb-16">
@@ -214,8 +213,8 @@ export default function Agriculture() {
         </Container>
       </section>
 
-            {/* Why Choose Us Section */}
-     <section className="bg-[#153577] text-white overflow-hidden">
+      {/* Why Choose Us Section */}
+      <section className="bg-[#153577] text-white overflow-hidden">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 relative min-h-[350px] md:min-h-[500px]">
             <Image
@@ -233,9 +232,9 @@ export default function Agriculture() {
               </SectionHeading>
 
               <p className="text-blue-100 text-base mb-4 leading-relaxed">
-                Blockchain technology offers numerous benefits to the agriculture
-                industry, including improved data security, interoperability,
-                and   patient care.
+                Blockchain technology offers numerous benefits to the
+                agriculture industry, including improved data security,
+                interoperability, and patient care.
               </p>
 
               <p className="text-blue-200 font-semibold mb-4 text-sm">
@@ -276,7 +275,6 @@ export default function Agriculture() {
         </div>
       </section>
 
-
       {/* Services Section */}
       <section className="py-20 bg-white">
         <Container>
@@ -308,13 +306,9 @@ export default function Agriculture() {
         </Container>
       </section>
 
- 
-
-
       {/* Stats */}
 
       <SupportCTA />
-
 
       {/* <Stats /> */}
 

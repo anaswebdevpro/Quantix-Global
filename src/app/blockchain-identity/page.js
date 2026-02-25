@@ -164,7 +164,7 @@ export default function Page() {
       <HeroWithForm
         heading="Blockchain In Identity Management"
         text="Utilize the impressive features of blockchain, such as decentralization, security, immutability, speed, and transparency, for storing and managing digital identities."
-        bgimage="/assets/image/Identity-Management.jpg" // Placeholder
+        bgimage="/assets/image/Banner_defi-2.jpg" 
         className=""
       />
 
@@ -174,7 +174,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="w-full md:w-1/2">
               <Image
-                src="/assets/image/Identity-Management-1.png" // Placeholder
+                src="/assets/image/innovation.png" 
                 alt="Blockchain Identity Management"
                 width={600}
                 height={400}

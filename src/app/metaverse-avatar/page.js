@@ -577,11 +577,8 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#f2f3f5] py-16 md:py-20">
+      <section className="bg-[#f2f3f5] py-10 md:py-10">
         <Container className="max-w-7xl px-4 md:px-8">
-          <h2 className="text-3xl md:text-[52px] font-bold leading-tight text-center text-[#2f3d4f]">
-            Frequently Asked Questions (FAQs)
-          </h2>
           <FAQAccordion items={faqItems} />
         </Container>
       </section>

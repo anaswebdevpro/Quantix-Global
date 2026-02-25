@@ -180,7 +180,7 @@ export default function MLMSoftware() {
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center p-10">
           <Image
-            src="/assets/image/web_design_1.png"
+            src="/assets/image/Web_design_1.png"
             alt="MLM Software Development"
             width={800}
             height={600}
