@@ -15,12 +15,12 @@ import Container from "@/components/ui/container";
 import { Heading } from "@/components/ui/Heading";
 
 const websites = [
-  "/assets/image/Featured_Image_1.jpg",
-  "/assets/image/Featured_Image_2.jpg",
-  "/assets/image/Featured_Image_3.jpg",
-  "/assets/image/Featured_Image_4-1.jpg",
-  "/assets/image/Featured_Image_5-1.jpg",
-  "/assets/image/Featured_Image_6.jpg",
+  "/assets/image/feature1.png",
+  "/assets/image/feature2.png",
+  "/assets/image/feature3.png",
+  "/assets/image/feature4.png",
+  "/assets/image/feature5.jpg",
+  "/assets/image/feature6.jpg",
 ];
 
 // Tuned for the requested visual reference
@@ -209,7 +209,7 @@ function SliderItem({
           src={src}
           alt="Project Preview"
           fill
-          className="object-center"
+          className="object-auto"
           sizes="(max-width: 768px) 300px, 450px"
           priority={index < 3}
           quality={90}

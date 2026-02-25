@@ -256,7 +256,7 @@ export default function Footer() {
 
           <Link
             href="/terms-and-conditions"
-            className="text-sm text-gray-400 hover:text-white transition-colors"
+            className="text-sm text-white hover:text-white transition-colors"
           >
             Terms & Conditions | Refund Policy | Privacy Policy
           </Link>
