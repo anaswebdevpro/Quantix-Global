@@ -25,7 +25,7 @@ jobs:
               echo "First time setup. Cloning repository..."
               mkdir -p $APP_DIR
               cd $APP_DIR
-              git clone github.com/anaswebdevpro/Quantix-Global.git .
+              git clone https://github.com/anaswebdevpro/Quantix-Global.git .
             else
               echo "Repository exists. Pulling latest code..."
               cd $APP_DIR
