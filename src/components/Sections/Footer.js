@@ -59,7 +59,7 @@ const footerLinks = {
       { name: "Contact Us", href: "/contact-us" },
       { name: "Blog", href: "/blog" },
       { name: "Terms & Conditions", href: "/terms-and-conditions" },
-      { name: "Current Openings", href: "#" },
+      // { name: "Current Openings", href: "#" },
     ],
   },
 };
