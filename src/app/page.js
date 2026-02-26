@@ -1,4 +1,7 @@
 "use client";
+import Link from "next/link";
+import Button from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 import Hero from "@/components/Hero";
 import IntroSection from "@/components/IntroSection";
 import Services from "@/components/Sections/Services";
@@ -48,6 +51,15 @@ export default function Home() {
               infrastructure, we provide end-to-end technology solutions
               tailored for measurable impact.
             </p>
+            <div className="pt-6">
+                 <Link
+                href="/about-us"
+                className="inline-block px-6 py-2 border-2 border-[#153577] text-[#153577] font-semibold rounded hover:bg-[#153577] hover:text-white transition-colors"
+              >
+                Read More
+              </Link>
+            
+            </div>
           </div>
         }
         items={introItems}
