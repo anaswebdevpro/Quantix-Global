@@ -119,6 +119,7 @@ export default function Bep20Token() {
         text="BEP20 Token Development On Binance Smart Cross-Chain"
         bgimage="/assets/image/Banner-1.jpg"
       />
+      
 
       {/* intro section  */}
       <section className="py-16 md:py-20 bg-gray-50">
