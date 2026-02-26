@@ -12,6 +12,7 @@ const services = [
     image: "/assets/image/Defi-Development.png",
     link: "/defi-development",
   },
+  
   {
     title: "Blockchain Development",
     desc: "Enterprise-grade blockchain applications built on Hyperledger, Ethereum, and Hashgraph for seamless business automation.",
