@@ -20,17 +20,11 @@ jobs:
 
             APP_DIR="/var/www/avnerglobal"
 
-            echo "Checking if app directory exists..."
-            if [ ! -d "$APP_DIR/.git" ]; then
-              echo "First time setup. Cloning repository..."
-              mkdir -p $APP_DIR
-              cd $APP_DIR
-              git clone https://github.com/anaswebdevpro/Quantix-Global.git .
-            else
-              echo "Repository exists. Pulling latest code..."
-              cd $APP_DIR
-              git pull origin master
-            fi
+            cd $APP_DIR || exit
+
+            echo "Fetching latest code..."
+            git fetch origin
+            git reset --hard origin/master
 
             echo "Installing dependencies..."
             npm install
@@ -39,6 +33,6 @@ jobs:
             npm run build
 
             echo "Restarting PM2..."
-            pm2 restart avnerglobal || pm2 start npm --name "avnerglobal" -- start
+            pm2 restart avnerglobal --update-env
 
             echo "Deployment completed successfully!"
