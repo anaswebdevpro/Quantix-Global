@@ -23,10 +23,10 @@ export const metadata = {
       "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
     images: [
       {
-        url: "/assets/image/favicon.png",
-        width: 512,
-        height: 512,
-        alt: "Avner Global Logo",
+        url: "/assets/image/logo_metadata.png",
+        width: 1200,
+        height: 630,
+        alt: "Avner Global - Blockchain Development Company",
       },
     ],
     type: "website",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
     description:
       "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
-    images: ["/assets/image/favicon.png"],
+    images: ["/assets/image/logo_metadata.png"],
   },
 };
 
