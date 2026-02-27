@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
@@ -169,7 +170,7 @@ export default function ContactSection() {
                     {...register("service", {
                       required: "Service is required",
                     })}
-                    className={`w-full px-5 py-3  order rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all text-gray-600 ${
+                    className={`w-full px-5 py-3  border rounded-lg focus:outline-none focus:border-[#09d0c6] focus:ring-4 focus:ring-[#09d0c6]/10 transition-all text-gray-600 ${
                       errors.service ? "border-red-500" : "border-gray-200"
                     }`}
                   >

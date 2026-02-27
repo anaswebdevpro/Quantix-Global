@@ -10,6 +10,7 @@ const lato = Lato({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://avnerglobal.com"),
   title: "Blockchain Development Company | Web 3.0 Solutions - Avner Global",
   description:
     "Dive into Web 3.0 with Avner Global! We build custom blockchain solutions to automate trust, streamline workflows, and unlock next-gen possibilities.",
