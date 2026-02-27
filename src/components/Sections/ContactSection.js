@@ -1,19 +1,56 @@
-"use client";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Send,
+  CheckCircle,
+  AlertCircle,
+  Loader2,
+} from "lucide-react";
 import Container from "./../ui/container";
 
 export default function ContactSection() {
+  const [status, setStatus] = useState("idle"); // idle, loading, success, error
+  const [errorMessage, setErrorMessage] = useState("");
+
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-    // Handle form submission logic here
+  const onSubmit = async (data) => {
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        reset();
+        // Reset success state after 5 seconds
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      setStatus("error");
+      setErrorMessage(error.message);
+    }
   };
 
   return (
@@ -213,11 +250,57 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#153577] text-white font-bold rounded-lg shadow-lg shadow-[#09d0c6]/30 hover:shadow-xl hover:shadow-[#09d0c6]/40 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                disabled={status === "loading" || status === "success"}
+                className={`w-full py-4 text-white font-bold rounded-lg shadow-lg transition-all transform flex items-center justify-center gap-2 ${
+                  status === "loading"
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : status === "success"
+                      ? "bg-green-500 shadow-green-500/30"
+                      : "bg-[#153577] shadow-[#09d0c6]/30 hover:shadow-xl hover:shadow-[#09d0c6]/40 hover:-translate-y-1"
+                }`}
               >
-                <Send size={20} />
-                Send Message
+                {status === "loading" ? (
+                  <>
+                    <Loader2 size={20} className="animate-spin" />
+                    Sending...
+                  </>
+                ) : status === "success" ? (
+                  <>
+                    <CheckCircle size={20} />
+                    Message Sent!
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Send Message
+                  </>
+                )}
               </button>
+
+              {status === "error" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3 text-red-700 text-sm"
+                >
+                  <AlertCircle size={20} className="shrink-0" />
+                  <p>{errorMessage}</p>
+                </motion.div>
+              )}
+
+              {status === "success" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3 text-green-700 text-sm"
+                >
+                  <CheckCircle size={20} className="shrink-0" />
+                  <p>
+                    Thank you! Your message has been sent successfully. We'll
+                    get back to you soon.
+                  </p>
+                </motion.div>
+              )}
             </form>
           </motion.div>
         </div>
