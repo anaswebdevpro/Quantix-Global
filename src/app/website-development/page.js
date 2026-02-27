@@ -18,7 +18,7 @@ import SupportCTA from "@/components/Sections/SupportCTA";
 const features = [
   {
     title: "PHP",
-    desc: "Having  in-depth knowledge of all PHP frameworks we provide a wide range of web development solutions to bridge gaps and improve processes",
+    desc: "Having in-depth knowledge of all PHP frameworks we provide a wide range of web development solutions to bridge gaps and improve processes",
   },
   {
     title: "E-commerce",
